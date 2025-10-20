@@ -12,7 +12,7 @@ config_version=5
 
 config/name="game"
 run/main_scene="uid://cil2vjwrmwraf"
-config/features=PackedStringArray("4.5", "Forward Plus")
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [input]
@@ -55,4 +55,4 @@ crouch={
 
 [physics]
 
-3d/default_gravity=9.810000000000002
+3d/default_gravity=9.81
