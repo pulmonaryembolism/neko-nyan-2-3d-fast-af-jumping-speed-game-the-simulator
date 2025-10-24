@@ -1,8 +1,17 @@
-[gd_scene format=3 uid="uid://cjvwcqhp2cgd0"]
+[gd_scene load_steps=3 format=3 uid="uid://cjvwcqhp2cgd0"]
 
-[node name="Portal" type="Node3D"]
+[ext_resource type="Script" uid="uid://ojwkjmba3m5w" path="res://Mechanics/portal.gd" id="1_8muoe"]
 
-[node name="kill_trigger" type="CSGBox3D" parent="."]
-use_collision = true
+[sub_resource type="BoxShape3D" id="BoxShape3D_xngn7"]
+resource_local_to_scene = true
+
+[node name="Portal" type="Area3D"]
+script = ExtResource("1_8muoe")
 
 [node name="check_point" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.72869086, 0)
+
+[node name="kill_trigger" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_xngn7")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
