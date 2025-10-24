@@ -1,8 +1,9 @@
-[gd_scene load_steps=24 format=3 uid="uid://cil2vjwrmwraf"]
+[gd_scene load_steps=25 format=3 uid="uid://cil2vjwrmwraf"]
 
 [ext_resource type="Shader" uid="uid://dgxelk4fpflp1" path="res://checkerboard.gdshader" id="1_8uh7m"]
 [ext_resource type="PackedScene" uid="uid://dvdsmpactuuv0" path="res://Character/character_body.tscn" id="1_37kl0"]
 [ext_resource type="ArrayMesh" uid="uid://c80sqyv3se17c" path="res://Assets/Neko.obj" id="3_6uqi0"]
+[ext_resource type="Material" uid="uid://dgotcfaj4bg3i" path="res://Materials/new_shader_material.tres" id="3_ppyta"]
 
 [sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_8uh7m"]
 
@@ -29,6 +30,11 @@ auto_exposure_enabled = true
 size = Vector2(60, 60)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6uqi0"]
+render_priority = 0
+shader = ExtResource("1_8uh7m")
+shader_parameter/color1 = Color(0.592, 0.475, 0.82, 1)
+shader_parameter/color2 = Color(0.11, 0.082, 0.161, 1)
+shader_parameter/size = 32.0
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ppyta"]
 data = PackedVector3Array(30, 0, 30, -30, 0, 30, 30, 0, -30, -30, 0, 30, -30, 0, -30, 30, 0, -30)
@@ -232,6 +238,7 @@ material = SubResource("ShaderMaterial_ehkex")
 [node name="Neko" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.50636, -0.6267433, 34.7844)
 material_override = SubResource("StandardMaterial3D_6uqi0")
+material_overlay = ExtResource("3_ppyta")
 mesh = ExtResource("3_6uqi0")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Neko"]
