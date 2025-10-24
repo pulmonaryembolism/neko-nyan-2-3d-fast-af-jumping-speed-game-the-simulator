@@ -1,8 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://w4bc1edi813i"]
+[gd_scene load_steps=13 format=3 uid="uid://w4bc1edi813i"]
 
 [ext_resource type="Shader" uid="uid://dgxelk4fpflp1" path="res://checkerboard.gdshader" id="1_le25m"]
 [ext_resource type="PackedScene" uid="uid://dvdsmpactuuv0" path="res://Character/character_body.tscn" id="2_7bqr2"]
 [ext_resource type="PackedScene" uid="uid://cjvwcqhp2cgd0" path="res://Mechanics/portal.tscn" id="3_rutxk"]
+[ext_resource type="PackedScene" uid="uid://djm4nldmulyqq" path="res://Mechanics/spawn_point.tscn" id="4_km2qp"]
 
 [sub_resource type="Environment" id="Environment_7bqr2"]
 
@@ -71,5 +72,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6178942, 0.72869086, 0.898
 [node name="kill_trigger" parent="Portal" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.784915, -2.5882282, 1.732645)
 shape = SubResource("BoxShape3D_km2qp")
+
+[node name="RespawnPoint" parent="." instance=ExtResource("4_km2qp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22828293, 2.4222796, 3.7732024)
 
 [editable path="Portal"]
