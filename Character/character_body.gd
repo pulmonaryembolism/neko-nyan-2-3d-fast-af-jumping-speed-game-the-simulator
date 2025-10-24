@@ -2,15 +2,17 @@ extends CharacterBody3D
 
 @export var cm_per_360 := 22.0
 @export var dpi := 800.0
-@export var jump_speed := 4.0
-@export var walk_speed := 2.7
-@export var sprint_speed := 8.0
-@export var walk_to_sprint := 2.0
-@export var sprint_to_walk := 1.0
+@export var jump_speed := 3.75
+@export var wall_jump_speed := 4.43
+@export var wall_jump_boost := 1.15
+@export var walk_speed := 2.85
+@export var sprint_speed := 8.5
+@export var walk_to_sprint := 0.75
+@export var sprint_to_walk := 0.75
 @export var ground_accel := 10.0
 @export var ground_friction := 6.0
 @export var stop_speed := 2.19
-@export var air_accel := 1.0
+@export var air_accel := 2.10
 
 const MAX_STEP_HEIGHT := 0.45
 
@@ -128,8 +130,8 @@ func wall_bounce() -> void:
 	if wall_normal == last_wall_normal and global_transform.origin.y >= last_wall_y:
 		return
 
-	velocity = (wall_normal * current_sprint_speed * 0.5) + velocity
-	velocity.y = jump_speed
+	velocity = (wall_normal * current_sprint_speed * 0.5) + (velocity * wall_jump_boost)
+	velocity.y = wall_jump_speed
 	jump_queue = false
 
 	last_wall_normal = wall_normal
