@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://w4bc1edi813i"]
+[gd_scene load_steps=10 format=3 uid="uid://w4bc1edi813i"]
 
 [ext_resource type="Shader" uid="uid://dgxelk4fpflp1" path="res://checkerboard.gdshader" id="1_le25m"]
 [ext_resource type="PackedScene" uid="uid://dvdsmpactuuv0" path="res://Character/character_body.tscn" id="2_7bqr2"]
@@ -30,9 +30,10 @@ shader_parameter/size = 32.0
 
 [sub_resource type="Compositor" id="Compositor_km2qp"]
 
-[sub_resource type="PointMesh" id="PointMesh_7bqr2"]
-
 [node name="MechanicsTest" type="Node3D"]
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_7bqr2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.64099836, 0, -0.5104971)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
@@ -42,14 +43,11 @@ mesh = SubResource("PlaneMesh_rutxk")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_7bqr2")
 
-[node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9937693, 1.806086)
+[node name="CSGBox3D" type="CSGBox3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9937693, 3.7462974)
 use_collision = true
 size = Vector3(1, 2, 1)
 material = SubResource("ShaderMaterial_rutxk")
-
-[node name="CharacterBody3D" parent="." instance=ExtResource("2_7bqr2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.64099836, 0, -0.5104971)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_7bqr2")
@@ -58,11 +56,3 @@ compositor = SubResource("Compositor_km2qp")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
 transform = Transform3D(1, 0, 0, 0, 0.5545976, 0.83211875, 0, -0.83211875, 0.5545976, 0, 8.396616, 0)
-
-[node name="kill trigger" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.2262545, 0)
-size = Vector3(40, 1, 40)
-
-[node name="spawn point" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1194424, 0)
-mesh = SubResource("PointMesh_7bqr2")

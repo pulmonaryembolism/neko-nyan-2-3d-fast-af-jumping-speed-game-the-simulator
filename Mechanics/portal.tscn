@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cjvwcqhp2cgd0"]
+
+[node name="Portal" type="Node3D"]
+
+[node name="kill_trigger" type="CSGBox3D" parent="."]
+use_collision = true
+
+[node name="check_point" type="Marker3D" parent="."]
