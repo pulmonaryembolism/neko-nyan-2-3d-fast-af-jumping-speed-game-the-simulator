@@ -1,24 +1,26 @@
-[gd_scene load_steps=2 format=3 uid="uid://b8y7dd5itfa1i"]
+[gd_scene load_steps=2 format=3 uid="uid://bxonrhkg1vfpe"]
 
-[ext_resource type="Script" uid="uid://c1qnij00u7f5e" path="res://title_screen.gd" id="1_klylv"]
+[ext_resource type="Script" uid="uid://bh4ms3w8y2uel" path="res://pause_menu.gd" id="1_emv3i"]
 
-[node name="TitleScreen" type="Control"]
+[node name="PauseScreen" type="Control"]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_klylv")
+script = ExtResource("1_emv3i")
 
-[node name="StartButton" type="Button" parent="."]
+[node name="ResumeButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 462.0
-offset_top = 129.0
-offset_right = 508.0
-offset_bottom = 160.0
-scale = Vector2(3.7723584, 3.283766)
-text = "Start"
+offset_left = 431.0
+offset_top = 123.0
+offset_right = 501.0
+offset_bottom = 154.0
+scale = Vector2(3.2904668, 3.194061)
+text = "Resume
+"
 
 [node name="OptionsButton" type="Button" parent="."]
 layout_mode = 0
@@ -38,6 +40,6 @@ offset_bottom = 402.99997
 scale = Vector2(3.8352368, 3.5122838)
 text = "Quit"
 
-[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="ResumeButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="OptionsButton" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
