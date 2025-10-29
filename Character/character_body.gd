@@ -4,8 +4,8 @@ extends CharacterBody3D
 @export var dpi := 800.0
 @export var jump_speed := 3.75
 @export var wall_jump_speed := 4.43
-@export var wall_jump_boost := 1.15
-@export var walk_speed := 2.85
+@export var wall_jump_boost := 3.15
+@export var walk_speed := 4.5
 @export var sprint_speed := 8.5
 @export var walk_to_sprint := 0.75
 @export var sprint_to_walk := 0.75
