@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://fgy8cf810r3w"
+uid="uid://joe3a76bh33x"
 valid=false
 
 [deps]
@@ -55,4 +55,4 @@ blender/materials/export_materials=1
 blender/animation/limit_playback=true
 blender/animation/always_sample=true
 blender/animation/group_tracks=true
-gltf/naming_version=2
+gltf/naming_version=0
