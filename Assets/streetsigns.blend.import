@@ -3,12 +3,12 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://gtfxc84axpxb"
+uid="uid://difbtk0g33mlp"
 valid=false
 
 [deps]
 
-source_file="res://Assets/fireescapeblend.blend"
+source_file="res://Assets/streetsigns.blend"
 
 [params]
 
