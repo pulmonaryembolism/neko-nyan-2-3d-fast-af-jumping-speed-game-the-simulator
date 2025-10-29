@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bqvnogourlnje"
-path="res://.godot/imported/metalawning.blend-170eaf854d1897c4654d5142871c2433.scn"
+uid="uid://cv05ebmyqj84c"
+path="res://.godot/imported/balcony.blend-499aab2dfc9d3babfeea0a205e54a11e.scn"
 
 [deps]
 
-source_file="res://Assets/metalawning.blend"
-dest_files=["res://.godot/imported/metalawning.blend-170eaf854d1897c4654d5142871c2433.scn"]
+source_file="res://Assets/balcony.blend"
+dest_files=["res://.godot/imported/balcony.blend-499aab2dfc9d3babfeea0a205e54a11e.scn"]
 
 [params]
 

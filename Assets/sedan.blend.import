@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bqvnogourlnje"
-path="res://.godot/imported/metalawning.blend-170eaf854d1897c4654d5142871c2433.scn"
+uid="uid://cywuls53dxdvc"
+path="res://.godot/imported/sedan.blend-4b66294caabfb72a534eb9098b8a6ab7.scn"
 
 [deps]
 
-source_file="res://Assets/metalawning.blend"
-dest_files=["res://.godot/imported/metalawning.blend-170eaf854d1897c4654d5142871c2433.scn"]
+source_file="res://Assets/sedan.blend"
+dest_files=["res://.godot/imported/sedan.blend-4b66294caabfb72a534eb9098b8a6ab7.scn"]
 
 [params]
 

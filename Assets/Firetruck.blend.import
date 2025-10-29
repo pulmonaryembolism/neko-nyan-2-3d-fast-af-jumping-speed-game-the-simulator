@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bqvnogourlnje"
-path="res://.godot/imported/metalawning.blend-170eaf854d1897c4654d5142871c2433.scn"
+uid="uid://o3imq7525kas"
+path="res://.godot/imported/Firetruck.blend-4cad3cc4910ad4849e410cc9ab1e7105.scn"
 
 [deps]
 
-source_file="res://Assets/metalawning.blend"
-dest_files=["res://.godot/imported/metalawning.blend-170eaf854d1897c4654d5142871c2433.scn"]
+source_file="res://Assets/Firetruck.blend"
+dest_files=["res://.godot/imported/Firetruck.blend-4cad3cc4910ad4849e410cc9ab1e7105.scn"]
 
 [params]
 

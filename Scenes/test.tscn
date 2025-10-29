@@ -113,7 +113,7 @@ data = PackedVector3Array(13.4001, 4.8682, 3.2896, -19.7978, 4.8682, 3.2896, 13.
 script = ExtResource("1_ys1qc")
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("1_qc4db")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -124.043106, 24.332226, 55.495888)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.432564, 1.8678894, 34.187057)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_i3aeo")
@@ -243,7 +243,7 @@ size = Vector3(4.78174, 0.193848, 3.06354)
 material = SubResource("ShaderMaterial_ehkex")
 
 [node name="Neko" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.409573, -0.719265, 34.70421)
+transform = Transform3D(0.50140995, 0, 0, 0, 0.50140995, 0, 0, 0, 0.50140995, -49.409573, -0.719265, 34.70421)
 material_override = SubResource("StandardMaterial3D_6uqi0")
 material_overlay = SubResource("ShaderMaterial_xersf")
 mesh = ExtResource("3_35xla")
