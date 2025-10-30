@@ -14,18 +14,16 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 4
 script = ExtResource("1_qqnya")
+metadata/_edit_horizontal_guides_ = [651.0]
+metadata/_edit_vertical_guides_ = [1154.0]
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 8.0
-offset_top = -316.0
-offset_right = 67.0
-offset_bottom = -218.0
-grow_vertical = 2
-scale = Vector2(3.1285303, 3.2211134)
+layout_mode = 0
+offset_left = 410.0
+offset_top = 82.0
+offset_right = 529.99915
+offset_bottom = 277.0
+scale = Vector2(2.528288, 2.5414119)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
@@ -40,6 +38,7 @@ text = "Volume"
 
 [node name="Volume" type="HSlider" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+max_value = 15.0
 
 [node name="MuteLabel" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -48,8 +47,22 @@ text = "Mute"
 [node name="Mute" type="CheckBox" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="ResolutionLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Resolution"
+
+[node name="Resolutions" type="OptionButton" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+selected = 0
+item_count = 3
+popup/item_0/text = "1920x1080"
+popup/item_0/id = 0
+popup/item_1/text = "1600x900"
+popup/item_1/id = 1
+popup/item_2/text = "1280x720"
+popup/item_2/id = 2
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="value_changed" from="MarginContainer/VBoxContainer/Volume" to="." method="_on_volume_value_changed"]
 [connection signal="toggled" from="MarginContainer/VBoxContainer/Mute" to="." method="_on_mute_toggled"]
+[connection signal="item_selected" from="MarginContainer/VBoxContainer/Resolutions" to="." method="_on_resolutions_item_selected"]

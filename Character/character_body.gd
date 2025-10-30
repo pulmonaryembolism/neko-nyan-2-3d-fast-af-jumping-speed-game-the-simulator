@@ -2,17 +2,17 @@ extends CharacterBody3D
 
 @export var cm_per_360 := 22.0
 @export var dpi := 800.0
-@export var jump_speed := 5.75
+@export var jump_speed := 8.0
 @export var wall_jump_speed := 4.43
-@export var wall_jump_boost := 1.15
-@export var walk_speed := 4.5
-@export var sprint_speed := 6.5
-@export var walk_to_sprint := 0.1
+@export var wall_jump_boost := 1.175
+@export var walk_speed := 6.0
+@export var sprint_speed := 8.0
+@export var walk_to_sprint := 0.05
 @export var sprint_to_walk := 0.1
 @export var ground_accel := 10.0
-@export var ground_friction := 10.0
-@export var stop_speed := 1.19
-@export var air_accel := 2.30
+@export var ground_friction := 6.0
+@export var stop_speed := 2.19
+@export var air_accel := 2.5
 
 const MAX_STEP_HEIGHT := 0.45
 
@@ -27,6 +27,7 @@ var last_wall_y := -INF
 var snapped_to_stairs_last := false
 var last_frame_on_floor := -INF
 var saved_global_camera = null
+
 
 func input_buffer(pressed, released, queue) -> bool:
 	if released:
