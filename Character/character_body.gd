@@ -2,17 +2,17 @@ extends CharacterBody3D
 
 @export var cm_per_360 := 22.0
 @export var dpi := 800.0
-@export var jump_speed := 3.75
+@export var jump_speed := 5.75
 @export var wall_jump_speed := 4.43
-@export var wall_jump_boost := 3.15
+@export var wall_jump_boost := 1.15
 @export var walk_speed := 4.5
-@export var sprint_speed := 8.5
-@export var walk_to_sprint := 0.75
-@export var sprint_to_walk := 0.75
+@export var sprint_speed := 6.5
+@export var walk_to_sprint := 0.1
+@export var sprint_to_walk := 0.1
 @export var ground_accel := 10.0
-@export var ground_friction := 6.0
-@export var stop_speed := 2.19
-@export var air_accel := 2.10
+@export var ground_friction := 10.0
+@export var stop_speed := 1.19
+@export var air_accel := 2.30
 
 const MAX_STEP_HEIGHT := 0.45
 
