@@ -116,7 +116,6 @@ script = ExtResource("1_ys1qc")
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("1_qc4db")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.432564, 1.8678894, 34.187057)
-jump_speed = 3.0
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_i3aeo")

@@ -2,9 +2,9 @@ extends CharacterBody3D
 
 @export var cm_per_360 := 22.0
 @export var dpi := 800.0
-@export var jump_speed := 8.0
+@export var jump_speed := 4.15
 @export var wall_jump_speed := 4.43
-@export var wall_jump_boost := 1.175
+@export var wall_jump_boost := 1.17
 @export var walk_speed := 6.0
 @export var sprint_speed := 8.0
 @export var walk_to_sprint := 0.05
