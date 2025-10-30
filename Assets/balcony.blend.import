@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cv05ebmyqj84c"
-path="res://.godot/imported/balcony.blend-499aab2dfc9d3babfeea0a205e54a11e.scn"
+valid=false
 
 [deps]
 
 source_file="res://Assets/balcony.blend"
-dest_files=["res://.godot/imported/balcony.blend-499aab2dfc9d3babfeea0a205e54a11e.scn"]
 
 [params]
 

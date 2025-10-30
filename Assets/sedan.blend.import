@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cywuls53dxdvc"
-path="res://.godot/imported/sedan.blend-4b66294caabfb72a534eb9098b8a6ab7.scn"
+valid=false
 
 [deps]
 
 source_file="res://Assets/sedan.blend"
-dest_files=["res://.godot/imported/sedan.blend-4b66294caabfb72a534eb9098b8a6ab7.scn"]
 
 [params]
 
