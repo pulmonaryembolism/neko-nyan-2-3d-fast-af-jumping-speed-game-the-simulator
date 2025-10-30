@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 @export var cm_per_360 := 22.0
 @export var dpi := 800.0
-@export var jump_speed := 5.75
+@export var jump_speed := 4.50
 @export var wall_jump_speed := 4.43
 @export var wall_jump_boost := 1.15
 @export var walk_speed := 4.5
@@ -27,6 +27,7 @@ var last_wall_y := -INF
 var snapped_to_stairs_last := false
 var last_frame_on_floor := -INF
 var saved_global_camera = null
+
 
 func input_buffer(pressed, released, queue) -> bool:
 	if released:
