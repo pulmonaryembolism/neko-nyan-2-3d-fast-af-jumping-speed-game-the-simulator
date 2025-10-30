@@ -5,8 +5,9 @@ func _input(event):
 		_open_pause_menu()
 
 func _open_pause_menu():
-	if get_tree().current_scene.has_node("PauseScreen"):
+	if get_tree().current_scene.has_node("PauseMenu"):
 		return
+	
 	var pause_menu = preload("res://Scenes/pause_menu.tscn").instantiate()
 	pause_menu.name = "PauseMenu"
 	get_tree().current_scene.add_child(pause_menu)

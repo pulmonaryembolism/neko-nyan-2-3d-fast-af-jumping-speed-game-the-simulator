@@ -4,6 +4,8 @@ func _ready():
 	$StartButton.pressed.connect(_on_StartButton_pressed)
 	$OptionsButton.pressed.connect(_on_OptionsButton_pressed)
 	$QuitButton.pressed.connect(_on_QuitButton_pressed)
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	Input.set_mouse_mode(Input.MOUSE_MODE_CONFINED)
 
 func _on_QuitButton_pressed():
 	get_tree().quit()

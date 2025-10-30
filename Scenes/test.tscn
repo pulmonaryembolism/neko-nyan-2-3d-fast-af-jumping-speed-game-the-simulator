@@ -1,9 +1,10 @@
-[gd_scene load_steps=26 format=3 uid="uid://cil2vjwrmwraf"]
+[gd_scene load_steps=27 format=3 uid="uid://cil2vjwrmwraf"]
 
 [ext_resource type="PackedScene" uid="uid://dvdsmpactuuv0" path="res://Character/character_body.tscn" id="1_qc4db"]
 [ext_resource type="Script" uid="uid://cb1fev18bvi6e" path="res://game.gd" id="1_ys1qc"]
 [ext_resource type="Shader" uid="uid://dgxelk4fpflp1" path="res://checkerboard.gdshader" id="2_ys1qc"]
 [ext_resource type="ArrayMesh" uid="uid://c80sqyv3se17c" path="res://Assets/Neko.obj" id="3_35xla"]
+[ext_resource type="AudioStream" uid="uid://bre3388at1ge7" path="res://Sounds/eaykjbgkbdf125.mp3" id="5_35xla"]
 
 [sub_resource type="Environment" id="Environment_i3aeo"]
 volumetric_fog_enabled = true
@@ -254,3 +255,7 @@ surface_material_override/1 = SubResource("ShaderMaterial_77dp3")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Neko/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ykrsh")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_35xla")
+autoplay = true
