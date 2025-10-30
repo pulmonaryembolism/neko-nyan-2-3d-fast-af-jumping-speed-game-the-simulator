@@ -17,7 +17,7 @@ func _ready():
 
 func _on_volume_changed(value):
 	AudioManager.master_slider_value = value
-	var scaled_value = value * 0.3 #limits max volume
+	var scaled_value = value * 0.3
 	AudioManager.set_master_volume(scaled_value)
 
 func set_source(new_source):
@@ -54,3 +54,13 @@ func _unhandled_input(event):
 	if event is InputEventKey and event.is_pressed() and event.is_action("ui_cancel"):
 		_on_back_button_pressed()
 		return
+
+
+func _on_resolutions_item_selected(index: int) -> void:
+	match index:
+		0:
+			DisplayServer.window_set_size(Vector2i(1920,1080))
+		1:
+			DisplayServer.window_set_size(Vector2i(1600,900))
+		2:
+			DisplayServer.window_set_size(Vector2i(1280,720))

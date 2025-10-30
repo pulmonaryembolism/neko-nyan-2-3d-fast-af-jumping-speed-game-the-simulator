@@ -28,7 +28,7 @@ func _on_resume_button_pressed():
 
 func _input(event):
 	if not self.visible:
-		return  # Only respond when the Pause menu is actually visible
+		return
 	if event.is_action_pressed("ui_cancel"):
 		_on_resume_button_pressed()
 
