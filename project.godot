@@ -22,6 +22,7 @@ AudioManager="*res://AudioManager.gd"
 [global_group]
 
 Player=""
+Timer=""
 
 [input]
 
