@@ -70,6 +70,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.784915, -2.5882282, 1.73264
 shape = SubResource("BoxShape3D_km2qp")
 
 [node name="RespawnPoint" parent="." instance=ExtResource("4_km2qp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22828293, 2.3326864, 3.8417118)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22828293, 0.84621, -2.5459394)
 
 [editable path="Portal"]
