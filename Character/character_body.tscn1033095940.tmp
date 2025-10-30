@@ -8,13 +8,13 @@
 radius = 0.35
 
 [sub_resource type="Theme" id="Theme_mq5ws"]
-default_font_size = 64
+default_font_size = 48
 
 [sub_resource type="Theme" id="Theme_a7dog"]
-default_font_size = 64
+default_font_size = 48
 
 [sub_resource type="Theme" id="Theme_y0ec0"]
-default_font_size = 64
+default_font_size = 48
 
 [node name="CharacterBody3D" type="CharacterBody3D" groups=["Player"]]
 physics_interpolation_mode = 1
@@ -57,9 +57,8 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -144.0
-offset_top = 16.0
-offset_right = -53.0
-offset_bottom = 104.0
+offset_right = -76.0
+offset_bottom = 67.0
 grow_horizontal = 2
 theme = SubResource("Theme_mq5ws")
 text = "00:"
@@ -70,10 +69,9 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -45.5
-offset_top = 16.0
-offset_right = 45.5
-offset_bottom = 104.0
+offset_left = -56.0
+offset_right = -22.0
+offset_bottom = 34.0
 grow_horizontal = 2
 theme = SubResource("Theme_a7dog")
 text = "00:"
@@ -81,10 +79,9 @@ horizontal_alignment = 2
 
 [node name="Milliseconds" type="Label" parent="CanvasLayer/Control"]
 layout_mode = 0
-offset_left = 1016.0
-offset_top = 16.0
-offset_right = 1089.0
-offset_bottom = 104.0
+offset_left = 960.0
+offset_right = 1015.0
+offset_bottom = 67.0
 theme = SubResource("Theme_y0ec0")
 text = "00"
 horizontal_alignment = 2
