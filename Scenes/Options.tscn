@@ -47,6 +47,7 @@ layout_mode = 2
 text = "Mute"
 
 [node name="Mute" type="CheckBox" parent="MarginContainer/VBoxContainer"]
+process_mode = 2
 layout_mode = 2
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]

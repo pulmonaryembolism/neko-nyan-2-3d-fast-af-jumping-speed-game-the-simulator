@@ -9,6 +9,7 @@ func _ready():
 	resume_button.pressed.connect(_on_resume_button_pressed)
 	main_menu_button.pressed.connect(_on_main_menu_pressed)
 	$QuitButton.pressed.connect(_on_QuitButton_pressed)
+	process_mode = Node.PROCESS_MODE_WHEN_PAUSED
 
 func _on_optionsButton_pressed():
 	var options = preload("res://Scenes/Options.tscn").instantiate()
@@ -21,11 +22,13 @@ func _on_optionsButton_pressed():
 	
 
 func _on_resume_button_pressed():
-	self.hide()
+	queue_free()
 	get_tree().paused = false
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 
 func _input(event):
+	if not self.visible:
+		return  # Only respond when the Pause menu is actually visible
 	if event.is_action_pressed("ui_cancel"):
 		_on_resume_button_pressed()
 
