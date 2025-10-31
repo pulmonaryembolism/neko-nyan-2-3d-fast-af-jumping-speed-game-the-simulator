@@ -2,19 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bd0iq1ginnk0c"
-path="res://.godot/imported/NightBuilding_Building_Night.png-be9f19b914d643d789059d0874ea539e.ctex"
-metadata={
-"vram_texture": false
-}
-generator_parameters={
-"md5": "73f1717d83f8aa3a5e7642dd2ee8b719"
-}
+uid="uid://cxdp3oxeo45k6"
+valid=false
 
 [deps]
 
 source_file="res://Assets/NightBuilding_Building_Night.png"
-dest_files=["res://.godot/imported/NightBuilding_Building_Night.png-be9f19b914d643d789059d0874ea539e.ctex"]
 
 [params]
 
@@ -26,7 +19,7 @@ compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -40,4 +33,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

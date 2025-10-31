@@ -2,19 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cf0qld05dfo3t"
-path="res://.godot/imported/walljumpbillboard_EdgesRetexturedPSX.png-e1ee5c87d8f6ebe535d45e740068a40c.ctex"
-metadata={
-"vram_texture": false
-}
-generator_parameters={
-"md5": "00904efdb604158359c6acedb8bfa21d"
-}
+uid="uid://cru1gpelehfox"
+valid=false
 
 [deps]
 
 source_file="res://Assets/walljumpbillboard_EdgesRetexturedPSX.png"
-dest_files=["res://.godot/imported/walljumpbillboard_EdgesRetexturedPSX.png-e1ee5c87d8f6ebe535d45e740068a40c.ctex"]
 
 [params]
 
@@ -26,7 +19,7 @@ compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -40,4 +33,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

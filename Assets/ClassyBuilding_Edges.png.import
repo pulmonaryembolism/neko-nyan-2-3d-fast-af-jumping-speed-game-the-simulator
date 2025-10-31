@@ -2,19 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cyjd5ahoe501j"
-path="res://.godot/imported/ClassyBuilding_Edges.png-abfa46237c595e314891daaf150b3e36.ctex"
-metadata={
-"vram_texture": false
-}
-generator_parameters={
-"md5": "49af0548b9ad09e4f4b573ac028b00b3"
-}
+uid="uid://df0wsqc1yk8t"
+valid=false
 
 [deps]
 
 source_file="res://Assets/ClassyBuilding_Edges.png"
-dest_files=["res://.godot/imported/ClassyBuilding_Edges.png-abfa46237c595e314891daaf150b3e36.ctex"]
 
 [params]
 
@@ -26,7 +19,7 @@ compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -40,4 +33,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

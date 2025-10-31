@@ -3,15 +3,12 @@
 importer="wavefront_obj"
 importer_version=1
 type="Mesh"
-uid="uid://djkynhpylva5p"
-path="res://.godot/imported/jump_billboard.obj-64bd32984f0842d0d195ade7bf626b17.mesh"
+uid="uid://cjiytwyprg8ju"
+valid=false
 
 [deps]
 
-files=["res://.godot/imported/jump_billboard.obj-64bd32984f0842d0d195ade7bf626b17.mesh"]
-
 source_file="res://Assets/jump_billboard.obj"
-dest_files=["res://.godot/imported/jump_billboard.obj-64bd32984f0842d0d195ade7bf626b17.mesh", "res://.godot/imported/jump_billboard.obj-64bd32984f0842d0d195ade7bf626b17.mesh"]
 
 [params]
 

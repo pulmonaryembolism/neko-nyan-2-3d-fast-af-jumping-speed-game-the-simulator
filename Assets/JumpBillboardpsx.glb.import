@@ -3,13 +3,12 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bqicupi1d5lbx"
-path="res://.godot/imported/JumpBillboardpsx.glb-bc48dc2d2864ab3d2425e7bc53398db2.scn"
+uid="uid://i8siyjk4rlk3"
+valid=false
 
 [deps]
 
 source_file="res://Assets/JumpBillboardpsx.glb"
-dest_files=["res://.godot/imported/JumpBillboardpsx.glb-bc48dc2d2864ab3d2425e7bc53398db2.scn"]
 
 [params]
 
