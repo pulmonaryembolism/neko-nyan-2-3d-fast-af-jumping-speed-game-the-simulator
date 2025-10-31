@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dvdsmpactuuv0"]
+[gd_scene load_steps=22 format=3 uid="uid://dvdsmpactuuv0"]
 
 [ext_resource type="Script" uid="uid://dlvg0idigj8hd" path="res://Character/character_body.gd" id="1_7germ"]
 [ext_resource type="PackedScene" uid="uid://d1b38nddoq7d4" path="res://Mechanics/timer.tscn" id="2_i00vr"]
@@ -26,6 +26,9 @@ default_font_size = 64
 
 [sub_resource type="Theme" id="Theme_y0ec0"]
 default_font_size = 64
+
+[sub_resource type="Theme" id="Theme_scbpe"]
+default_font_size = 48
 
 [sub_resource type="AudioStreamInteractive" id="AudioStreamInteractive_e08b2"]
 clip_count = 5
@@ -135,6 +138,23 @@ offset_bottom = 104.0
 theme = SubResource("Theme_y0ec0")
 text = "00"
 horizontal_alignment = 2
+
+[node name="Speedometer" type="Label" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -160.0
+offset_top = -400.0
+offset_right = 160.0
+offset_bottom = -312.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_scbpe")
+text = "00"
+horizontal_alignment = 1
 
 [node name="Timer" parent="." instance=ExtResource("2_i00vr")]
 

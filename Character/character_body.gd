@@ -2,7 +2,8 @@ extends CharacterBody3D
 
 @export var jump_speed := 4.15
 @export var wall_jump_speed := 4.43
-@export var wall_jump_boost := 1.17
+@export var wall_jump_boost := 1.10
+@export var wall_jump_retain := 0.66
 @export var walk_speed := 6.0
 @export var sprint_speed := 8.0
 @export var walk_to_sprint := 0.05
@@ -10,7 +11,7 @@ extends CharacterBody3D
 @export var ground_accel := 10.0
 @export var ground_friction := 6.0
 @export var stop_speed := 2.19
-@export var air_accel := 2.5
+@export var air_accel := 2.0
 
 const MAX_STEP_HEIGHT := 0.45
 
@@ -148,7 +149,6 @@ func wall_bounce() -> void:
 
 func _handle_air_physics(delta) -> void:
 	var wish_velocity = wish_dir * wish_speed
-	
 	var horizontal_velocity = velocity
 	horizontal_velocity.y = 0.0
 	
@@ -157,12 +157,15 @@ func _handle_air_physics(delta) -> void:
 	if horizontal_velocity.length() > wish_speed:
 		var wish_norm = wish_dir.normalized()
 		var projected_speed = horizontal_velocity.dot(wish_norm)
-		# angle based speed loss
-		if projected_speed > 0.0:
-			wish_velocity = wish_dir.normalized() * max(projected_speed, wish_speed)
-		else:
-			wish_velocity = wish_dir * wish_speed
-	
+		wish_velocity = wish_norm * max(projected_speed, wish_speed)
+
+	if horizontal_velocity.length() > wish_velocity.length():
+		var target_dir = wish_dir.normalized()
+		if target_dir == Vector3.ZERO:
+			target_dir = horizontal_velocity.normalized()
+		var blended_dir = (horizontal_velocity.normalized() * wall_jump_retain + target_dir * (1.0 - wall_jump_retain)).normalized()
+		wish_velocity = blended_dir * horizontal_velocity.length()
+
 	var push_dir = wish_velocity - velocity
 	push_dir.y = 0.0
 	var push_len = push_dir.length()
