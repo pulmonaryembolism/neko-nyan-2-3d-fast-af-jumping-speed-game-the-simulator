@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bc4bc5iustrwe"
-path="res://.godot/imported/canopy.blend-2250b478139f1ff9ba95fd71c5408348.scn"
+valid=false
 
 [deps]
 
 source_file="res://Assets/canopy.blend"
-dest_files=["res://.godot/imported/canopy.blend-2250b478139f1ff9ba95fd71c5408348.scn"]
 
 [params]
 
