@@ -13,6 +13,10 @@ func _process(delta: float) -> void:
 	seconds = fmod(time, 60)
 	minutes = fmod(time, 3600) / 60
 	time_changed.emit(minutes, seconds, msec)
+	if Global.stop_timer == true:
+		stop(minutes, seconds, msec)
 
-func stop() -> void:
+func stop(minutes, seconds, msec) -> void:
+	Global.final_time = "%02d:%02d:%03d" % [minutes, seconds, msec]
 	set_process(false)
+	Global.stop_timer = false
