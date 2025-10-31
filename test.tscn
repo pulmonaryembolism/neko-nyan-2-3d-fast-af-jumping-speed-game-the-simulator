@@ -1,6 +1,6 @@
-[gd_scene load_steps=27 format=3 uid="uid://bne0735dv02vr"]
+[gd_scene load_steps=27 format=3 uid="uid://d1i1gdv8bdh7f"]
 
-[ext_resource type="Shader" uid="uid://dgxelk4fpflp1" path="res://checkerboard.gdshader" id="1_8uh7m"]
+[ext_resource type="Shader" uid="uid://dgxelk4fpflp1" path="res://Shaders/checkerboard.gdshader" id="1_8uh7m"]
 [ext_resource type="PackedScene" uid="uid://dvdsmpactuuv0" path="res://Character/character_body.tscn" id="1_37kl0"]
 [ext_resource type="ArrayMesh" uid="uid://c80sqyv3se17c" path="res://Assets/Neko.obj" id="3_6uqi0"]
 
@@ -121,7 +121,7 @@ data = PackedVector3Array(13.4001, 4.8682, 3.2896, -19.7978, 4.8682, 3.2896, 13.
 [node name="Test" type="Node3D"]
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("1_37kl0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -124.043106, 24.332226, 55.495888)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.248219, 11.846298, 14.759956)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_37kl0")
