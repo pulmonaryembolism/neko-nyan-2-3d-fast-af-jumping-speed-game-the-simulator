@@ -16,7 +16,7 @@ shader_parameter/affine_mapping = 0.00999999977648
 render_priority = 0
 shader = ExtResource("2_dhxsb")
 shader_parameter/color_texture = ExtResource("4_t28vq")
-shader_parameter/vertex_wobble = 0.36999999172976
+shader_parameter/vertex_wobble = 1.0
 shader_parameter/affine_mapping = 0.15
 
 [node name="walljumpbillboard" instance=ExtResource("1_dpd6h")]

@@ -60,6 +60,7 @@ compositor = SubResource("Compositor_km2qp")
 transform = Transform3D(1, 0, 0, 0, -0.6626201, 0.74895567, 0, -0.74895567, -0.6626201, 0.03862965, 8.441176, -0.15565455)
 light_bake_mode = 1
 shadow_enabled = true
+shadow_blur = 5.314
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 

@@ -8,7 +8,7 @@
 render_priority = 0
 shader = ExtResource("2_1ptjg")
 shader_parameter/color_texture = ExtResource("3_5nmvx")
-shader_parameter/vertex_wobble = 0.0999999977648
+shader_parameter/vertex_wobble = 1.0
 shader_parameter/affine_mapping = 0.15
 
 [node name="StopSignsTextured" instance=ExtResource("1_aelb8")]
