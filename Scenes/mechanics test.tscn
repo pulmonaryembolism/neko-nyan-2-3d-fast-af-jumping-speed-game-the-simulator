@@ -1,14 +1,26 @@
-[gd_scene load_steps=14 format=3 uid="uid://w4bc1edi813i"]
+[gd_scene load_steps=19 format=3 uid="uid://w4bc1edi813i"]
 
 [ext_resource type="Shader" uid="uid://dgxelk4fpflp1" path="res://Shaders/checkerboard.gdshader" id="1_le25m"]
 [ext_resource type="PackedScene" uid="uid://cjvwcqhp2cgd0" path="res://Mechanics/portal.tscn" id="3_rutxk"]
 [ext_resource type="PackedScene" uid="uid://djm4nldmulyqq" path="res://Mechanics/spawn_point.tscn" id="4_km2qp"]
-[ext_resource type="PackedScene" uid="uid://dilof10wetaei" path="res://Assets/walljumpbillboard.glb" id="5_dqqa1"]
-[ext_resource type="PackedScene" uid="uid://cmagy038lch4n" path="res://Assets/StopSignsTextured.glb" id="5_xv138"]
+[ext_resource type="PackedScene" uid="uid://blnvaen5w16cg" path="res://Unpacked Assets/walljumpbillboard.tscn" id="7_8vwkk"]
+[ext_resource type="PackedScene" uid="uid://cgvxfm81vft1w" path="res://Unpacked Assets/blue_building.tscn" id="7_grby0"]
+[ext_resource type="PackedScene" uid="uid://pxp8yn5b5u8i" path="res://Unpacked Assets/stop_signs_textured.tscn" id="7_kww1a"]
+[ext_resource type="PackedScene" uid="uid://ca3emwldt7knk" path="res://Unpacked Assets/cardboard_box_textured.tscn" id="7_myxph"]
+[ext_resource type="VoxelGIData" uid="uid://dw6efu24qalui" path="res://Scenes/Baked Lighting/mechanics test.VoxelGI_data.res" id="8_myxph"]
 
-[sub_resource type="Environment" id="Environment_7bqr2"]
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_myxph"]
+
+[sub_resource type="Sky" id="Sky_8vwkk"]
+sky_material = SubResource("PhysicalSkyMaterial_myxph")
+
+[sub_resource type="Environment" id="Environment_kww1a"]
+background_mode = 2
+sky = SubResource("Sky_8vwkk")
+tonemap_mode = 4
 
 [sub_resource type="CameraAttributesPhysical" id="CameraAttributesPhysical_rutxk"]
+auto_exposure_enabled = true
 
 [sub_resource type="Compositor" id="Compositor_km2qp"]
 
@@ -40,12 +52,13 @@ size = Vector3(41.645508, 1, 35.40322)
 [node name="MechanicsTest" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_7bqr2")
+environment = SubResource("Environment_kww1a")
 camera_attributes = SubResource("CameraAttributesPhysical_rutxk")
 compositor = SubResource("Compositor_km2qp")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
-transform = Transform3D(1, 0, 0, 0, -0.33314866, 0.9428744, 0, -0.9428744, -0.33314866, 0, 8.396616, 0)
+transform = Transform3D(1, 0, 0, 0, -0.6626201, 0.74895567, 0, -0.74895567, -0.6626201, 0.03862965, 8.441176, -0.15565455)
+light_bake_mode = 1
 shadow_enabled = true
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
@@ -62,9 +75,6 @@ use_collision = true
 size = Vector3(1, 2, 1)
 material = SubResource("ShaderMaterial_5b545")
 
-[node name="walljumpbillboard" parent="StaticBody3D" instance=ExtResource("5_dqqa1")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -6.525851, 1.4291687, -5.080148)
-
 [node name="Portal" parent="." instance=ExtResource("3_rutxk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.81052685, 2.3841858e-07, -1.7198602)
 
@@ -78,7 +88,19 @@ shape = SubResource("BoxShape3D_km2qp")
 [node name="RespawnPoint" parent="." instance=ExtResource("4_km2qp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22828293, 2.3326864, 3.8417118)
 
-[node name="StopSignsTextured" parent="." instance=ExtResource("5_xv138")]
-transform = Transform3D(0.435, 0, 0, 0, 0.435, 0, 0, 0, 0.435, 9.387079, 3.3092527, -4.458583)
+[node name="blueBuilding" parent="." instance=ExtResource("7_grby0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7357087, 20.969501, 19.914625)
+
+[node name="CardboardBoxTextured" parent="." instance=ExtResource("7_myxph")]
+transform = Transform3D(0.185, 0, 0, 0, 0.185, 0, 0, 0, 0.185, 3.3231049, 0.26679993, -1.9184841)
+
+[node name="walljumpbillboard" parent="." instance=ExtResource("7_8vwkk")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -7.800349, 1.3629837, -2.8045444)
+
+[node name="StopSignsTextured" parent="." instance=ExtResource("7_kww1a")]
+transform = Transform3D(0.465, 0, 0, 0, 0.465, 0, 0, 0, 0.465, 8.985741, 3.510921, -2.3312392)
+
+[node name="VoxelGI" type="VoxelGI" parent="."]
+data = ExtResource("8_myxph")
 
 [editable path="Portal"]
