@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://o3imq7525kas"
-path="res://.godot/imported/Firetruck.blend-4cad3cc4910ad4849e410cc9ab1e7105.scn"
+valid=false
 
 [deps]
 
 source_file="res://Assets/Firetruck.blend"
-dest_files=["res://.godot/imported/Firetruck.blend-4cad3cc4910ad4849e410cc9ab1e7105.scn"]
 
 [params]
 
