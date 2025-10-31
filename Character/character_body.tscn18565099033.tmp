@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dvdsmpactuuv0"]
+[gd_scene load_steps=20 format=3 uid="uid://dvdsmpactuuv0"]
 
 [ext_resource type="Script" uid="uid://dlvg0idigj8hd" path="res://Character/character_body.gd" id="1_7germ"]
 [ext_resource type="PackedScene" uid="uid://d1b38nddoq7d4" path="res://Mechanics/timer.tscn" id="2_i00vr"]
@@ -28,7 +28,7 @@ default_font_size = 64
 default_font_size = 64
 
 [sub_resource type="AudioStreamInteractive" id="AudioStreamInteractive_e08b2"]
-clip_count = 5
+clip_count = 10
 clip_0/name = &"Jump Grunt Ty 1"
 clip_0/stream = ExtResource("4_y0ec0")
 clip_0/auto_advance = 0
@@ -44,28 +44,38 @@ clip_3/auto_advance = 0
 clip_4/name = &"Doublejump Grunt Ty 1"
 clip_4/stream = ExtResource("8_3ejmi")
 clip_4/auto_advance = 0
-
-[sub_resource type="AudioStreamInteractive" id="AudioStreamInteractive_scbpe"]
-clip_count = 5
-clip_0/name = &"Jump Grunt Ty 1"
-clip_0/stream = ExtResource("9_ha0v7")
-clip_0/auto_advance = 0
-clip_1/name = &"Footstep 2"
-clip_1/stream = ExtResource("10_32h38")
-clip_1/auto_advance = 0
-clip_2/name = &"Footstep 3"
-clip_2/stream = ExtResource("11_v82kp")
-clip_2/auto_advance = 0
-clip_3/name = &"Footstep 4"
-clip_3/stream = ExtResource("12_am5mb")
-clip_3/auto_advance = 0
-clip_4/name = &"Footstep 5"
-clip_4/stream = ExtResource("13_hlqkp")
-clip_4/auto_advance = 0
+clip_5/name = &"Footstep 1"
+clip_5/stream = ExtResource("9_ha0v7")
+clip_5/auto_advance = 0
+clip_6/name = &"Footstep 2"
+clip_6/stream = ExtResource("10_32h38")
+clip_6/auto_advance = 0
+clip_7/name = &"Footstep 3"
+clip_7/stream = ExtResource("11_v82kp")
+clip_7/auto_advance = 0
+clip_8/name = &"Footstep 4"
+clip_8/stream = ExtResource("12_am5mb")
+clip_8/auto_advance = 0
+clip_9/name = &"Footstep 5"
+clip_9/stream = ExtResource("13_hlqkp")
+clip_9/auto_advance = 0
 
 [node name="CharacterBody3D" type="CharacterBody3D" groups=["Player"]]
 physics_interpolation_mode = 1
 script = ExtResource("1_7germ")
+cm_per_360 = null
+dpi = null
+jump_speed = null
+wall_jump_speed = null
+wall_jump_boost = null
+walk_speed = null
+sprint_speed = null
+walk_to_sprint = null
+sprint_to_walk = null
+ground_accel = null
+ground_friction = null
+stop_speed = null
+air_accel = null
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -141,13 +151,8 @@ horizontal_alignment = 2
 [node name="Sounds" type="Node3D" parent="."]
 script = ExtResource("4_scbpe")
 
-[node name="Grunts" type="AudioStreamPlayer3D" parent="Sounds"]
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Sounds"]
 stream = SubResource("AudioStreamInteractive_e08b2")
-bus = &"Player"
-
-[node name="FootSteps" type="AudioStreamPlayer3D" parent="Sounds"]
-stream = SubResource("AudioStreamInteractive_scbpe")
-volume_db = -15.0
 bus = &"Player"
 
 [connection signal="audio_is_jumping" from="." to="Sounds" method="_on_character_body_3d_audio_is_jumping"]

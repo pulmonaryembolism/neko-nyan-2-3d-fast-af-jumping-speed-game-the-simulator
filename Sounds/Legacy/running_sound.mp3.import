@@ -12,8 +12,8 @@ dest_files=["res://.godot/imported/running_sound.mp3-0f52c6c3225317098ada1383d12
 
 [params]
 
-loop=false
-loop_offset=0
-bpm=0
+loop=true
+loop_offset=0.0
+bpm=0.0
 beat_count=0
 bar_beats=4

@@ -1,7 +1,5 @@
 extends CharacterBody3D
 
-@export var cm_per_360 := 22.0
-@export var dpi := 800.0
 @export var jump_speed := 4.15
 @export var wall_jump_speed := 4.43
 @export var wall_jump_boost := 1.17
@@ -28,6 +26,9 @@ var snapped_to_stairs_last := false
 var last_frame_on_floor := -INF
 var saved_global_camera = null
 
+signal audio_is_jumping(active)
+signal audio_is_wall_jumping(active)
+signal audio_is_sprinting(speed)
 
 func input_buffer(pressed, released, queue) -> bool:
 	if released:
@@ -41,7 +42,10 @@ func get_move_speed(delta) -> float:
 		sprint_duration -= delta / sprint_to_walk
 	
 	sprint_duration = clamp(sprint_duration, 0.0, 1.0)
-	return lerp(walk_speed, sprint_speed, sprint_duration)
+	var move_speed = lerp(walk_speed, sprint_speed, sprint_duration)
+	#audiohook for sprint
+	audio_is_sprinting.emit(move_speed)
+	return move_speed
 
 func save_camera_pos():
 	if saved_global_camera == null:
@@ -58,7 +62,7 @@ func camera_reset(delta):
 		saved_global_camera = null
 
 func _ready():
-	look_sensitivity = TAU / (cm_per_360 * dpi / 2.54)
+	look_sensitivity = TAU / (Global.cm_per_360 * Global.dpi / 2.54)
 
 func _unhandled_input(event):
 	if event is InputEventMouseButton:
@@ -71,9 +75,6 @@ func _unhandled_input(event):
 			rotate_y(-event.relative.x * look_sensitivity)
 			%Camera3D.rotate_x(-event.relative.y * look_sensitivity)
 			%Camera3D.rotation.x = clamp(%Camera3D.rotation.x, deg_to_rad(-90), deg_to_rad(90))
-
-func _process(delta):
-	pass
 
 func clip_velocity(normal, overbounce) -> void:
 	var backoff = self.velocity.dot(normal) * overbounce
@@ -133,6 +134,12 @@ func wall_bounce() -> void:
 
 	velocity = (wall_normal * current_sprint_speed * 0.5) + (velocity * wall_jump_boost)
 	velocity.y = wall_jump_speed
+	
+	#audiohook for wall jump
+	audio_is_wall_jumping.emit(true)
+	await get_tree().process_frame
+	audio_is_wall_jumping.emit(false)
+	
 	jump_queue = false
 
 	last_wall_normal = wall_normal
@@ -244,6 +251,10 @@ func _physics_process(delta):
 	if is_on_floor() or snapped_to_stairs_last: # snapped to stairs last for smoothness
 		if jump_queue:
 			self.velocity.y = jump_speed
+			#audiohook for wall jump
+			audio_is_jumping.emit(true)
+			await get_tree().process_frame
+			audio_is_jumping.emit(false)
 			jump_queue = false
 		_handle_ground_physics(delta)
 	else:
