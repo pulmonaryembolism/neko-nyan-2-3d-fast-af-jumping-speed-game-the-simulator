@@ -3,12 +3,15 @@
 importer="wavefront_obj"
 importer_version=1
 type="Mesh"
-uid="uid://kjftm3hsnq4h"
-valid=false
+uid="uid://d0rkg65oaq6aq"
+path="res://.godot/imported/box.obj-f1eb5096d5933583c4bb820291e30971.mesh"
 
 [deps]
 
+files=["res://.godot/imported/box.obj-f1eb5096d5933583c4bb820291e30971.mesh"]
+
 source_file="res://Assets/box.obj"
+dest_files=["res://.godot/imported/box.obj-f1eb5096d5933583c4bb820291e30971.mesh", "res://.godot/imported/box.obj-f1eb5096d5933583c4bb820291e30971.mesh"]
 
 [params]
 

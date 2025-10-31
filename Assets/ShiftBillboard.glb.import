@@ -3,12 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://ccyq0bu2bima3"
-valid=false
+uid="uid://b4vv0m5owruud"
+path="res://.godot/imported/ShiftBillboard.glb-f70c995812736c1cc720383e2ce1920f.scn"
 
 [deps]
 
 source_file="res://Assets/ShiftBillboard.glb"
+dest_files=["res://.godot/imported/ShiftBillboard.glb-f70c995812736c1cc720383e2ce1920f.scn"]
 
 [params]
 

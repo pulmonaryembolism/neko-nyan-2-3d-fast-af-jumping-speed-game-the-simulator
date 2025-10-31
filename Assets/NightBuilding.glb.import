@@ -3,12 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://c8imvdqx4wk35"
-valid=false
+uid="uid://br6evtrxtwjh4"
+path="res://.godot/imported/NightBuilding.glb-d1156e30655eb14f7f7027cf1a7c5c3c.scn"
 
 [deps]
 
 source_file="res://Assets/NightBuilding.glb"
+dest_files=["res://.godot/imported/NightBuilding.glb-d1156e30655eb14f7f7027cf1a7c5c3c.scn"]
 
 [params]
 

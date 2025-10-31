@@ -2,12 +2,19 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0haqf2c247e7"
-valid=false
+uid="uid://bhvo2cpgd61yh"
+path="res://.godot/imported/ShiftBillboard_shift_Billboard.jpg-a32c632fbfec76d3bfb8557c24132fdd.ctex"
+metadata={
+"vram_texture": false
+}
+generator_parameters={
+"md5": "8ff43ab63cfaf4986dd84d2e5263de41"
+}
 
 [deps]
 
 source_file="res://Assets/ShiftBillboard_shift_Billboard.jpg"
+dest_files=["res://.godot/imported/ShiftBillboard_shift_Billboard.jpg-a32c632fbfec76d3bfb8557c24132fdd.ctex"]
 
 [params]
 
@@ -19,7 +26,7 @@ compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=false
+mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -33,4 +40,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

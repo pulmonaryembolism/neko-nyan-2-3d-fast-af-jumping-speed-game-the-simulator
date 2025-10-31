@@ -3,12 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bstx7emhmglxx"
-valid=false
+uid="uid://c3y3sprp0l7pg"
+path="res://.godot/imported/ClassyBuilding.glb-bf30c80ca9d801eec934f945dd07d31d.scn"
 
 [deps]
 
 source_file="res://Assets/ClassyBuilding.glb"
+dest_files=["res://.godot/imported/ClassyBuilding.glb-bf30c80ca9d801eec934f945dd07d31d.scn"]
 
 [params]
 

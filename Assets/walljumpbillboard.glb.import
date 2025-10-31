@@ -3,12 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://b3munfd37dued"
-valid=false
+uid="uid://dilof10wetaei"
+path="res://.godot/imported/walljumpbillboard.glb-ef4cd5fb495e25ce31cc1f1fafdeedc2.scn"
 
 [deps]
 
 source_file="res://Assets/walljumpbillboard.glb"
+dest_files=["res://.godot/imported/walljumpbillboard.glb-ef4cd5fb495e25ce31cc1f1fafdeedc2.scn"]
 
 [params]
 

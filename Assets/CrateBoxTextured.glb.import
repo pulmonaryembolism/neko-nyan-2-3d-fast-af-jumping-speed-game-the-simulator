@@ -3,12 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://b0a4cmkhevouo"
-valid=false
+uid="uid://ddpop6165s65c"
+path="res://.godot/imported/CrateBoxTextured.glb-7de136f2298070ef868bbfb28d92fae9.scn"
 
 [deps]
 
 source_file="res://Assets/CrateBoxTextured.glb"
+dest_files=["res://.godot/imported/CrateBoxTextured.glb-7de136f2298070ef868bbfb28d92fae9.scn"]
 
 [params]
 

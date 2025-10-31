@@ -3,12 +3,15 @@
 importer="wavefront_obj"
 importer_version=1
 type="Mesh"
-uid="uid://cby7cdk2c8knl"
-valid=false
+uid="uid://bf3seka1ekxqe"
+path="res://.godot/imported/streetsigns.obj-4e1d28514c79f98a1dd0b72ebdcd1789.mesh"
 
 [deps]
 
+files=["res://.godot/imported/streetsigns.obj-4e1d28514c79f98a1dd0b72ebdcd1789.mesh"]
+
 source_file="res://Assets/streetsigns.obj"
+dest_files=["res://.godot/imported/streetsigns.obj-4e1d28514c79f98a1dd0b72ebdcd1789.mesh", "res://.godot/imported/streetsigns.obj-4e1d28514c79f98a1dd0b72ebdcd1789.mesh"]
 
 [params]
 

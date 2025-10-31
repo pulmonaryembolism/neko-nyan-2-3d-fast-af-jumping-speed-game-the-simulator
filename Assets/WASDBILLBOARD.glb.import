@@ -3,12 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://blh8ppw2xt8w"
-valid=false
+uid="uid://cd62io720dvvq"
+path="res://.godot/imported/WASDBILLBOARD.glb-1af4cd7d46fc1c4f46dbfb955f3b75d7.scn"
 
 [deps]
 
 source_file="res://Assets/WASDBILLBOARD.glb"
+dest_files=["res://.godot/imported/WASDBILLBOARD.glb-1af4cd7d46fc1c4f46dbfb955f3b75d7.scn"]
 
 [params]
 
