@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://dvdsmpactuuv0"]
+[gd_scene load_steps=25 format=3 uid="uid://dvdsmpactuuv0"]
 
 [ext_resource type="Script" uid="uid://dlvg0idigj8hd" path="res://Character/character_body.gd" id="1_7germ"]
 [ext_resource type="PackedScene" uid="uid://d1b38nddoq7d4" path="res://Mechanics/timer.tscn" id="2_i00vr"]
@@ -14,6 +14,7 @@
 [ext_resource type="AudioStream" uid="uid://bd61hc2vyfr6m" path="res://Sounds/footstep_3.mp3" id="11_v82kp"]
 [ext_resource type="AudioStream" uid="uid://c4uf6u533osjp" path="res://Sounds/footstep_4.mp3" id="12_am5mb"]
 [ext_resource type="AudioStream" uid="uid://dq6yutj08uw44" path="res://Sounds/footstep_5.mp3" id="13_hlqkp"]
+[ext_resource type="Shader" uid="uid://h7tbtaqcp4yj" path="res://Shaders/post_processing.gdshader" id="15_5ixlk"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vlble"]
 radius = 0.35
@@ -65,6 +66,15 @@ clip_3/auto_advance = 0
 clip_4/name = &"Footstep 5"
 clip_4/stream = ExtResource("13_hlqkp")
 clip_4/auto_advance = 0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lu6bf"]
+render_priority = 0
+shader = ExtResource("15_5ixlk")
+shader_parameter/dither_amount = 0.5
+
+[sub_resource type="QuadMesh" id="QuadMesh_3ejmi"]
+flip_faces = true
+size = Vector2(2, 2)
 
 [node name="CharacterBody3D" type="CharacterBody3D" groups=["Player"]]
 physics_interpolation_mode = 1
@@ -169,6 +179,11 @@ bus = &"Player"
 stream = SubResource("AudioStreamInteractive_scbpe")
 volume_db = -15.0
 bus = &"Player"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("ShaderMaterial_lu6bf")
+extra_cull_margin = 16384.0
+mesh = SubResource("QuadMesh_3ejmi")
 
 [connection signal="audio_is_jumping" from="." to="Sounds" method="_on_character_body_3d_audio_is_jumping"]
 [connection signal="audio_is_sprinting" from="." to="Sounds" method="_on_character_body_3d_audio_is_sprinting"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=27 format=3 uid="uid://d1i1gdv8bdh7f"]
 
-[ext_resource type="Shader" uid="uid://dgxelk4fpflp1" path="res://checkerboard.gdshader" id="1_8uh7m"]
+[ext_resource type="Shader" uid="uid://dgxelk4fpflp1" path="res://Shaders/checkerboard.gdshader" id="1_8uh7m"]
 [ext_resource type="PackedScene" uid="uid://dvdsmpactuuv0" path="res://Character/character_body.tscn" id="1_37kl0"]
 [ext_resource type="ArrayMesh" uid="uid://c80sqyv3se17c" path="res://Assets/Neko.obj" id="3_6uqi0"]
 
