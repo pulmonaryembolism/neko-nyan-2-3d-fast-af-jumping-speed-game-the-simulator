@@ -5,6 +5,8 @@ extends Control
 @onready var quit_button = $MarginContainer/VBoxContainer/QuitButton
 
 func _ready():
+	$MarginContainer/VBoxContainer/Time.text = Global.final_time
+	
 	start_button.pressed.connect(_on_StartButton_pressed)
 	options_button.pressed.connect(_on_OptionsButton_pressed)
 	quit_button.pressed.connect(_on_QuitButton_pressed)
