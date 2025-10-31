@@ -8,6 +8,9 @@ extends Node3D
 signal time_changed(minutes, seconds, msec)
 
 func _process(delta: float) -> void:
+	if Global.reset_timer == true:
+		time -= time
+		Global.reset_timer = false
 	time += delta
 	msec = int(fmod(time, 1) * 100)
 	seconds = int(fmod(time, 60))
