@@ -73,3 +73,19 @@ reset={
 [physics]
 
 3d/default_gravity=9.81
+
+[rendering]
+
+shading/overrides/force_vertex_shading=true
+anti_aliasing/screen_space_roughness_limiter/enabled=false
+
+[shader_globals]
+
+resolution={
+"type": "vec2",
+"value": Vector2(960, 540)
+}
+color_depth={
+"type": "float",
+"value": 32.0
+}

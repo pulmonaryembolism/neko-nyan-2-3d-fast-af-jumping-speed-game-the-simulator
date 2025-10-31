@@ -1,10 +1,9 @@
 extends CharacterBody3D
 
-@export var cm_per_360 := 22.0
-@export var dpi := 800.0
 @export var jump_speed := 4.15
 @export var wall_jump_speed := 4.43
-@export var wall_jump_boost := 1.17
+@export var wall_jump_boost := 1.10
+@export var wall_jump_retain := 0.66
 @export var walk_speed := 6.0
 @export var sprint_speed := 8.0
 @export var walk_to_sprint := 0.05
@@ -12,7 +11,7 @@ extends CharacterBody3D
 @export var ground_accel := 10.0
 @export var ground_friction := 6.0
 @export var stop_speed := 2.19
-@export var air_accel := 2.5
+@export var air_accel := 2.0
 
 const MAX_STEP_HEIGHT := 0.45
 
@@ -28,6 +27,9 @@ var snapped_to_stairs_last := false
 var last_frame_on_floor := -INF
 var saved_global_camera = null
 
+signal audio_is_jumping(active)
+signal audio_is_wall_jumping(active)
+signal audio_is_sprinting(speed)
 
 func input_buffer(pressed, released, queue) -> bool:
 	if released:
@@ -41,7 +43,10 @@ func get_move_speed(delta) -> float:
 		sprint_duration -= delta / sprint_to_walk
 	
 	sprint_duration = clamp(sprint_duration, 0.0, 1.0)
-	return lerp(walk_speed, sprint_speed, sprint_duration)
+	var move_speed = lerp(walk_speed, sprint_speed, sprint_duration)
+	#audiohook for sprint
+	audio_is_sprinting.emit(move_speed)
+	return move_speed
 
 func save_camera_pos():
 	if saved_global_camera == null:
@@ -58,7 +63,7 @@ func camera_reset(delta):
 		saved_global_camera = null
 
 func _ready():
-	look_sensitivity = TAU / (cm_per_360 * dpi / 2.54)
+	look_sensitivity = TAU / (Global.cm_per_360 * Global.dpi / 2.54)
 
 func _unhandled_input(event):
 	if event is InputEventMouseButton:
@@ -71,9 +76,6 @@ func _unhandled_input(event):
 			rotate_y(-event.relative.x * look_sensitivity)
 			%Camera3D.rotate_x(-event.relative.y * look_sensitivity)
 			%Camera3D.rotation.x = clamp(%Camera3D.rotation.x, deg_to_rad(-90), deg_to_rad(90))
-
-func _process(delta):
-	pass
 
 func clip_velocity(normal, overbounce) -> void:
 	var backoff = self.velocity.dot(normal) * overbounce
@@ -133,6 +135,12 @@ func wall_bounce() -> void:
 
 	velocity = (wall_normal * current_sprint_speed * 0.5) + (velocity * wall_jump_boost)
 	velocity.y = wall_jump_speed
+	
+	#audiohook for wall jump
+	audio_is_wall_jumping.emit(true)
+	await get_tree().process_frame
+	audio_is_wall_jumping.emit(false)
+	
 	jump_queue = false
 
 	last_wall_normal = wall_normal
@@ -141,7 +149,6 @@ func wall_bounce() -> void:
 
 func _handle_air_physics(delta) -> void:
 	var wish_velocity = wish_dir * wish_speed
-	
 	var horizontal_velocity = velocity
 	horizontal_velocity.y = 0.0
 	
@@ -150,12 +157,15 @@ func _handle_air_physics(delta) -> void:
 	if horizontal_velocity.length() > wish_speed:
 		var wish_norm = wish_dir.normalized()
 		var projected_speed = horizontal_velocity.dot(wish_norm)
-		# angle based speed loss
-		if projected_speed > 0.0:
-			wish_velocity = wish_dir.normalized() * max(projected_speed, wish_speed)
-		else:
-			wish_velocity = wish_dir * wish_speed
-	
+		wish_velocity = wish_norm * max(projected_speed, wish_speed)
+
+	if horizontal_velocity.length() > wish_velocity.length():
+		var target_dir = wish_dir.normalized()
+		if target_dir == Vector3.ZERO:
+			target_dir = horizontal_velocity.normalized()
+		var blended_dir = (horizontal_velocity.normalized() * wall_jump_retain + target_dir * (1.0 - wall_jump_retain)).normalized()
+		wish_velocity = blended_dir * horizontal_velocity.length()
+
 	var push_dir = wish_velocity - velocity
 	push_dir.y = 0.0
 	var push_len = push_dir.length()
@@ -244,6 +254,10 @@ func _physics_process(delta):
 	if is_on_floor() or snapped_to_stairs_last: # snapped to stairs last for smoothness
 		if jump_queue:
 			self.velocity.y = jump_speed
+			#audiohook for wall jump
+			audio_is_jumping.emit(true)
+			await get_tree().process_frame
+			audio_is_jumping.emit(false)
 			jump_queue = false
 		_handle_ground_physics(delta)
 	else:
