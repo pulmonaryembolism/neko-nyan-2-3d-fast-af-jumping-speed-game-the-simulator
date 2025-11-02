@@ -3,12 +3,12 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cv05ebmyqj84c"
+uid="uid://cnc7d3eb2ij3r"
 valid=false
 
 [deps]
 
-source_file="res://Assets/balcony.blend"
+source_file="res://Assets/spikes.trafficcone.blend"
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cv05ebmyqj84c"
+uid="uid://b1t65rr3q5xqb"
 valid=false
 
 [deps]
 
-source_file="res://Assets/balcony.blend"
+source_file="res://Assets/checkpointflag.blend"
 
 [params]
 
