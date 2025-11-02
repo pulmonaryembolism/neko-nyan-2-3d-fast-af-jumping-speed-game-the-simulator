@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cjvwcqhp2cgd0" path="res://Mechanics/portal.tscn" id="3_rutxk"]
 [ext_resource type="PackedScene" uid="uid://djm4nldmulyqq" path="res://Mechanics/spawn_point.tscn" id="4_km2qp"]
 [ext_resource type="PackedScene" uid="uid://blnvaen5w16cg" path="res://Unpacked Assets/walljumpbillboard.tscn" id="7_8vwkk"]
-[ext_resource type="PackedScene" uid="uid://cgvxfm81vft1w" path="res://Unpacked Assets/blue_building.tscn" id="7_grby0"]
+[ext_resource type="PackedScene" uid="uid://cgvxfm81vft1w" path="res://blue_building.tscn" id="7_grby0"]
 [ext_resource type="PackedScene" uid="uid://pxp8yn5b5u8i" path="res://Unpacked Assets/stop_signs_textured.tscn" id="7_kww1a"]
 [ext_resource type="PackedScene" uid="uid://ca3emwldt7knk" path="res://Unpacked Assets/cardboard_box_textured.tscn" id="7_myxph"]
 [ext_resource type="VoxelGIData" uid="uid://dw6efu24qalui" path="res://Scenes/Baked Lighting/mechanics test.VoxelGI_data.res" id="8_myxph"]
