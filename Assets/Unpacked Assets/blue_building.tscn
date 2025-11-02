@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://cgvxfm81vft1w"]
+
+[ext_resource type="PackedScene" uid="uid://dpfuplxl35g7k" path="res://Assets/blueBuilding.glb" id="1_5cf2l"]
+[ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_2dc6t"]
+[ext_resource type="Texture2D" uid="uid://bxlf100bsbndp" path="res://Assets/blueBuilding_city_texture_4.jpg" id="3_vms0c"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_r56vt"]
+render_priority = 0
+shader = ExtResource("2_2dc6t")
+shader_parameter/color_texture = ExtResource("3_vms0c")
+shader_parameter/vertex_wobble = 0.999999977648
+shader_parameter/affine_mapping = 0.00999999977648
+
+[node name="blueBuilding" instance=ExtResource("1_5cf2l")]
+
+[node name="Building_blue" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_r56vt")

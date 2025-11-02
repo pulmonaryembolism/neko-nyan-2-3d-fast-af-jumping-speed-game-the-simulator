@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1b38nddoq7d4"]
+
+[ext_resource type="Script" uid="uid://d1iidnygrr48m" path="res://Mechanics/timer.gd" id="1_lmtw1"]
+
+[node name="Timer" type="Node3D" groups=["Timer"]]
+script = ExtResource("1_lmtw1")
