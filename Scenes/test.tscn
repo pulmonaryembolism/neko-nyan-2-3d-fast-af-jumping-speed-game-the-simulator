@@ -142,6 +142,7 @@ transform = Transform3D(0.73981, 0.304215, 0.600112, -0.0820551, -0.844487, 0.52
 shadow_enabled = true
 
 [node name="WanPrototype" type="StaticBody3D" parent="."]
+visible = false
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="WanPrototype"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.58151865, -0.0013593435, 0, -4.2347956)
@@ -299,13 +300,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.16589, -0.0899806, 159.40
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.796167, 6.060912, 168.47255)
 
 [node name="JumpBillboardpsx" parent="." instance=ExtResource("11_wojap")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.94369, 2.3038058, 144.99469)
+transform = Transform3D(0.76399875, 0, -0.6452177, 0, 1, 0, 0.6452177, 0, 0.76399875, -37.94369, 2.3038058, 4.852537)
 
 [node name="NightBuilding" parent="." instance=ExtResource("7_0c07c")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.974331, 34.947704, 237.54184)
 
 [node name="ShiftBillboard" parent="." instance=ExtResource("12_copon")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.425537, 2.3038058, 145.17734)
+transform = Transform3D(0.5671827, 0, 0.823592, 0, 1, 0, -0.823592, 0, 0.5671827, -36.35694, 2.3038058, 65.42427)
 
 [node name="Sidewalk_Curved" parent="." instance=ExtResource("18_vpf1r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.416611, -0.6396235, 151.28748)
@@ -320,7 +321,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.073158, 6.890398, 141.937
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.541031, 0.21567869, 137.09848)
 
 [node name="WASDBILLBOARD" parent="." instance=ExtResource("16_pgu05")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.446537, 2.3037982, 144.97583)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.180733, 2.3037982, 52.882137)
 
 [node name="walljumpbillboard" parent="." instance=ExtResource("15_rhq6j")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.776134, 2.3038058, 145.00648)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.776134, 2.3038058, 19.172218)
