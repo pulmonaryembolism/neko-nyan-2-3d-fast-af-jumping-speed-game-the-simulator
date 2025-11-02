@@ -3,12 +3,12 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://di6liy53sat68"
+uid="uid://bqvnogourlnje"
 valid=false
 
 [deps]
 
-source_file="res://Assets/pipes.blend"
+source_file="res://Assets/metalawning.blend"
 
 [params]
 
