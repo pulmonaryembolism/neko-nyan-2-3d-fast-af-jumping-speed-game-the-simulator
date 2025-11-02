@@ -3,12 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://qb1o2pjnxmem"
-valid=false
+uid="uid://b1t65rr3q5xqb"
+path="res://.godot/imported/checkpointflag.blend-b832090b8fb3fcafaae54e8cb5e98325.scn"
 
 [deps]
 
 source_file="res://Assets/checkpointflag.blend"
+dest_files=["res://.godot/imported/checkpointflag.blend-b832090b8fb3fcafaae54e8cb5e98325.scn"]
 
 [params]
 
