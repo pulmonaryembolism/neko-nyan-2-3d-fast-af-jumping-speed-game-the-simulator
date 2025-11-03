@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://b8y7dd5itfa1i"]
+[gd_scene load_steps=2 format=3 uid="uid://b8y7dd5itfa1i"]
 
 [ext_resource type="Script" uid="uid://c1qnij00u7f5e" path="res://title_screen.gd" id="1_klylv"]
-[ext_resource type="Texture2D" uid="uid://bi2xqt5lctv7m" path="res://Assets/Screenshot 2025-10-22 at 1.20.57 PM.png" id="2_p3fck"]
 
 [node name="TitleScreen" type="Control"]
 process_mode = 3
@@ -12,15 +11,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_klylv")
-
-[node name="Background" type="TextureRect" parent="."]
-layout_mode = 0
-offset_left = -21.0
-offset_top = -33.0
-offset_right = 1952.0
-offset_bottom = 1161.0
-texture = ExtResource("2_p3fck")
-stretch_mode = 6
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
