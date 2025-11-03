@@ -4,11 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://di6liy53sat68"
-valid=false
+path="res://.godot/imported/pipes.blend-ebe5d9f2cbf1521a7c7c85c8a817b70a.scn"
 
 [deps]
 
 source_file="res://Assets/pipes.blend"
+dest_files=["res://.godot/imported/pipes.blend-ebe5d9f2cbf1521a7c7c85c8a817b70a.scn"]
 
 [params]
 
