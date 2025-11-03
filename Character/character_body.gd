@@ -67,11 +67,11 @@ func _ready():
 
 func _unhandled_input(event):
 	if event is InputEventMouseButton:
-		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	elif event.is_action_pressed("ui_cancel"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	
-	if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
+	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		if event is InputEventMouseMotion:
 			rotate_y(-event.relative.x * look_sensitivity)
 			%Camera3D.rotate_x(-event.relative.y * look_sensitivity)
