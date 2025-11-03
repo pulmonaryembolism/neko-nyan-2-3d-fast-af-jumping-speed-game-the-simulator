@@ -9,7 +9,6 @@ func _ready():
 	options_button.pressed.connect(_on_OptionsButton_pressed)
 	quit_button.pressed.connect(_on_QuitButton_pressed)
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	Input.set_mouse_mode(Input.MOUSE_MODE_CONFINED)
 
 func _on_QuitButton_pressed():
 	get_tree().quit()

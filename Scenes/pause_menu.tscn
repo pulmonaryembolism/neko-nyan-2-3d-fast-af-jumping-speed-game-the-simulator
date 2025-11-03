@@ -12,44 +12,35 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_emv3i")
 
-[node name="ResumeButton" type="Button" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="."]
+process_mode = 2
 layout_mode = 0
-offset_left = 431.0
-offset_top = 111.0
-offset_right = 501.0
-offset_bottom = 142.0
-scale = Vector2(3.2904668, 3.194061)
+offset_right = 1919.0
+offset_bottom = 1109.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+process_mode = 2
+layout_mode = 2
+
+[node name="ResumeButton" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
 text = "Resume
 "
 
-[node name="OptionsButton" type="Button" parent="."]
-layout_mode = 0
-offset_left = 444.0
-offset_top = 245.0
-offset_right = 514.0
-offset_bottom = 276.0
-scale = Vector2(2.7897394, 2.7740052)
+[node name="OptionsButton" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
 text = "Options"
 
-[node name="MainMenuButton" type="Button" parent="."]
-layout_mode = 0
-offset_left = 423.0
-offset_top = 358.0
-offset_right = 519.0
-offset_bottom = 389.0
-scale = Vector2(2.5691383, 2.829278)
+[node name="MainMenuButton" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
 text = "Main Menu"
 
-[node name="QuitButton" type="Button" parent="."]
-layout_mode = 0
-offset_left = 485.99997
-offset_top = 473.00003
-offset_right = 528.0
-offset_bottom = 504.00003
-scale = Vector2(2.895885, 2.8536646)
+[node name="QuitButton" type="Button" parent="MarginContainer/VBoxContainer"]
+process_mode = 2
+layout_mode = 2
 text = "Quit"
 
-[connection signal="pressed" from="ResumeButton" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="OptionsButton" to="." method="_on_options_button_pressed"]
-[connection signal="pressed" from="MainMenuButton" to="." method="_on_main_menu_button_pressed"]
-[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ResumeButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
