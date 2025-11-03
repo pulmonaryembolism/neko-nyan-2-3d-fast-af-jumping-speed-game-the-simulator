@@ -1,25 +1,11 @@
-[gd_scene load_steps=42 format=3 uid="uid://cil2vjwrmwraf"]
+[gd_scene load_steps=28 format=3 uid="uid://cil2vjwrmwraf"]
 
 [ext_resource type="PackedScene" uid="uid://dvdsmpactuuv0" path="res://Character/character_body.tscn" id="1_qc4db"]
 [ext_resource type="Script" uid="uid://cb1fev18bvi6e" path="res://game.gd" id="1_ys1qc"]
 [ext_resource type="Shader" uid="uid://dgxelk4fpflp1" path="res://Shaders/checkerboard.gdshader" id="2_ys1qc"]
 [ext_resource type="ArrayMesh" uid="uid://c80sqyv3se17c" path="res://Assets/Neko.obj" id="3_35xla"]
-[ext_resource type="PackedScene" uid="uid://dpfuplxl35g7k" path="res://Assets/blueBuilding.glb" id="5_5wyu1"]
 [ext_resource type="AudioStream" uid="uid://bre3388at1ge7" path="res://Sounds/eaykjbgkbdf125.mp3" id="5_35xla"]
-[ext_resource type="PackedScene" uid="uid://c3y3sprp0l7pg" path="res://Assets/ClassyBuilding.glb" id="6_0c07c"]
 [ext_resource type="AudioStream" uid="uid://b3qq2sgevoqgk" path="res://Sounds/city_ambience.mp3" id="6_i3aeo"]
-[ext_resource type="PackedScene" uid="uid://br6evtrxtwjh4" path="res://Assets/NightBuilding.glb" id="7_0c07c"]
-[ext_resource type="PackedScene" uid="uid://co04v0k4uuouv" path="res://Assets/CardboardBoxTextured.glb" id="8_kuf18"]
-[ext_resource type="PackedScene" uid="uid://ddpop6165s65c" path="res://Assets/CrateBoxTextured.glb" id="9_q8sys"]
-[ext_resource type="PackedScene" uid="uid://cxg57vk86hct1" path="res://Assets/FIRE_ESCAPE_AFTERJOINED.glb" id="10_n0wup"]
-[ext_resource type="PackedScene" uid="uid://bqicupi1d5lbx" path="res://Assets/JumpBillboardpsx.glb" id="11_wojap"]
-[ext_resource type="PackedScene" uid="uid://b4vv0m5owruud" path="res://Assets/ShiftBillboard.glb" id="12_copon"]
-[ext_resource type="PackedScene" uid="uid://cmagy038lch4n" path="res://Assets/StopSignsTextured.glb" id="13_wjyqs"]
-[ext_resource type="PackedScene" uid="uid://dewhjb1oi7ddx" path="res://Assets/StreetSignNeon_Noodles.glb" id="14_kxtw2"]
-[ext_resource type="PackedScene" uid="uid://dilof10wetaei" path="res://Assets/walljumpbillboard.glb" id="15_rhq6j"]
-[ext_resource type="PackedScene" uid="uid://cd62io720dvvq" path="res://Assets/WASDBILLBOARD.glb" id="16_pgu05"]
-[ext_resource type="PackedScene" uid="uid://bh226grdrspao" path="res://Assets/Sidewalk_Straight.glb" id="17_3nkef"]
-[ext_resource type="PackedScene" uid="uid://bd4iv5lc84oxx" path="res://Assets/Sidewalk_Curved.glb" id="18_vpf1r"]
 
 [sub_resource type="Environment" id="Environment_i3aeo"]
 volumetric_fog_enabled = true
@@ -283,45 +269,3 @@ volume_db = 10.0
 autoplay = true
 emission_angle_enabled = true
 emission_angle_degrees = 24.1
-
-[node name="blueBuilding" parent="." instance=ExtResource("5_5wyu1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.151012, 20.996918, 192.60538)
-
-[node name="CardboardBoxTextured" parent="." instance=ExtResource("8_kuf18")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.585396, 0.8693826, 171.50514)
-
-[node name="ClassyBuilding" parent="." instance=ExtResource("6_0c07c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.111668, 24.795494, 199.08998)
-
-[node name="CrateBoxTextured" parent="." instance=ExtResource("9_q8sys")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.16589, -0.0899806, 159.40138)
-
-[node name="FIRE_ESCAPE_AFTERJOINED" parent="." instance=ExtResource("10_n0wup")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.796167, 6.060912, 168.47255)
-
-[node name="JumpBillboardpsx" parent="." instance=ExtResource("11_wojap")]
-transform = Transform3D(0.76399875, 0, -0.6452177, 0, 1, 0, 0.6452177, 0, 0.76399875, -37.94369, 2.3038058, 4.852537)
-
-[node name="NightBuilding" parent="." instance=ExtResource("7_0c07c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.974331, 34.947704, 237.54184)
-
-[node name="ShiftBillboard" parent="." instance=ExtResource("12_copon")]
-transform = Transform3D(0.5671827, 0, 0.823592, 0, 1, 0, -0.823592, 0, 0.5671827, -36.35694, 2.3038058, 65.42427)
-
-[node name="Sidewalk_Curved" parent="." instance=ExtResource("18_vpf1r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.416611, -0.6396235, 151.28748)
-
-[node name="Sidewalk_Straight2" parent="." instance=ExtResource("17_3nkef")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.473362, -0.71925735, 146.6095)
-
-[node name="StopSignsTextured" parent="." instance=ExtResource("13_wjyqs")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.073158, 6.890398, 141.93733)
-
-[node name="StreetSignNeon_Noodles" parent="." instance=ExtResource("14_kxtw2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.541031, 0.21567869, 137.09848)
-
-[node name="WASDBILLBOARD" parent="." instance=ExtResource("16_pgu05")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.180733, 2.3037982, 52.882137)
-
-[node name="walljumpbillboard" parent="." instance=ExtResource("15_rhq6j")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.776134, 2.3038058, 19.172218)
