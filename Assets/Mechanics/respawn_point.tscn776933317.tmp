@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://djm4nldmulyqq"]
-
-[ext_resource type="Script" uid="uid://bbb2d55sc1dbr" path="res://Mechanics/respawn_point.gd" id="1_imqlh"]
-
-[node name="RespawnPoint" type="Node3D"]
-script = ExtResource("1_imqlh")
-
-[node name="spawn_point" type="Marker3D" parent="."]
