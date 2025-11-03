@@ -1,37 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://b20r7ucu5bo00"]
+[gd_scene load_steps=2 format=3 uid="uid://b20r7ucu5bo00"]
 
 [ext_resource type="PackedScene" uid="uid://dvdsmpactuuv0" path="res://Character/character_body.tscn" id="1_80nbo"]
-
-[sub_resource type="Environment" id="Environment_80nbo"]
-volumetric_fog_enabled = true
-volumetric_fog_density = 0.028
-volumetric_fog_albedo = Color(1, 0.6039216, 1, 1)
-volumetric_fog_length = 295.22
-
-[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_e2o6t"]
-auto_exposure_enabled = true
-
-[sub_resource type="Compositor" id="Compositor_feb5d"]
 
 [node name="Node3D" type="Node3D"]
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("1_80nbo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.20333862, -0.21407217, -0.090361595)
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_80nbo")
-camera_attributes = SubResource("CameraAttributesPractical_e2o6t")
-compositor = SubResource("Compositor_feb5d")
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
-transform = Transform3D(0.73981, 0.304215, 0.600112, -0.0820551, -0.844487, 0.529253, 0.667794, -0.440789, -0.599798, 0, 8.98944, 0)
-shadow_enabled = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.20333862, 0.054963708, -0.090361595)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.412903, -0.47583008, -4.3776703)
-use_collision = true
-size = Vector3(1265.5024, 0.048339844, 1261.5007)
-
-[node name="CSGBox3D2" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.3567672)
-use_collision = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.31506348, -0.47583008, -0.3909912)
+size = Vector3(5.2424316, 0.048339844, 5.128662)

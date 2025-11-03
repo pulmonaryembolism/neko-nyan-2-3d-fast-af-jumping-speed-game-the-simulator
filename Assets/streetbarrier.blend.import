@@ -3,13 +3,12 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://0wnuwny2ljlh"
-path="res://.godot/imported/streetbarrier.blend-2c79c998d25f872de214533662d76bc8.scn"
+uid="uid://dxdhjirkkxfun"
+valid=false
 
 [deps]
 
 source_file="res://Assets/streetbarrier.blend"
-dest_files=["res://.godot/imported/streetbarrier.blend-2c79c998d25f872de214533662d76bc8.scn"]
 
 [params]
 

@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dmq10d5gntdfg"
-path="res://.godot/imported/spikes.traffic cone.blend-82d2dfa69779cb4f19a8f89299b155fe.scn"
+valid=false
 
 [deps]
 
 source_file="res://Assets/spikes.traffic cone.blend"
-dest_files=["res://.godot/imported/spikes.traffic cone.blend-82d2dfa69779cb4f19a8f89299b155fe.scn"]
 
 [params]
 
