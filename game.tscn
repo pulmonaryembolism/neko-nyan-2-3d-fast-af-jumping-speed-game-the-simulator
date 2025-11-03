@@ -1,6 +1,20 @@
-[gd_scene load_steps=5 format=3 uid="uid://b20r7ucu5bo00"]
+[gd_scene load_steps=19 format=3 uid="uid://b20r7ucu5bo00"]
 
 [ext_resource type="PackedScene" uid="uid://dvdsmpactuuv0" path="res://Character/character_body.tscn" id="1_80nbo"]
+[ext_resource type="PackedScene" uid="uid://cjogsykulkxw4" path="res://Unpacked Assets/JumpBillboard.glb" id="2_e2o6t"]
+[ext_resource type="AudioStream" uid="uid://bre3388at1ge7" path="res://Sounds/eaykjbgkbdf125.mp3" id="3_fc0e3"]
+[ext_resource type="PackedScene" uid="uid://bvjf744jsp8ov" path="res://Unpacked Assets/CardBoardBox.glb" id="3_lc2xo"]
+[ext_resource type="AudioStream" uid="uid://b3qq2sgevoqgk" path="res://Sounds/city_ambience.mp3" id="4_7jktm"]
+[ext_resource type="PackedScene" uid="uid://cu5p87kqid4s5" path="res://Unpacked Assets/Crate.glb" id="4_215e1"]
+[ext_resource type="PackedScene" uid="uid://dr8jlhedgvefj" path="res://Unpacked Assets/FireEscapeStairs.glb" id="5_7sc4i"]
+[ext_resource type="PackedScene" uid="uid://jgwkwerkdbhb" path="res://Unpacked Assets/ShiftBillboard.glb" id="6_80cx4"]
+[ext_resource type="PackedScene" uid="uid://q5ldvipind7f" path="res://Unpacked Assets/NeonSignMeat.glb" id="8_7sc4i"]
+[ext_resource type="PackedScene" uid="uid://bbv1rwtmfl1q4" path="res://Unpacked Assets/WASDBillboard.glb" id="8_rvswv"]
+[ext_resource type="PackedScene" uid="uid://bncaf3u3g65a5" path="res://Unpacked Assets/WallJumpBillboard.glb" id="9_boyg6"]
+[ext_resource type="PackedScene" uid="uid://bo7kavu2705at" path="res://Unpacked Assets/StraightStairs.glb" id="10_e36ub"]
+[ext_resource type="PackedScene" uid="uid://dxo2ofwx15e17" path="res://Unpacked Assets/SidewalkCurved.glb" id="11_hb5m1"]
+[ext_resource type="PackedScene" uid="uid://cxoggb23puwtx" path="res://Unpacked Assets/SidewalkStraight.glb" id="12_x5p1p"]
+[ext_resource type="PackedScene" uid="uid://dayo6ldjlmxg6" path="res://Unpacked Assets/StopSign.glb" id="13_qhcbd"]
 
 [sub_resource type="Environment" id="Environment_80nbo"]
 volumetric_fog_enabled = true
@@ -33,5 +47,53 @@ use_collision = true
 size = Vector3(1265.5024, 0.048339844, 1261.5007)
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.3567672)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.018013239, 2.0911925, -3.4784937)
 use_collision = true
+size = Vector3(1.9346313, 0.092285156, 1)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_fc0e3")
+autoplay = true
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_7jktm")
+volume_db = 10.0
+autoplay = true
+emission_angle_enabled = true
+emission_angle_degrees = 24.1
+
+[node name="CardBoardBox" parent="." instance=ExtResource("3_lc2xo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.945385, 1.1369879, -3.6926556)
+
+[node name="Crate" parent="." instance=ExtResource("4_215e1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.036724, 0.17762423, 3.8641968)
+
+[node name="FireEscapeStairs2" parent="." instance=ExtResource("5_7sc4i")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -17.118374, 3.3536415, -29.965128)
+
+[node name="JumpBillboard" parent="." instance=ExtResource("2_e2o6t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.694817, 2.5714025, -21.485216)
+
+[node name="NeonSignMeat2" parent="." instance=ExtResource("8_7sc4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.7268257, 0.6382414, 3.9155216)
+
+[node name="ShiftBillboard" parent="." instance=ExtResource("6_80cx4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.804102, 2.5714025, -19.830145)
+
+[node name="SidewalkCurved" parent="." instance=ExtResource("11_hb5m1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.404625, -0.37202683, 5.2962255)
+
+[node name="SidewalkStraight" parent="." instance=ExtResource("12_x5p1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9478054, -0.45166063, 5.015547)
+
+[node name="StopSign" parent="." instance=ExtResource("13_qhcbd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0031395, 7.1580024, 8.334532)
+
+[node name="StraightStairs2" parent="." instance=ExtResource("10_e36ub")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 8.333208, 3.3536415, -29.157146)
+
+[node name="WallJumpBillboard" parent="." instance=ExtResource("9_boyg6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.697706, 2.571403, -20.399473)
+
+[node name="WASDBillboard" parent="." instance=ExtResource("8_rvswv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.398167, 2.5714025, -18.520422)
