@@ -1,0 +1,35 @@
+[gd_scene load_steps=9 format=3 uid="uid://b1umvew3mm735"]
+
+[ext_resource type="PackedScene" uid="uid://c1uqq88g7f2gt" path="res://Unpacked Assets/FireEscapeStairs.glb" id="1_wl7ge"]
+[ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_3xn11"]
+[ext_resource type="Texture2D" uid="uid://bpklrvecww2rn" path="res://Unpacked Assets/FireEscapeStairs_Stair_OMEGAPSXFINAL.png" id="3_ts118"]
+[ext_resource type="Texture2D" uid="uid://c2u8t5l65r27r" path="res://Unpacked Assets/FireEscapeStairs_PolesImageALTERNATIVEPSX.png" id="4_k8jfd"]
+[ext_resource type="Texture2D" uid="uid://dudg23g2h0u7c" path="res://Unpacked Assets/FireEscapeStairs_RailingTextureCRUSTYFINAL.png" id="5_37bws"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q0lhc"]
+render_priority = 0
+shader = ExtResource("2_3xn11")
+shader_parameter/color_texture = ExtResource("3_ts118")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.15
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1kdmi"]
+render_priority = 0
+shader = ExtResource("2_3xn11")
+shader_parameter/color_texture = ExtResource("4_k8jfd")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.15
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_flb16"]
+render_priority = 0
+shader = ExtResource("2_3xn11")
+shader_parameter/color_texture = ExtResource("5_37bws")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.15
+
+[node name="FireEscapeStairs" instance=ExtResource("1_wl7ge")]
+
+[node name="Revised_Better_Stairs" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_q0lhc")
+surface_material_override/1 = SubResource("ShaderMaterial_1kdmi")
+surface_material_override/2 = SubResource("ShaderMaterial_flb16")
