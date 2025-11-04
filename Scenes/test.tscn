@@ -10,7 +10,7 @@
 [sub_resource type="Environment" id="Environment_i3aeo"]
 volumetric_fog_enabled = true
 volumetric_fog_density = 0.028
-volumetric_fog_albedo = Color(1, 0.6039216, 1, 1)
+volumetric_fog_albedo = Color(0.8314727, 0.61107963, 0.8450046, 1)
 volumetric_fog_length = 295.22
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_8uh7m"]

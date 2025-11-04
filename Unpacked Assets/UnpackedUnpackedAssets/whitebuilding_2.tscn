@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://drmeukqcmj02m"]
+
+[ext_resource type="PackedScene" uid="uid://bnmjifo6bqc1v" path="res://Unpacked Assets/Whitebuilding2.glb" id="1_4r2bw"]
+[ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_jsc34"]
+[ext_resource type="Texture2D" uid="uid://by2lj5lta7i1d" path="res://Unpacked Assets/Whitebuilding2_city_texture6.jpg" id="3_fedby"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uxe5v"]
+render_priority = 0
+shader = ExtResource("2_jsc34")
+shader_parameter/color_texture = ExtResource("3_fedby")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.15
+
+[node name="Whitebuilding2" instance=ExtResource("1_4r2bw")]
+
+[node name="Building" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_uxe5v")

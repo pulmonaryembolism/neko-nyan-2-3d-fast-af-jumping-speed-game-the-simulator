@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-@export var jump_speed := 4.15
+@export var jump_speed := 4.50
 @export var wall_jump_speed := 4.43
 @export var wall_jump_boost := 1.10
 @export var wall_jump_retain := 0.66
