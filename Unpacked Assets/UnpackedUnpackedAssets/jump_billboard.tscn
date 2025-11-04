@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3 uid="uid://be3fbggq3i3h"]
+
+[ext_resource type="PackedScene" uid="uid://bml0avndx07o2" path="res://Unpacked Assets/JumpBillboard.glb" id="1_xi1cl"]
+[ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_147it"]
+[ext_resource type="Texture2D" uid="uid://c1exit0od2jbq" path="res://Unpacked Assets/JumpBillboard_EdgesRetexturedPSX.png" id="3_wquq5"]
+[ext_resource type="Texture2D" uid="uid://dnhkp10lidmqv" path="res://Unpacked Assets/JumpBillboard_jump_billboard.png" id="4_qa4dj"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_eg5ah"]
+render_priority = 0
+shader = ExtResource("2_147it")
+shader_parameter/color_texture = ExtResource("3_wquq5")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.15
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_50phm"]
+render_priority = 0
+shader = ExtResource("2_147it")
+shader_parameter/color_texture = ExtResource("4_qa4dj")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.15
+
+[node name="JumpBillboard" instance=ExtResource("1_xi1cl")]
+
+[node name="jump_board" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_eg5ah")
+surface_material_override/1 = SubResource("ShaderMaterial_50phm")

@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3 uid="uid://bqgslumwjva4w"]
+
+[ext_resource type="PackedScene" uid="uid://b3a7wvdj6qgyu" path="res://Unpacked Assets/WhiteBuilding1.glb" id="1_2blhy"]
+[ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_otsv3"]
+[ext_resource type="Texture2D" uid="uid://ch52py4k0u1ms" path="res://Unpacked Assets/WhiteBuilding1_Building.png" id="3_ujedv"]
+[ext_resource type="Texture2D" uid="uid://dup1xf2bxwp8j" path="res://Unpacked Assets/WhiteBuilding1_Edges.png" id="4_1m1se"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6gmvf"]
+render_priority = 0
+shader = ExtResource("2_otsv3")
+shader_parameter/color_texture = ExtResource("3_ujedv")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.15
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cn2rl"]
+render_priority = 0
+shader = ExtResource("2_otsv3")
+shader_parameter/color_texture = ExtResource("4_1m1se")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.15
+
+[node name="WhiteBuilding1" instance=ExtResource("1_2blhy")]
+
+[node name="BuildingClassy" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_6gmvf")
+surface_material_override/1 = SubResource("ShaderMaterial_cn2rl")

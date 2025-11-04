@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://pvqr0xuxqj2l"]
+
+[ext_resource type="PackedScene" uid="uid://dukqsmvos1k8h" path="res://Unpacked Assets/StopSign.glb" id="1_mrojd"]
+[ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_twsce"]
+[ext_resource type="Texture2D" uid="uid://catpucsou1qod" path="res://Unpacked Assets/StopSign_stopsigntexturePSX.png" id="3_0ihd5"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tho6x"]
+render_priority = 0
+shader = ExtResource("2_twsce")
+shader_parameter/color_texture = ExtResource("3_0ihd5")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.15
+
+[node name="StopSign" instance=ExtResource("1_mrojd")]
+
+[node name="Stop" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_tho6x")

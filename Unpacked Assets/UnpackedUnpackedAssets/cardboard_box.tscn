@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://hqkjth54vrtu"]
+
+[ext_resource type="PackedScene" uid="uid://clsi18l1j4hxv" path="res://Unpacked Assets/CardboardBox.glb" id="1_2c7l8"]
+[ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_ys21h"]
+[ext_resource type="Texture2D" uid="uid://71j8k38srcry" path="res://Unpacked Assets/CardboardBox_cbox.png" id="3_0djgd"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hw7r3"]
+render_priority = 0
+shader = ExtResource("2_ys21h")
+shader_parameter/color_texture = ExtResource("3_0djgd")
+shader_parameter/vertex_wobble = 0.999999977648
+shader_parameter/affine_mapping = 0.1499999966472
+
+[node name="CardboardBox" instance=ExtResource("1_2c7l8")]
+
+[node name="box" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_hw7r3")

@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8o8e5u30dq8g"]
+
+[ext_resource type="PackedScene" uid="uid://dgsirc3u0rgtx" path="res://Unpacked Assets/Crate.glb" id="1_nt7y0"]
+[ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_mht4d"]
+[ext_resource type="Texture2D" uid="uid://dax6028w8o1wx" path="res://Unpacked Assets/Crate_crate.png" id="3_1cm1q"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ltgbq"]
+render_priority = 0
+shader = ExtResource("2_mht4d")
+shader_parameter/color_texture = ExtResource("3_1cm1q")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.15
+
+[node name="Crate" instance=ExtResource("1_nt7y0")]
+
+[node name="crate" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_ltgbq")
