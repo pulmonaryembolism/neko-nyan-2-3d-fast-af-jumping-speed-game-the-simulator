@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbo5vwby3lip7"
-path.s3tc="res://.godot/imported/SingleStreetlight_Edges.png-b64d4479035bcb29cc3f4c5e3d882e55.s3tc.ctex"
+uid="uid://bpkxqw7mh4uev"
+path.s3tc="res://.godot/imported/SingleSreetlight_metal_texture.webp-91abd2d1420e62d4abfd40d33433e1cd.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "49af0548b9ad09e4f4b573ac028b00b3"
+"md5": "beb125f3190628968ea5d3d59fc27179"
 }
 
 [deps]
 
-source_file="res://Unpacked Assets/SingleStreetlight_Edges.png"
-dest_files=["res://.godot/imported/SingleStreetlight_Edges.png-b64d4479035bcb29cc3f4c5e3d882e55.s3tc.ctex"]
+source_file="res://Unpacked Assets/SingleSreetlight_metal_texture.webp"
+dest_files=["res://.godot/imported/SingleSreetlight_metal_texture.webp-91abd2d1420e62d4abfd40d33433e1cd.s3tc.ctex"]
 
 [params]
 

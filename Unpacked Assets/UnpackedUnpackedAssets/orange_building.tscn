@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://dv3w1whidj1vf"]
+
+[ext_resource type="PackedScene" uid="uid://md1hqqv0am8r" path="res://Unpacked Assets/OrangeBuilding.glb" id="1_6cdxg"]
+[ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_4bumt"]
+[ext_resource type="Texture2D" uid="uid://bdbf3uwm1txg6" path="res://Unpacked Assets/OrangeBuilding_city_texture7.jpg" id="3_7a0cs"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_g57ue"]
+render_priority = 0
+shader = ExtResource("2_4bumt")
+shader_parameter/color_texture = ExtResource("3_7a0cs")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.15
+
+[node name="OrangeBuilding" instance=ExtResource("1_6cdxg")]
+
+[node name="Building2" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_g57ue")

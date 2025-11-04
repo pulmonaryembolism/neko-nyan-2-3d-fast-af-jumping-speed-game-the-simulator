@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3 uid="uid://cfjx3u1rgvx0t"]
+
+[ext_resource type="PackedScene" uid="uid://chnansg4nwswk" path="res://Unpacked Assets/ShiftBillboard.glb" id="1_ie1gv"]
+[ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_2qa2b"]
+[ext_resource type="Texture2D" uid="uid://b2wgq665hs7tk" path="res://Unpacked Assets/ShiftBillboard_shift_Billboard.jpg" id="3_2yokp"]
+[ext_resource type="Texture2D" uid="uid://deu3frfnexs5k" path="res://Unpacked Assets/ShiftBillboard_EdgesRetexturedPSX.png" id="4_nea67"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2eihl"]
+render_priority = 0
+shader = ExtResource("2_2qa2b")
+shader_parameter/color_texture = ExtResource("3_2yokp")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.15
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fm7se"]
+render_priority = 0
+shader = ExtResource("2_2qa2b")
+shader_parameter/color_texture = ExtResource("4_nea67")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.15
+
+[node name="ShiftBillboard" instance=ExtResource("1_ie1gv")]
+
+[node name="shift_board" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_2eihl")
+surface_material_override/1 = SubResource("ShaderMaterial_fm7se")
