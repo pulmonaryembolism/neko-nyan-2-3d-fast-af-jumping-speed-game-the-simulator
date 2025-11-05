@@ -1,11 +1,24 @@
-[gd_scene load_steps=28 format=3 uid="uid://cil2vjwrmwraf"]
+[gd_scene load_steps=41 format=3 uid="uid://cil2vjwrmwraf"]
 
 [ext_resource type="PackedScene" uid="uid://dvdsmpactuuv0" path="res://Character/character_body.tscn" id="1_qc4db"]
 [ext_resource type="Script" uid="uid://cb1fev18bvi6e" path="res://game.gd" id="1_ys1qc"]
 [ext_resource type="Shader" uid="uid://dgxelk4fpflp1" path="res://Shaders/checkerboard.gdshader" id="2_ys1qc"]
 [ext_resource type="ArrayMesh" uid="uid://c80sqyv3se17c" path="res://Assets/Neko.obj" id="3_35xla"]
+[ext_resource type="PackedScene" uid="uid://clsi18l1j4hxv" path="res://Unpacked Assets/CardboardBox.glb" id="3_kuf18"]
+[ext_resource type="PackedScene" uid="uid://dgsirc3u0rgtx" path="res://Unpacked Assets/Crate.glb" id="4_q8sys"]
 [ext_resource type="AudioStream" uid="uid://bre3388at1ge7" path="res://Sounds/eaykjbgkbdf125.mp3" id="5_35xla"]
 [ext_resource type="AudioStream" uid="uid://b3qq2sgevoqgk" path="res://Sounds/city_ambience.mp3" id="6_i3aeo"]
+[ext_resource type="PackedScene" uid="uid://bxwkvcykh08ov" path="res://Unpacked Assets/WallJumpBillboard.glb" id="7_iaow0"]
+[ext_resource type="PackedScene" uid="uid://c7cg0xlnl6mb8" path="res://Unpacked Assets/WASDBillboard.glb" id="8_qpfo2"]
+[ext_resource type="PackedScene" uid="uid://chnansg4nwswk" path="res://Unpacked Assets/ShiftBillboard.glb" id="9_yb21e"]
+[ext_resource type="PackedScene" uid="uid://bml0avndx07o2" path="res://Unpacked Assets/JumpBillboard.glb" id="10_aees8"]
+[ext_resource type="PackedScene" uid="uid://md1hqqv0am8r" path="res://Unpacked Assets/OrangeBuilding.glb" id="11_mie3u"]
+[ext_resource type="PackedScene" uid="uid://bnmjifo6bqc1v" path="res://Unpacked Assets/Whitebuilding2.glb" id="12_0qy5o"]
+[ext_resource type="PackedScene" uid="uid://b3a7wvdj6qgyu" path="res://Unpacked Assets/WhiteBuilding1.glb" id="13_7nf3m"]
+[ext_resource type="PackedScene" uid="uid://bb8pajc6pyjv0" path="res://Unpacked Assets/BlueBuilding.glb" id="14_2ocox"]
+[ext_resource type="PackedScene" uid="uid://i3pvsp1scedj" path="res://Unpacked Assets/NightBuilding.glb" id="15_0qy5o"]
+[ext_resource type="PackedScene" uid="uid://sowlhcidwhm2" path="res://Unpacked Assets/StraightStairs.glb" id="18_n0wup"]
+[ext_resource type="PackedScene" uid="uid://c1uqq88g7f2gt" path="res://Unpacked Assets/FireEscapeStairs.glb" id="19_q8sys"]
 
 [sub_resource type="Environment" id="Environment_i3aeo"]
 volumetric_fog_enabled = true
@@ -116,7 +129,7 @@ process_mode = 3
 script = ExtResource("1_ys1qc")
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("1_qc4db")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.432564, 1.8678894, 34.187057)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 21.7987, 29.2276, 40.308746)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_i3aeo")
@@ -124,7 +137,7 @@ camera_attributes = SubResource("CameraAttributesPractical_8uh7m")
 compositor = SubResource("Compositor_6uqi0")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
-transform = Transform3D(0.73981, 0.304215, 0.600112, -0.0820551, -0.844487, 0.529253, 0.667794, -0.440789, -0.599798, 0, 8.98944, 0)
+transform = Transform3D(0.73980975, 0.30421537, 0.6001121, -0.08205507, -0.8444871, 0.5292529, 0.66779375, -0.4407887, -0.5997973, 0, 92.38321, 47.75855)
 shadow_enabled = true
 
 [node name="WanPrototype" type="StaticBody3D" parent="."]
@@ -247,7 +260,7 @@ size = Vector3(4.78174, 0.193848, 3.06354)
 material = SubResource("ShaderMaterial_ehkex")
 
 [node name="Neko" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.50140995, 0, 0, 0, 0.50140995, 0, 0, 0, 0.50140995, -49.409573, -0.719265, 34.70421)
+transform = Transform3D(0.50140995, 0, 0, 0, 0.50140995, 0, 0, 0, 0.50140995, -107.09769, -0.719265, 34.70421)
 material_override = SubResource("StandardMaterial3D_6uqi0")
 material_overlay = SubResource("ShaderMaterial_xersf")
 mesh = ExtResource("3_35xla")
@@ -269,3 +282,93 @@ volume_db = 10.0
 autoplay = true
 emission_angle_enabled = true
 emission_angle_degrees = 24.1
+
+[node name="WallJumpBillboard" parent="." instance=ExtResource("7_iaow0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.5563965, 2.3037977, -90.12402)
+
+[node name="WASDBillboard" parent="WallJumpBillboard" instance=ExtResource("8_qpfo2")]
+transform = Transform3D(0.5945106, 0, 0.85332114, 0, 1.04, 0, -0.85332114, 0, 0.5945106, 9.61758, 33.082005, 158.06839)
+
+[node name="ShiftBillboard" parent="WallJumpBillboard" instance=ExtResource("9_yb21e")]
+transform = Transform3D(0.544871, 0, -0.33573145, 0, 0.64, 0, 0.33573145, 0, 0.544871, 13.430567, 27.162918, 110.12442)
+
+[node name="JumpBillboard" parent="WallJumpBillboard" instance=ExtResource("10_aees8")]
+transform = Transform3D(0.7547668, 0, 0.65599316, 0, 1, 0, -0.65599316, 0, 0.7547668, -15.604969, 38.938473, 155.93727)
+
+[node name="OrangeBuilding" parent="WallJumpBillboard" instance=ExtResource("11_mie3u")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 44.625237, -5.969022, 130.44734)
+
+[node name="OrangeBuilding4" parent="WallJumpBillboard" instance=ExtResource("11_mie3u")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 18.566711, -5.969022, 130.44734)
+
+[node name="OrangeBuilding2" parent="WallJumpBillboard" instance=ExtResource("11_mie3u")]
+transform = Transform3D(0.55, 0, 0, 0, 0.55, 0, 0, 0, 0.55, 7.4588127, 10.421897, 159.85034)
+
+[node name="OrangeBuilding5" parent="WallJumpBillboard" instance=ExtResource("11_mie3u")]
+transform = Transform3D(0.73, 0, 0, 0, 0.73, 0, 0, 0, 0.73, 8.957462, 82.82915, 185.55525)
+
+[node name="OrangeBuilding7" parent="WallJumpBillboard" instance=ExtResource("11_mie3u")]
+transform = Transform3D(0.73, 0, 0, 0, 0.73, 0, 0, 0, 0.73, -40.189148, 19.957344, 112.73347)
+
+[node name="OrangeBuilding3" parent="WallJumpBillboard" instance=ExtResource("11_mie3u")]
+transform = Transform3D(0.55, 0, 0, 0, 0.55, 0, 0, 0, 0.55, -4.0850105, 16.316689, 107.43787)
+
+[node name="OrangeBuilding6" parent="WallJumpBillboard" instance=ExtResource("11_mie3u")]
+transform = Transform3D(0.68, 0, 0, 0, 0.68, 0, 0, 0, 0.68, 34.63514, 58.89969, 106.432236)
+
+[node name="Whitebuilding2" parent="WallJumpBillboard" instance=ExtResource("12_0qy5o")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 10.790865, 10.978091, 109.01774)
+
+[node name="Whitebuilding4" parent="WallJumpBillboard" instance=ExtResource("12_0qy5o")]
+transform = Transform3D(0.66, 0, 0, 0, 0.66, 0, 0, 0, 0.66, -38.506184, 18.257965, 131.0393)
+
+[node name="Whitebuilding3" parent="WallJumpBillboard" instance=ExtResource("12_0qy5o")]
+transform = Transform3D(0.78, 0, 0, 0, 0.78, 0, 0, 0, 0.78, 9.017715, 29.76936, 184.32065)
+
+[node name="Whitebuilding5" parent="WallJumpBillboard" instance=ExtResource("12_0qy5o")]
+transform = Transform3D(0.56, 0, 0, 0, 0.56, 0, 0, 0, 0.56, -3.5474243, 55.09699, 108.734024)
+
+[node name="WhiteBuilding1" parent="WallJumpBillboard" instance=ExtResource("13_7nf3m")]
+transform = Transform3D(0.84, 0, 0, 0, 0.84, 0, 0, 0, 0.84, 40.637104, 22.491688, 171.80353)
+
+[node name="WhiteBuilding2" parent="WallJumpBillboard" instance=ExtResource("13_7nf3m")]
+transform = Transform3D(1.45, 0, 0, 0, 1.45, 0, 0, 0, 1.45, -58.616898, 27.670975, 175.576)
+
+[node name="WhiteBuilding3" parent="WallJumpBillboard" instance=ExtResource("13_7nf3m")]
+transform = Transform3D(1.45, 0, 0, 0, 1.45, 0, 0, 0, 1.45, -58.616898, 27.670975, 175.576)
+
+[node name="BlueBuilding" parent="WallJumpBillboard" instance=ExtResource("14_2ocox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.6838, 31.600822, 178.26443)
+
+[node name="BlueBuilding3" parent="WallJumpBillboard" instance=ExtResource("14_2ocox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.639618, 16.22536, 106.42151)
+
+[node name="BlueBuilding2" parent="WallJumpBillboard" instance=ExtResource("14_2ocox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.4049, 0.27907848, 127.37039)
+
+[node name="BlueBuilding4" parent="WallJumpBillboard" instance=ExtResource("14_2ocox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.669716, 65.378456, 170.18408)
+
+[node name="NightBuilding" parent="WallJumpBillboard" instance=ExtResource("15_0qy5o")]
+transform = Transform3D(0.55, 0, 0, 0, 0.55, 0, 0, 0, 0.55, -18.278019, 16.378792, 156.98434)
+
+[node name="NightBuilding2" parent="WallJumpBillboard" instance=ExtResource("15_0qy5o")]
+transform = Transform3D(1.13, 0, 0, 0, 1.13, 0, 0, 0, 1.13, -26.547516, 36.57404, 219.47372)
+
+[node name="StraightStairs2" parent="WallJumpBillboard" instance=ExtResource("18_n0wup")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -16.506659, 31.835712, 111.36363)
+
+[node name="FireEscapeStairs" parent="WallJumpBillboard" instance=ExtResource("19_q8sys")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -16.41815, 24.576397, 111.3144)
+
+[node name="FireEscapeStairs2" parent="WallJumpBillboard" instance=ExtResource("19_q8sys")]
+transform = Transform3D(-0.3, 0, -2.6226834e-08, 0, 0.3, 0, 2.6226834e-08, 0, -0.3, -14.260958, 28.224388, 111.431595)
+
+[node name="CardboardBox" parent="WallJumpBillboard" instance=ExtResource("3_kuf18")]
+transform = Transform3D(0.2910456, 0, 0.07274929, 0, 0.29999998, 0, -0.07274929, 0, 0.2910456, 11.716633, 22.97248, 137.328)
+
+[node name="CardboardBox2" parent="WallJumpBillboard" instance=ExtResource("3_kuf18")]
+transform = Transform3D(0.2841345, 0, -0.09626819, 0, 0.29999998, 0, 0.09626819, 0, 0.2841345, 12.487551, 22.97248, 139.29297)
+
+[node name="Crate" parent="WallJumpBillboard" instance=ExtResource("4_q8sys")]
+transform = Transform3D(0.47454533, 0, 0.15750155, 0, 0.5, 0, -0.15750155, 0, 0.47454533, 8.959716, 23.193825, 138.38031)
