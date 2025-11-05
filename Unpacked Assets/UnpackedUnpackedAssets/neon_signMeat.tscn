@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3 uid="uid://dtcqdkpcgxxqm"]
+
+[ext_resource type="PackedScene" uid="uid://b3a15lmp403gi" path="res://Unpacked Assets/NeonSign.glb" id="1_5t4fg"]
+[ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_xqfgk"]
+[ext_resource type="Texture2D" uid="uid://dtxaho85pucyy" path="res://Unpacked Assets/NeonSign_TEXTNEONPSX.png" id="3_yhbco"]
+[ext_resource type="Texture2D" uid="uid://bbjjqfvd0u230" path="res://Unpacked Assets/NeonSign_BACKBOARDTEXTUREPSX.png" id="4_gbki0"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7rvfq"]
+render_priority = 0
+shader = ExtResource("2_xqfgk")
+shader_parameter/color_texture = ExtResource("3_yhbco")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.15
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_t3sip"]
+render_priority = 0
+shader = ExtResource("2_xqfgk")
+shader_parameter/color_texture = ExtResource("4_gbki0")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.15
+
+[node name="NeonSign2" instance=ExtResource("1_5t4fg")]
+
+[node name="NeonSign" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_7rvfq")
+surface_material_override/1 = SubResource("ShaderMaterial_t3sip")

@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://cwpqbll1xe80q"]
+
+[ext_resource type="PackedScene" uid="uid://by38ewf4kiurd" path="res://Unpacked Assets/SingleSreetlight.glb" id="1_l2d3m"]
+[ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_4bvda"]
+[ext_resource type="Texture2D" uid="uid://bpkxqw7mh4uev" path="res://Unpacked Assets/SingleSreetlight_metal_texture.webp" id="3_ud2ig"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q3sxm"]
+render_priority = 0
+shader = ExtResource("2_4bvda")
+shader_parameter/color_texture = ExtResource("3_ud2ig")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.15
+
+[node name="SingleSreetlight" instance=ExtResource("1_l2d3m")]
+
+[node name="Streetlight" parent="." index="0"]
+surface_material_override/1 = SubResource("ShaderMaterial_q3sxm")

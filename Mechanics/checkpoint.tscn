@@ -1,6 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://msbxa4di1xk"]
+[gd_scene load_steps=4 format=3 uid="uid://ckq0wuodht4xa"]
 
-[ext_resource type="Script" path="res://Mechanics/checkpoint.gd" id="1_5nv6f"]
+[ext_resource type="Script" uid="uid://r7uft03yw55y" path="res://Mechanics/checkpoint.gd" id="1_t1csw"]
 
-[node name="Checkpoint" type="Node3D"]
-script = ExtResource("1_5nv6f")
+[sub_resource type="SphereShape3D" id="SphereShape3D_8yx64"]
+radius = 0.98678416
+
+[sub_resource type="SphereMesh" id="SphereMesh_t1csw"]
+
+[node name="Checkpoint" type="Area3D"]
+script = ExtResource("1_t1csw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_8yx64")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
+transform = Transform3D(2.0340607, 0, 0, 0, 1.7913904, 0, 0, 0, 2.0608554, 0, 0, 0)
+mesh = SubResource("SphereMesh_t1csw")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

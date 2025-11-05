@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3 uid="uid://b8ra431hsaixc"]
+
+[ext_resource type="PackedScene" uid="uid://c7cg0xlnl6mb8" path="res://Unpacked Assets/WASDBillboard.glb" id="1_gnhuq"]
+[ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_yhqad"]
+[ext_resource type="Texture2D" uid="uid://dl7ltdksjcdo5" path="res://Unpacked Assets/WASDBillboard_WASD_Billboard.jpg" id="3_rr7vm"]
+[ext_resource type="Texture2D" uid="uid://c0e3h00tm3xa1" path="res://Unpacked Assets/WASDBillboard_EdgesRetexturedPSX.png" id="4_ykb6y"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7d45q"]
+render_priority = 0
+shader = ExtResource("2_yhqad")
+shader_parameter/color_texture = ExtResource("3_rr7vm")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.15
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_le5gn"]
+render_priority = 0
+shader = ExtResource("2_yhqad")
+shader_parameter/color_texture = ExtResource("4_ykb6y")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.15
+
+[node name="WASDBillboard" instance=ExtResource("1_gnhuq")]
+
+[node name="wasd_board" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_7d45q")
+surface_material_override/1 = SubResource("ShaderMaterial_le5gn")
