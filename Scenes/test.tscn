@@ -31,7 +31,7 @@
 [sub_resource type="Environment" id="Environment_i3aeo"]
 volumetric_fog_enabled = true
 volumetric_fog_density = 0.028
-volumetric_fog_albedo = Color(1.699, 1.663, 1.735, 1)
+volumetric_fog_albedo = Color(0.8314727, 0.61107963, 0.8450046, 1)
 volumetric_fog_length = 295.22
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_8uh7m"]
@@ -2151,11 +2151,7 @@ size = Vector3(4.78174, 0.193848, 3.06354)
 material = SubResource("ShaderMaterial_ehkex")
 
 [node name="Neko" type="MeshInstance3D" parent="."]
-<<<<<<< Updated upstream
 transform = Transform3D(-2.1917325e-08, 0, 0.50140995, 0, 0.50140995, 0, -0.50140995, 0, -2.1917325e-08, 1843.7509, -0.719265, -196.59158)
-=======
-transform = Transform3D(-2.1917325e-08, 0, 0.50140995, 0, 0.50140995, 0, -0.50140995, 0, -2.1917325e-08, 1935.0017, -0.719265, -200.4578)
->>>>>>> Stashed changes
 material_override = SubResource("StandardMaterial3D_6uqi0")
 material_overlay = SubResource("ShaderMaterial_xersf")
 mesh = ExtResource("3_35xla")
@@ -2234,12 +2230,8 @@ skeleton = NodePath("../CityCrafter")
 shape = SubResource("ConcavePolygonShape3D_jm0wb")
 
 [node name="CityCrafter" type="Node3D" parent="."]
-<<<<<<< Updated upstream
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.166977, 0, 566.5345)
 visible = false
-=======
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.166977, 0, 303.3968)
->>>>>>> Stashed changes
 script = ExtResource("20_wojap")
 city_configuration = SubResource("Resource_wjyqs")
 metadata/_custom_type_script = "uid://dvlgclv0w1a38"
