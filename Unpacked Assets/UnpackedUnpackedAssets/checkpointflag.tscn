@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://bgm82p10a27cp"]
+
+[ext_resource type="PackedScene" uid="uid://cg8we1n2tnmss" path="res://Unpacked Assets/checkpointflag.glb" id="1_wuve3"]
+[ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_3tl0s"]
+[ext_resource type="Texture2D" uid="uid://cr34fu1fwwdbu" path="res://Unpacked Assets/checkpointflag_FlagPSX.png" id="3_v48he"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yunrg"]
+render_priority = 0
+shader = ExtResource("2_3tl0s")
+shader_parameter/color_texture = ExtResource("3_v48he")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.0
+
+[node name="checkpointflag" instance=ExtResource("1_wuve3")]
+
+[node name="Flag" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_yunrg")

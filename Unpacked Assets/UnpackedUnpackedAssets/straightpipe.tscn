@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://6dgpi6dyo2fa"]
+
+[ext_resource type="PackedScene" uid="uid://y3022yxo2pco" path="res://Unpacked Assets/Straightpipe.glb" id="1_6wa1v"]
+[ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_niypt"]
+[ext_resource type="Texture2D" uid="uid://lrnl4y1bltff" path="res://Unpacked Assets/Straightpipe_StraightPipePSX2.png" id="3_fqki7"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7buqt"]
+render_priority = 0
+shader = ExtResource("2_niypt")
+shader_parameter/color_texture = ExtResource("3_fqki7")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.15
+
+[node name="Straightpipe" instance=ExtResource("1_6wa1v")]
+
+[node name="StraightPipe" parent="." index="1"]
+surface_material_override/0 = SubResource("ShaderMaterial_7buqt")

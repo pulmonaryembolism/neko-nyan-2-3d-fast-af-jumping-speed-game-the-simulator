@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://3gq32aggp2yp"]
+
+[ext_resource type="PackedScene" uid="uid://c55j4eusk7rie" path="res://Unpacked Assets/spike.glb" id="1_oo5xr"]
+[ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_xb7r0"]
+[ext_resource type="Texture2D" uid="uid://da3hfoxrl5lr5" path="res://Unpacked Assets/spike_SpikePSX.png" id="3_nx7bx"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vlpq0"]
+render_priority = 0
+shader = ExtResource("2_xb7r0")
+shader_parameter/color_texture = ExtResource("3_nx7bx")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.15
+
+[node name="spike" instance=ExtResource("1_oo5xr")]
+
+[node name="Spike" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_vlpq0")
