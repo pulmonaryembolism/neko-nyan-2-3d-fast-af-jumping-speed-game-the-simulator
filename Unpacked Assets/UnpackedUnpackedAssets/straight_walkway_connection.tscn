@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cb6bwq2h3f1ba"]
+[gd_scene load_steps=8 format=3 uid="uid://bws716dvs3j7s"]
 
 [ext_resource type="PackedScene" uid="uid://dmvw6lvdky18y" path="res://Unpacked Assets/StraightWalkwayConnection.glb" id="1_el05s"]
 [ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_p0vfg"]
@@ -19,8 +19,23 @@ shader_parameter/color_texture = ExtResource("5_xgucb")
 shader_parameter/vertex_wobble = 1.0
 shader_parameter/affine_mapping = 0.15
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_80xcg"]
+size = Vector3(5.817322, 16.438904, 0.3184204)
+
 [node name="StraightWalkwayConnection" instance=ExtResource("1_el05s")]
 
 [node name="Straight_Walkway" parent="." index="0"]
 surface_material_override/0 = SubResource("ShaderMaterial_8t3os")
 surface_material_override/2 = SubResource("ShaderMaterial_7l026")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="cube" index="0"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.029704, 0.123687744, -0.507471)
+shape = SubResource("BoxShape3D_80xcg")
+
+[node name="CollisionShape3D" parent="cube" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.18105924, 0.041229248, 2.3058584)
+shape = SubResource("BoxShape3D_80xcg")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="cube" index="2"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4.040221, 0.082458496, -0.48809257)
+shape = SubResource("BoxShape3D_80xcg")
