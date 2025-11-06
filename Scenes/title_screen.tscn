@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://b8y7dd5itfa1i"]
+[gd_scene load_steps=3 format=3 uid="uid://b8y7dd5itfa1i"]
 
 [ext_resource type="Script" uid="uid://c1qnij00u7f5e" path="res://title_screen.gd" id="1_klylv"]
+[ext_resource type="Texture2D" uid="uid://c2u8t5l65r27r" path="res://Unpacked Assets/FireEscapeStairs_PolesImageALTERNATIVEPSX.png" id="2_p3fck"]
 
 [node name="TitleScreen" type="Control"]
 process_mode = 3
@@ -11,6 +12,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_klylv")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -28.999998
+offset_top = -16.000002
+offset_right = 227.0
+offset_bottom = 240.0
+scale = Vector2(7.816903, 4.4571695)
+texture = ExtResource("2_p3fck")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
