@@ -10,14 +10,14 @@ render_priority = 0
 shader = ExtResource("2_xqfgk")
 shader_parameter/color_texture = ExtResource("3_yhbco")
 shader_parameter/vertex_wobble = 1.0
-shader_parameter/affine_mapping = 0.15
+shader_parameter/affine_mapping = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_t3sip"]
 render_priority = 0
 shader = ExtResource("2_xqfgk")
 shader_parameter/color_texture = ExtResource("4_gbki0")
 shader_parameter/vertex_wobble = 1.0
-shader_parameter/affine_mapping = 0.15
+shader_parameter/affine_mapping = 0.0
 
 [node name="NeonSign2" instance=ExtResource("1_5t4fg")]
 

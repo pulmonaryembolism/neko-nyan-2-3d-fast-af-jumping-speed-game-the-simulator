@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=4 uid="uid://j4u3hr3xl6h0"]
+[gd_scene load_steps=5 format=3 uid="uid://j4u3hr3xl6h0"]
 
 [ext_resource type="PackedScene" uid="uid://bb8pajc6pyjv0" path="res://Unpacked Assets/BlueBuilding.glb" id="1_f14k8"]
 [ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_p807k"]
@@ -8,56 +8,11 @@
 render_priority = 0
 shader = ExtResource("2_p807k")
 shader_parameter/color_texture = ExtResource("3_qov3j")
-shader_parameter/vertex_wobble = 1.0
-shader_parameter/affine_mapping = 0.15
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_va1qd"]
-resource_name = "Material"
-cull_mode = 2
-shading_mode = 0
-albedo_texture = ExtResource("3_qov3j")
-texture_filter = 2
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_mxygj"]
-_surfaces = [{
-"aabb": AABB(-11.817478, -21.716175, -9.885189, 23.634956, 43.432346, 19.770378),
-"format": 34896613377,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAAADAAEAAgABAAQAAwAEAAEABQAAAAIABQADAAAAAgAEAAYABQACAAYAAwAHAAQABQAHAAMABwAGAAQABwAFAAYA"),
-"name": "Material",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 8,
-"vertex_data": PackedByteArray("//8AAAAAAAD///////8AAP////8AAAAA//8AAP//AAAAAP////8AAAAAAAAAAAAAAAD//wAAAAAAAAAA//8AAA==")
-}]
-blend_shape_mode = 0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_bc2wb"]
-resource_name = "BlueBuilding_Cube_002"
-_surfaces = [{
-"aabb": AABB(-11.817478, -21.716175, -9.885189, 23.634956, 43.432346, 19.770378),
-"attribute_data": PackedByteArray("8f8GlA3AsSnx/7EpDcAGlGNqIpQNAPH/DQAilGNq8f8NADgo8T8GlA0ABpTxPzgo8b8GlA2AsSnxv7EpDYAGlPF/BpQNQDgo8X84KA1ABpR/avH/1dQilNXU8f9/aiKU"),
-"format": 34896613399,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
-"material": SubResource("StandardMaterial3D_va1qd"),
-"name": "Material",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 24,
-"vertex_data": PackedByteArray("//8AAAAA/7//////////v/////8AAP+///8AAP///78AAAAAAAD///////8AAP//AAD//wAA/////wAAAAD//wAAAAAAAFTV//8AAP//VNX//wAAAABU1QAAAAD//1TVAAAAAP///78AAP//AAD/vwAA//////+/AAAAAAAA/7//////AABU1QAA/////1TVAAD//wAAVNX///////9U1f//AAD///+/AAD//////7//////////vwAAAAD///+//38AAP9/AAD/fwAA/38AAP8//7//P/+//z//v/8//7+qKlTVqipU1aoqVNWqKlTV/3////9/////f////3///1TVqipU1aoqVNWqKlTVqir/////////////////////")
-}]
-blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_mxygj")
+shader_parameter/vertex_wobble = 0.999999977648
+shader_parameter/affine_mapping = 0.0
 
 [node name="BlueBuilding" instance=ExtResource("1_f14k8")]
 
 [node name="Building_blue" parent="." index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10865021, -3.8146973e-06, 0.05934906)
-surface_material_override/0 = SubResource("ShaderMaterial_mw4o4")
-
-[node name="Building_blue" type="MeshInstance3D" parent="Building_blue" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10865021, -3.8146973e-06, 0.05934906)
-mesh = SubResource("ArrayMesh_bc2wb")
-skeleton = NodePath("")
 surface_material_override/0 = SubResource("ShaderMaterial_mw4o4")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://m0fnp87jr2rj"]
+[gd_scene load_steps=5 format=3 uid="uid://bml5aj3ifj8of"]
 
 [ext_resource type="PackedScene" uid="uid://d2avo2rh1255d" path="res://Unpacked Assets/SidewalkStraight.glb" id="1_dvlwb"]
 [ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_8d571"]
@@ -9,7 +9,7 @@ render_priority = 0
 shader = ExtResource("2_8d571")
 shader_parameter/color_texture = ExtResource("3_hpcic")
 shader_parameter/vertex_wobble = 1.0
-shader_parameter/affine_mapping = 0.15
+shader_parameter/affine_mapping = 0.0
 
 [node name="SidewalkStraight" instance=ExtResource("1_dvlwb")]
 
