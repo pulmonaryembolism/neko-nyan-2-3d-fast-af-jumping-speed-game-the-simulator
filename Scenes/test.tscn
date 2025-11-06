@@ -1,4 +1,4 @@
-[gd_scene load_steps=675 format=3 uid="uid://cil2vjwrmwraf"]
+[gd_scene load_steps=674 format=3 uid="uid://cil2vjwrmwraf"]
 
 [ext_resource type="Script" uid="uid://cb1fev18bvi6e" path="res://game.gd" id="1_ys1qc"]
 [ext_resource type="PackedScene" uid="uid://djm4nldmulyqq" path="res://Mechanics/spawn_point.tscn" id="2_pgu05"]
@@ -11,20 +11,19 @@
 [ext_resource type="PackedScene" uid="uid://b3a7wvdj6qgyu" path="res://Unpacked Assets/WhiteBuilding1.glb" id="13_7nf3m"]
 [ext_resource type="PackedScene" uid="uid://bb8pajc6pyjv0" path="res://Unpacked Assets/BlueBuilding.glb" id="14_2ocox"]
 [ext_resource type="PackedScene" uid="uid://i3pvsp1scedj" path="res://Unpacked Assets/NightBuilding.glb" id="15_0qy5o"]
-[ext_resource type="PackedScene" uid="uid://c1uqq88g7f2gt" path="res://Unpacked Assets/FireEscapeStairs.glb" id="19_q8sys"]
-[ext_resource type="PackedScene" uid="uid://b8ra431hsaixc" path="res://Unpacked Assets/UnpackedUnpackedAssets/wasd_billboard.tscn" id="19_wojap"]
-[ext_resource type="PackedScene" uid="uid://cfjx3u1rgvx0t" path="res://Unpacked Assets/UnpackedUnpackedAssets/shift_billboard.tscn" id="20_copon"]
+[ext_resource type="PackedScene" uid="uid://bv2ob3gbvwi02" path="res://Unpacked Assets/UnpackedUnpackedAssets/wasd_billboard.tscn" id="19_wojap"]
+[ext_resource type="PackedScene" uid="uid://dxu865tb0cnfe" path="res://Unpacked Assets/UnpackedUnpackedAssets/shift_billboard.tscn" id="20_copon"]
 [ext_resource type="Script" uid="uid://dvlgclv0w1a38" path="res://addons/citycrafter/citycrafter.gd" id="20_wojap"]
 [ext_resource type="Script" uid="uid://bdjvc6rbjwwvg" path="res://addons/citycrafter/city_configuration.gd" id="21_copon"]
 [ext_resource type="PackedScene" uid="uid://be3fbggq3i3h" path="res://Unpacked Assets/UnpackedUnpackedAssets/jump_billboard.tscn" id="21_kxtw2"]
 [ext_resource type="PackedScene" uid="uid://hqkjth54vrtu" path="res://Unpacked Assets/UnpackedUnpackedAssets/cardboard_box.tscn" id="21_wjyqs"]
-[ext_resource type="PackedScene" uid="uid://wptmu3tt2j0a" path="res://Unpacked Assets/UnpackedUnpackedAssets/wall_jump_billboard.tscn" id="22_kxtw2"]
+[ext_resource type="PackedScene" uid="uid://b3hqdv66li4kq" path="res://Unpacked Assets/UnpackedUnpackedAssets/wall_jump_billboard.tscn" id="22_kxtw2"]
 [ext_resource type="PackedScene" uid="uid://j4u3hr3xl6h0" path="res://Unpacked Assets/UnpackedUnpackedAssets/blue_building.tscn" id="22_pgu05"]
-[ext_resource type="PackedScene" uid="uid://dx2p32n1hbopl" path="res://Unpacked Assets/UnpackedUnpackedAssets/night_building.tscn" id="23_3nkef"]
-[ext_resource type="PackedScene" uid="uid://bqgslumwjva4w" path="res://Unpacked Assets/UnpackedUnpackedAssets/white_building_1.tscn" id="24_vpf1r"]
-[ext_resource type="PackedScene" uid="uid://drmeukqcmj02m" path="res://Unpacked Assets/UnpackedUnpackedAssets/whitebuilding_2.tscn" id="25_m64o6"]
-[ext_resource type="PackedScene" uid="uid://dv3w1whidj1vf" path="res://Unpacked Assets/UnpackedUnpackedAssets/orange_building.tscn" id="26_55gk5"]
-[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/straight_walkway_connection_2.tscn" id="26_pgu05"]
+[ext_resource type="PackedScene" uid="uid://buhogafmbcico" path="res://Unpacked Assets/UnpackedUnpackedAssets/night_building.tscn" id="23_3nkef"]
+[ext_resource type="PackedScene" uid="uid://by8f8u33576j2" path="res://Unpacked Assets/UnpackedUnpackedAssets/white_building_1.tscn" id="24_vpf1r"]
+[ext_resource type="PackedScene" uid="uid://824e6fu6micu" path="res://Unpacked Assets/UnpackedUnpackedAssets/whitebuilding_2.tscn" id="25_m64o6"]
+[ext_resource type="PackedScene" uid="uid://cnqp2jmbwtf4c" path="res://Unpacked Assets/UnpackedUnpackedAssets/orange_building.tscn" id="26_55gk5"]
+[ext_resource type="PackedScene" uid="uid://dyt1uh4g2mmih" path="res://Unpacked Assets/UnpackedUnpackedAssets/straight_walkway_connection_2.tscn" id="26_pgu05"]
 [ext_resource type="PackedScene" uid="uid://bhgvqoj0smgwv" path="res://Unpacked Assets/ac_unit.glb" id="27_3nkef"]
 [ext_resource type="PackedScene" uid="uid://b1umvew3mm735" path="res://Unpacked Assets/UnpackedUnpackedAssets/fire_escape_stairs.tscn" id="28_m64o6"]
 
@@ -2151,7 +2150,7 @@ size = Vector3(4.78174, 0.193848, 3.06354)
 material = SubResource("ShaderMaterial_ehkex")
 
 [node name="Neko" type="MeshInstance3D" parent="."]
-transform = Transform3D(-2.1917325e-08, 0, 0.50140995, 0, 0.50140995, 0, -0.50140995, 0, -2.1917325e-08, 1843.7509, -0.719265, -196.59158)
+transform = Transform3D(-2.1917325e-08, 0, 0.50140995, 0, 0.50140995, 0, -0.50140995, 0, -2.1917325e-08, 1843.7546, -0.65620804, -196.56964)
 material_override = SubResource("StandardMaterial3D_6uqi0")
 material_overlay = SubResource("ShaderMaterial_xersf")
 mesh = ExtResource("3_35xla")
@@ -2215,9 +2214,6 @@ transform = Transform3D(-4.0214477e-08, 0, 0.92, 0, 0.92, 0, -0.92, 0, -4.021447
 
 [node name="BlueBuilding" parent="." instance=ExtResource("14_2ocox")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1909.0084, 19.338772, -302.11954)
-
-[node name="FireEscapeStairs3" parent="." instance=ExtResource("19_q8sys")]
-transform = Transform3D(3.934025e-08, 0, -0.3, 0, 0.3, 0, 0.3, 0, 3.934025e-08, 1850.8462, 20.544117, -260.37836)
 
 [node name="_MeshInstance3D_61360" type="MeshInstance3D" parent="."]
 transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 1860.833, -2.430418, -304.36206)
@@ -8427,9 +8423,6 @@ transform = Transform3D(1.45, 0, 0, 0, 1.45, 0, 0, 0, 1.45, 1803.7207, 29.932032
 [node name="WhiteBuilding8" parent="." instance=ExtResource("24_vpf1r")]
 transform = Transform3D(1.45, 0, 0, 0, 1.45, 0, 0, 0, 1.45, 1906.7021, 29.932032, -264.2518)
 
-[node name="WhiteBuilding10" parent="." instance=ExtResource("24_vpf1r")]
-transform = Transform3D(0.81, 0, 0, 0, 0.81, 0, 0, 0, 0.81, 1871.4166, 29.932032, -180.49301)
-
 [node name="WhiteBuilding9" parent="." instance=ExtResource("24_vpf1r")]
 transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 1816.5, 0.827, -264.252)
 
@@ -8455,6 +8448,21 @@ transform = Transform3D(-1.3113417e-08, 0, -0.3, 0, 0.3, 0, 0.3, 0, -1.3113417e-
 transform = Transform3D(-1.3113417e-08, 0, 0.3, 0, 0.3, 0, -0.3, 0, -1.3113417e-08, 1841.4553, 32.943554, -303.2706)
 
 [node name="ac_unit" parent="." instance=ExtResource("27_3nkef")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1812.0692, 22.94309, -282.73947)
+transform = Transform3D(-3.14722e-08, 0, 0.72, 0, 0.72, 0, -0.72, 0, -3.14722e-08, 1849.2495, 18.204672, -259.98)
+
+[node name="Whitebuilding3" parent="." instance=ExtResource("25_m64o6")]
+transform = Transform3D(0.66, 0, 0, 0, 0.66, 0, 0, 0, 0.66, 1864.515, 22.61599, -187.86441)
+
+[node name="Whitebuilding10" parent="." instance=ExtResource("25_m64o6")]
+transform = Transform3D(-0.013816546, 0.56533664, 0.07143994, 0.5698298, 0.013926361, 0, -0.0017454353, 0.071418606, -0.56550545, 1846.9479, 17.62149, -187.4934)
+
+[node name="OrangeBuilding" parent="." instance=ExtResource("26_55gk5")]
+transform = Transform3D(0.685, 0, 0, 0, 0.685, 0, 0, 0, 0.685, 1830.9998, 22.942986, -190.28223)
+
+[node name="BlueBuilding2" parent="." instance=ExtResource("22_pgu05")]
+transform = Transform3D(0.59, 0, 0, 0, 0.59, 0, 0, 0, 0.59, 1851.8105, 12.3271675, -156.00194)
+
+[node name="BlueBuilding3" parent="." instance=ExtResource("22_pgu05")]
+transform = Transform3D(0.59, 0, 0, 0, 0.59, 0, 0, 0, 0.59, 1851.8105, 37.87831, -156.00194)
 
 [editable path="SpawnPoint"]
