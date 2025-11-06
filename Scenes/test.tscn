@@ -1,4 +1,4 @@
-[gd_scene load_steps=674 format=3 uid="uid://cil2vjwrmwraf"]
+[gd_scene load_steps=681 format=3 uid="uid://cil2vjwrmwraf"]
 
 [ext_resource type="Script" uid="uid://cb1fev18bvi6e" path="res://game.gd" id="1_ys1qc"]
 [ext_resource type="PackedScene" uid="uid://djm4nldmulyqq" path="res://Mechanics/spawn_point.tscn" id="2_pgu05"]
@@ -24,8 +24,15 @@
 [ext_resource type="PackedScene" uid="uid://824e6fu6micu" path="res://Unpacked Assets/UnpackedUnpackedAssets/whitebuilding_2.tscn" id="25_m64o6"]
 [ext_resource type="PackedScene" uid="uid://cnqp2jmbwtf4c" path="res://Unpacked Assets/UnpackedUnpackedAssets/orange_building.tscn" id="26_55gk5"]
 [ext_resource type="PackedScene" uid="uid://dyt1uh4g2mmih" path="res://Unpacked Assets/UnpackedUnpackedAssets/straight_walkway_connection_2.tscn" id="26_pgu05"]
+[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/bentpipe.tscn" id="27_2jg6l"]
 [ext_resource type="PackedScene" uid="uid://bhgvqoj0smgwv" path="res://Unpacked Assets/ac_unit.glb" id="27_3nkef"]
 [ext_resource type="PackedScene" uid="uid://b1umvew3mm735" path="res://Unpacked Assets/UnpackedUnpackedAssets/fire_escape_stairs.tscn" id="28_m64o6"]
+[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/checkpointflag.tscn" id="28_nlfrn"]
+[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/scaffolding.tscn" id="29_j44qy"]
+[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/straightpipe.tscn" id="30_ipur1"]
+[ext_resource type="PackedScene" uid="uid://dpverg32l8mi3" path="res://Unpacked Assets/UnpackedUnpackedAssets/rooftop_white_2.tscn" id="33_2jg6l"]
+[ext_resource type="PackedScene" uid="uid://jmrfrfn5i3pt" path="res://Unpacked Assets/rooftop_blue.glb" id="33_051wo"]
+[ext_resource type="PackedScene" uid="uid://cs55k2wiik2q7" path="res://Unpacked Assets/UnpackedUnpackedAssets/rooftop_orange.tscn" id="34_nlfrn"]
 
 [sub_resource type="Environment" id="Environment_i3aeo"]
 volumetric_fog_enabled = true
@@ -2019,7 +2026,7 @@ process_mode = 3
 script = ExtResource("1_ys1qc")
 
 [node name="SpawnPoint" parent="." instance=ExtResource("2_pgu05")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1862.4086, 26.0953, -352.49896)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1862.4086, 26.957144, -352.49896)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_i3aeo")
@@ -8397,7 +8404,7 @@ transform = Transform3D(0.6050844, 0, 0.70623857, 0, 0.93, 0, -0.70623857, 0, 0.
 transform = Transform3D(-0.5823074, 0, 0.8129687, 0, 1, 0, -0.8129687, 0, -0.5823074, 1886.1987, 41.32248, -305.16687)
 
 [node name="BlueBuilding7" parent="." instance=ExtResource("22_pgu05")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1862.5928, 3.0138302, -311.5152)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1862.4943, 3.055256, -311.4719)
 
 [node name="BlueBuilding10" parent="." instance=ExtResource("22_pgu05")]
 transform = Transform3D(-4.8956753e-08, 0, 1.12, 0, 1.12, 0, -1.12, 0, -4.8956753e-08, 1800.6537, 16.094225, -259.68384)
@@ -8424,7 +8431,7 @@ transform = Transform3D(1.45, 0, 0, 0, 1.45, 0, 0, 0, 1.45, 1803.7207, 29.932032
 transform = Transform3D(1.45, 0, 0, 0, 1.45, 0, 0, 0, 1.45, 1906.7021, 29.932032, -264.2518)
 
 [node name="WhiteBuilding9" parent="." instance=ExtResource("24_vpf1r")]
-transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 1816.5, 0.827, -264.252)
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 1816.513, 0.827, -264.252)
 
 [node name="WhiteBuilding7" parent="." instance=ExtResource("24_vpf1r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1905.2054, 19.992647, -358.12698)
@@ -8464,5 +8471,29 @@ transform = Transform3D(0.59, 0, 0, 0, 0.59, 0, 0, 0, 0.59, 1851.8105, 12.327167
 
 [node name="BlueBuilding3" parent="." instance=ExtResource("22_pgu05")]
 transform = Transform3D(0.59, 0, 0, 0, 0.59, 0, 0, 0, 0.59, 1851.8105, 37.87831, -156.00194)
+
+[node name="Bentpipe" parent="." instance=ExtResource("27_2jg6l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1857.3475, 1.707861, -457.19485)
+
+[node name="checkpointflag" parent="." instance=ExtResource("28_nlfrn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1831.2502, -1.9725069, -387.48523)
+
+[node name="scaffolding" parent="." instance=ExtResource("29_j44qy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1830.2596, 9.790396, -413.47272)
+
+[node name="Straightpipe" parent="." instance=ExtResource("30_ipur1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1843.465, 1.7078457, -434.77313)
+
+[node name="rooftop_blue" parent="." instance=ExtResource("33_051wo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1862.2609, 24.69743, -311.40842)
+
+[node name="rooftop_orange3" parent="." instance=ExtResource("34_nlfrn")]
+transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-08, 1861.154, 24.966, -364.63)
+
+[node name="rooftop_orange4" parent="." instance=ExtResource("34_nlfrn")]
+transform = Transform3D(3.4969112e-08, -3.0570967e-15, 0.8, -6.9938224e-08, -0.8, 0, 0.8, -6.9938224e-08, -3.4969112e-08, 1861.1523, 24.96561, -338.56873)
+
+[node name="rooftop_white2" parent="." instance=ExtResource("33_2jg6l")]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 1816.5427, 19, -264.3297)
 
 [editable path="SpawnPoint"]
