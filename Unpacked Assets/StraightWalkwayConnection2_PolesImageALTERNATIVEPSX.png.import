@@ -2,23 +2,24 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctfpdiriuxrk7"
-path="res://.godot/imported/StraightWalkwayConnection_RailingTextureCRUSTYFINAL.png-aadf2de045f7e1b0adf2bfd130182e56.ctex"
+uid="uid://73sic0jxvgot"
+path.s3tc="res://.godot/imported/StraightWalkwayConnection2_PolesImageALTERNATIVEPSX.png-018b5c9061df5ae9ecb74840b53f8780.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={
-"md5": "dae45aa25bdb3f05eb900bda32606431"
+"md5": "87d57569ea8be88ada1e0f43bd201dfb"
 }
 
 [deps]
 
-source_file="res://Unpacked Assets/StraightWalkwayConnection_RailingTextureCRUSTYFINAL.png"
-dest_files=["res://.godot/imported/StraightWalkwayConnection_RailingTextureCRUSTYFINAL.png-aadf2de045f7e1b0adf2bfd130182e56.ctex"]
+source_file="res://Unpacked Assets/StraightWalkwayConnection2_PolesImageALTERNATIVEPSX.png"
+dest_files=["res://.godot/imported/StraightWalkwayConnection2_PolesImageALTERNATIVEPSX.png-018b5c9061df5ae9ecb74840b53f8780.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=674 format=3 uid="uid://cil2vjwrmwraf"]
+[gd_scene load_steps=673 format=3 uid="uid://cil2vjwrmwraf"]
 
 [ext_resource type="Script" uid="uid://cb1fev18bvi6e" path="res://game.gd" id="1_ys1qc"]
 [ext_resource type="PackedScene" uid="uid://djm4nldmulyqq" path="res://Mechanics/spawn_point.tscn" id="2_pgu05"]
@@ -12,19 +12,18 @@
 [ext_resource type="PackedScene" uid="uid://bb8pajc6pyjv0" path="res://Unpacked Assets/BlueBuilding.glb" id="14_2ocox"]
 [ext_resource type="PackedScene" uid="uid://i3pvsp1scedj" path="res://Unpacked Assets/NightBuilding.glb" id="15_0qy5o"]
 [ext_resource type="PackedScene" uid="uid://c1uqq88g7f2gt" path="res://Unpacked Assets/FireEscapeStairs.glb" id="19_q8sys"]
-[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/wasd_billboard.tscn" id="19_wojap"]
-[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/shift_billboard.tscn" id="20_copon"]
+[ext_resource type="PackedScene" uid="uid://bv2ob3gbvwi02" path="res://Unpacked Assets/UnpackedUnpackedAssets/wasd_billboard.tscn" id="19_wojap"]
+[ext_resource type="PackedScene" uid="uid://dxu865tb0cnfe" path="res://Unpacked Assets/UnpackedUnpackedAssets/shift_billboard.tscn" id="20_copon"]
 [ext_resource type="Script" uid="uid://dvlgclv0w1a38" path="res://addons/citycrafter/citycrafter.gd" id="20_wojap"]
 [ext_resource type="Script" uid="uid://bdjvc6rbjwwvg" path="res://addons/citycrafter/city_configuration.gd" id="21_copon"]
 [ext_resource type="PackedScene" uid="uid://be3fbggq3i3h" path="res://Unpacked Assets/UnpackedUnpackedAssets/jump_billboard.tscn" id="21_kxtw2"]
 [ext_resource type="PackedScene" uid="uid://hqkjth54vrtu" path="res://Unpacked Assets/UnpackedUnpackedAssets/cardboard_box.tscn" id="21_wjyqs"]
-[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/wall_jump_billboard.tscn" id="22_kxtw2"]
+[ext_resource type="PackedScene" uid="uid://b3hqdv66li4kq" path="res://Unpacked Assets/UnpackedUnpackedAssets/wall_jump_billboard.tscn" id="22_kxtw2"]
 [ext_resource type="PackedScene" uid="uid://j4u3hr3xl6h0" path="res://Unpacked Assets/UnpackedUnpackedAssets/blue_building.tscn" id="22_pgu05"]
-[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/night_building.tscn" id="23_3nkef"]
-[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/white_building_1.tscn" id="24_vpf1r"]
-[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/whitebuilding_2.tscn" id="25_m64o6"]
-[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/orange_building.tscn" id="26_55gk5"]
-[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/straight_walkway_connection.tscn" id="27_3nkef"]
+[ext_resource type="PackedScene" uid="uid://buhogafmbcico" path="res://Unpacked Assets/UnpackedUnpackedAssets/night_building.tscn" id="23_3nkef"]
+[ext_resource type="PackedScene" uid="uid://by8f8u33576j2" path="res://Unpacked Assets/UnpackedUnpackedAssets/white_building_1.tscn" id="24_vpf1r"]
+[ext_resource type="PackedScene" uid="uid://824e6fu6micu" path="res://Unpacked Assets/UnpackedUnpackedAssets/whitebuilding_2.tscn" id="25_m64o6"]
+[ext_resource type="PackedScene" uid="uid://cnqp2jmbwtf4c" path="res://Unpacked Assets/UnpackedUnpackedAssets/orange_building.tscn" id="26_55gk5"]
 [ext_resource type="PackedScene" uid="uid://b1umvew3mm735" path="res://Unpacked Assets/UnpackedUnpackedAssets/fire_escape_stairs.tscn" id="28_m64o6"]
 
 [sub_resource type="Environment" id="Environment_i3aeo"]
@@ -8449,8 +8448,5 @@ transform = Transform3D(-1.3113417e-08, 0, 0.3, 0, 0.3, 0, -0.3, 0, -1.3113417e-
 
 [node name="FireEscapeStairs5" parent="." instance=ExtResource("28_m64o6")]
 transform = Transform3D(-1.3113417e-08, 0, -0.3, 0, 0.3, 0, 0.3, 0, -1.3113417e-08, 1842.1954, 30.402386, -305.5792)
-
-[node name="StraightWalkwayConnection" parent="." instance=ExtResource("27_3nkef")]
-transform = Transform3D(-1.3113417e-08, 0, 0.3, 0, 0.3, 0, -0.3, 0, -1.3113417e-08, 1840.8917, 33.88588, -303.07367)
 
 [editable path="SpawnPoint"]

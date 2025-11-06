@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dmvw6lvdky18y"
-path="res://.godot/imported/StraightWalkwayConnection.glb-9e7219fc57302c97e2dc8ac480407909.scn"
+uid="uid://ddfnrqrerg312"
+path="res://.godot/imported/StraightWalkwayConnection2.glb-5a5fd4c37157bc4a6869b2cc8e7b67b0.scn"
 
 [deps]
 
-source_file="res://Unpacked Assets/StraightWalkwayConnection.glb"
-dest_files=["res://.godot/imported/StraightWalkwayConnection.glb-9e7219fc57302c97e2dc8ac480407909.scn"]
+source_file="res://Unpacked Assets/StraightWalkwayConnection2.glb"
+dest_files=["res://.godot/imported/StraightWalkwayConnection2.glb-5a5fd4c37157bc4a6869b2cc8e7b67b0.scn"]
 
 [params]
 
