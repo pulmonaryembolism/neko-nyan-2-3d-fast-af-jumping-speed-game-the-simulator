@@ -1,4 +1,4 @@
-[gd_scene load_steps=673 format=3 uid="uid://cil2vjwrmwraf"]
+[gd_scene load_steps=674 format=3 uid="uid://cil2vjwrmwraf"]
 
 [ext_resource type="Script" uid="uid://cb1fev18bvi6e" path="res://game.gd" id="1_ys1qc"]
 [ext_resource type="PackedScene" uid="uid://djm4nldmulyqq" path="res://Mechanics/spawn_point.tscn" id="2_pgu05"]
@@ -12,18 +12,19 @@
 [ext_resource type="PackedScene" uid="uid://bb8pajc6pyjv0" path="res://Unpacked Assets/BlueBuilding.glb" id="14_2ocox"]
 [ext_resource type="PackedScene" uid="uid://i3pvsp1scedj" path="res://Unpacked Assets/NightBuilding.glb" id="15_0qy5o"]
 [ext_resource type="PackedScene" uid="uid://c1uqq88g7f2gt" path="res://Unpacked Assets/FireEscapeStairs.glb" id="19_q8sys"]
-[ext_resource type="PackedScene" uid="uid://b8ra431hsaixc" path="res://Unpacked Assets/UnpackedUnpackedAssets/wasd_billboard.tscn" id="19_wojap"]
-[ext_resource type="PackedScene" uid="uid://cfjx3u1rgvx0t" path="res://Unpacked Assets/UnpackedUnpackedAssets/shift_billboard.tscn" id="20_copon"]
+[ext_resource type="PackedScene" uid="uid://bv2ob3gbvwi02" path="res://Unpacked Assets/UnpackedUnpackedAssets/wasd_billboard.tscn" id="19_wojap"]
+[ext_resource type="PackedScene" uid="uid://dxu865tb0cnfe" path="res://Unpacked Assets/UnpackedUnpackedAssets/shift_billboard.tscn" id="20_copon"]
 [ext_resource type="Script" uid="uid://dvlgclv0w1a38" path="res://addons/citycrafter/citycrafter.gd" id="20_wojap"]
 [ext_resource type="Script" uid="uid://bdjvc6rbjwwvg" path="res://addons/citycrafter/city_configuration.gd" id="21_copon"]
 [ext_resource type="PackedScene" uid="uid://be3fbggq3i3h" path="res://Unpacked Assets/UnpackedUnpackedAssets/jump_billboard.tscn" id="21_kxtw2"]
 [ext_resource type="PackedScene" uid="uid://hqkjth54vrtu" path="res://Unpacked Assets/UnpackedUnpackedAssets/cardboard_box.tscn" id="21_wjyqs"]
-[ext_resource type="PackedScene" uid="uid://wptmu3tt2j0a" path="res://Unpacked Assets/UnpackedUnpackedAssets/wall_jump_billboard.tscn" id="22_kxtw2"]
+[ext_resource type="PackedScene" uid="uid://b3hqdv66li4kq" path="res://Unpacked Assets/UnpackedUnpackedAssets/wall_jump_billboard.tscn" id="22_kxtw2"]
 [ext_resource type="PackedScene" uid="uid://j4u3hr3xl6h0" path="res://Unpacked Assets/UnpackedUnpackedAssets/blue_building.tscn" id="22_pgu05"]
-[ext_resource type="PackedScene" uid="uid://dx2p32n1hbopl" path="res://Unpacked Assets/UnpackedUnpackedAssets/night_building.tscn" id="23_3nkef"]
-[ext_resource type="PackedScene" uid="uid://bqgslumwjva4w" path="res://Unpacked Assets/UnpackedUnpackedAssets/white_building_1.tscn" id="24_vpf1r"]
-[ext_resource type="PackedScene" uid="uid://drmeukqcmj02m" path="res://Unpacked Assets/UnpackedUnpackedAssets/whitebuilding_2.tscn" id="25_m64o6"]
-[ext_resource type="PackedScene" uid="uid://dv3w1whidj1vf" path="res://Unpacked Assets/UnpackedUnpackedAssets/orange_building.tscn" id="26_55gk5"]
+[ext_resource type="PackedScene" uid="uid://buhogafmbcico" path="res://Unpacked Assets/UnpackedUnpackedAssets/night_building.tscn" id="23_3nkef"]
+[ext_resource type="PackedScene" uid="uid://by8f8u33576j2" path="res://Unpacked Assets/UnpackedUnpackedAssets/white_building_1.tscn" id="24_vpf1r"]
+[ext_resource type="PackedScene" uid="uid://824e6fu6micu" path="res://Unpacked Assets/UnpackedUnpackedAssets/whitebuilding_2.tscn" id="25_m64o6"]
+[ext_resource type="PackedScene" uid="uid://cnqp2jmbwtf4c" path="res://Unpacked Assets/UnpackedUnpackedAssets/orange_building.tscn" id="26_55gk5"]
+[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/straight_walkway_connection_2.tscn" id="26_pgu05"]
 [ext_resource type="PackedScene" uid="uid://b1umvew3mm735" path="res://Unpacked Assets/UnpackedUnpackedAssets/fire_escape_stairs.tscn" id="28_m64o6"]
 
 [sub_resource type="Environment" id="Environment_i3aeo"]
@@ -2182,7 +2183,7 @@ transform = Transform3D(-3.1909313e-08, 0, 0.73, 0, 0.73, 0, -0.73, 0, -3.190931
 transform = Transform3D(-3.1909313e-08, 0, 0.73, 0, 0.73, 0, -0.73, 0, -3.1909313e-08, 1850.4312, 22.261143, -279.61417)
 
 [node name="OrangeBuilding8" parent="." instance=ExtResource("11_mie3u")]
-transform = Transform3D(-3.1909313e-08, 0, 0.73, 0, 0.73, 0, -0.73, 0, -3.1909313e-08, 1838.7904, 1.7892036, -276.7158)
+transform = Transform3D(-3.1909313e-08, 0, 0.73, 0, 0.73, 0, -0.73, 0, -3.1909313e-08, 1838.7904, -0.609602, -276.7158)
 
 [node name="OrangeBuilding9" parent="." instance=ExtResource("11_mie3u")]
 transform = Transform3D(0.86, 0, 0, 0, 0.86, 0, 0, 0, 0.86, 1843.2798, 11.433615, -248.027)
@@ -2206,10 +2207,10 @@ transform = Transform3D(-2.4478377e-08, 0, 0.56, 0, 0.56, 0, -0.56, 0, -2.447837
 transform = Transform3D(-2.4478377e-08, 0, 0.56, 0, 0.56, 0, -0.56, 0, -2.4478377e-08, 1821.3407, 1.5918388, -298.5521)
 
 [node name="Whitebuilding9" parent="." instance=ExtResource("12_0qy5o")]
-transform = Transform3D(-4.2400046e-08, 0, 0.97, 0, 0.97, 0, -0.97, 0, -4.2400046e-08, 1790.4666, 25.24509, -288.86346)
+transform = Transform3D(-4.2400046e-08, 0, 0.97, 0, 0.97, 0, -0.97, 0, -4.2400046e-08, 1798.8104, 25.24509, -288.86346)
 
 [node name="Whitebuilding7" parent="." instance=ExtResource("12_0qy5o")]
-transform = Transform3D(-4.0214477e-08, 0, 0.92, 0, 0.92, 0, -0.92, 0, -4.0214477e-08, 1816.1997, 9.072662, -233.25215)
+transform = Transform3D(-4.0214477e-08, 0, 0.92, 0, 0.92, 0, -0.92, 0, -4.0214477e-08, 1816.1997, 9.072662, -242.11577)
 
 [node name="BlueBuilding" parent="." instance=ExtResource("14_2ocox")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1909.0084, 19.338772, -302.11954)
@@ -8387,7 +8388,7 @@ transform = Transform3D(-4.9732638e-08, 0, 1.1377501, 0, 1.1377501, 0, -1.137750
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1867.4353, 26.456987, -330.9381)
 
 [node name="WallJumpBillboard2" parent="." instance=ExtResource("22_kxtw2")]
-transform = Transform3D(-0.84799254, 0, 0.53000814, 0, 1, 0, -0.53000814, 0, -0.84799254, 1833.1853, 30.849144, -283.70932)
+transform = Transform3D(-0.7595324, 0, 0.6504694, 0, 1, 0, -0.6504694, 0, -0.7595324, 1833.8352, 25.664984, -282.9443)
 
 [node name="WASDBillboard" parent="." instance=ExtResource("19_wojap")]
 transform = Transform3D(-0.7183449, 0, 0.6956871, 0, 1, 0, -0.6956871, 0, -0.7183449, 1882.4418, 35.365585, -331.1662)
@@ -8402,10 +8403,10 @@ transform = Transform3D(-0.5823074, 0, 0.8129687, 0, 1, 0, -0.8129687, 0, -0.582
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1862.5928, 3.0138302, -311.5152)
 
 [node name="BlueBuilding10" parent="." instance=ExtResource("22_pgu05")]
-transform = Transform3D(-4.8956753e-08, 0, 1.12, 0, 1.12, 0, -1.12, 0, -4.8956753e-08, 1792.706, 16.094225, -253.36786)
+transform = Transform3D(-4.8956753e-08, 0, 1.12, 0, 1.12, 0, -1.12, 0, -4.8956753e-08, 1800.6537, 16.094225, -259.68384)
 
 [node name="BlueBuilding11" parent="." instance=ExtResource("22_pgu05")]
-transform = Transform3D(-4.8956753e-08, 0, 1.12, 0, 1.12, 0, -1.12, 0, -4.8956753e-08, 1792.706, 64.677986, -253.36786)
+transform = Transform3D(-4.8956753e-08, 0, 1.12, 0, 1.12, 0, -1.12, 0, -4.8956753e-08, 1800.6537, 64.677986, -259.68384)
 
 [node name="BlueBuilding8" parent="." instance=ExtResource("22_pgu05")]
 transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, 1832.9218, 8.908983, -354.2344)
@@ -8449,7 +8450,7 @@ transform = Transform3D(-1.3113417e-08, 0, 0.3, 0, 0.3, 0, -0.3, 0, -1.3113417e-
 [node name="FireEscapeStairs5" parent="." instance=ExtResource("28_m64o6")]
 transform = Transform3D(-1.3113417e-08, 0, -0.3, 0, 0.3, 0, 0.3, 0, -1.3113417e-08, 1842.1954, 30.402386, -305.5792)
 
-[node name="NightBuilding2" parent="." instance=ExtResource("15_0qy5o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1865.734, 7.196726, -249.93927)
+[node name="StraightWalkwayConnection2" parent="." instance=ExtResource("26_pgu05")]
+transform = Transform3D(-1.3113417e-08, 0, 0.3, 0, 0.3, 0, -0.3, 0, -1.3113417e-08, 1841.4553, 32.943554, -303.2706)
 
 [editable path="SpawnPoint"]
