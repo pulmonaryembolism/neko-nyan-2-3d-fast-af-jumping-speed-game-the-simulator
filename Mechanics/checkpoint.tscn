@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://r7uft03yw55y" path="res://Mechanics/checkpoint.gd" id="1_t1csw"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_8yx64"]
-radius = 2.4351244
+radius = 0.98678416
 
 [sub_resource type="SphereMesh" id="SphereMesh_t1csw"]
 
@@ -14,7 +14,7 @@ script = ExtResource("1_t1csw")
 shape = SubResource("SphereShape3D_8yx64")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
-transform = Transform3D(4.31922, 0, 0, 0, 4.31922, 0, 0, 0, 4.31922, 0, 0, 0)
+transform = Transform3D(2.0340607, 0, 0, 0, 1.7913904, 0, 0, 0, 2.0608554, 0, 0, 0)
 mesh = SubResource("SphereMesh_t1csw")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

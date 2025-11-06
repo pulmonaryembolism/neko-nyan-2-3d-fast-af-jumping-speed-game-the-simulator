@@ -19,7 +19,6 @@ config/icon="res://icon.svg"
 
 AudioManager="*res://AudioManager.gd"
 Global="*res://Global.gd"
-CheckpointManager="*res://checkpoint_manager.gd"
 
 [display]
 
