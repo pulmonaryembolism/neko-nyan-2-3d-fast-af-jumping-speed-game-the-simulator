@@ -1,4 +1,4 @@
-[gd_scene load_steps=675 format=3 uid="uid://cil2vjwrmwraf"]
+[gd_scene load_steps=674 format=3 uid="uid://cil2vjwrmwraf"]
 
 [ext_resource type="Script" uid="uid://cb1fev18bvi6e" path="res://game.gd" id="1_ys1qc"]
 [ext_resource type="PackedScene" uid="uid://djm4nldmulyqq" path="res://Mechanics/spawn_point.tscn" id="2_pgu05"]
@@ -17,7 +17,6 @@
 [ext_resource type="Script" uid="uid://dvlgclv0w1a38" path="res://addons/citycrafter/citycrafter.gd" id="20_wojap"]
 [ext_resource type="Script" uid="uid://bdjvc6rbjwwvg" path="res://addons/citycrafter/city_configuration.gd" id="21_copon"]
 [ext_resource type="PackedScene" uid="uid://be3fbggq3i3h" path="res://Unpacked Assets/UnpackedUnpackedAssets/jump_billboard.tscn" id="21_kxtw2"]
-[ext_resource type="PackedScene" uid="uid://hqkjth54vrtu" path="res://Unpacked Assets/UnpackedUnpackedAssets/cardboard_box.tscn" id="21_wjyqs"]
 [ext_resource type="PackedScene" uid="uid://wptmu3tt2j0a" path="res://Unpacked Assets/UnpackedUnpackedAssets/wall_jump_billboard.tscn" id="22_kxtw2"]
 [ext_resource type="PackedScene" uid="uid://j4u3hr3xl6h0" path="res://Unpacked Assets/UnpackedUnpackedAssets/blue_building.tscn" id="22_pgu05"]
 [ext_resource type="PackedScene" uid="uid://dx2p32n1hbopl" path="res://Unpacked Assets/UnpackedUnpackedAssets/night_building.tscn" id="23_3nkef"]
@@ -2181,16 +2180,16 @@ transform = Transform3D(-2.4041263e-08, 0, 0.55, 0, 0.55, 0, -0.55, 0, -2.404126
 transform = Transform3D(-3.1909313e-08, 0, 0.73, 0, 0.73, 0, -0.73, 0, -3.1909313e-08, 1916.2993, 85.13294, -328.7608)
 
 [node name="OrangeBuilding7" parent="." instance=ExtResource("11_mie3u")]
-transform = Transform3D(-3.1909313e-08, 0, 0.73, 0, 0.73, 0, -0.73, 0, -3.1909313e-08, 1850.4312, 22.261143, -279.61417)
+transform = Transform3D(-4.1146656e-08, 0, 0.97309095, 0, 0.9591378, 0, -0.9413258, 0, -4.2535152e-08, 1854.1335, 22.261143, -279.61417)
 
 [node name="OrangeBuilding8" parent="." instance=ExtResource("11_mie3u")]
-transform = Transform3D(-3.1909313e-08, 0, 0.73, 0, 0.73, 0, -0.73, 0, -3.1909313e-08, 1838.7904, -0.609602, -276.7158)
+transform = Transform3D(-3.1909313e-08, 0, 0.73, 0, 0.73, 0, -0.73, 0, -3.1909313e-08, 1838.7904, -0.8882561, -276.7158)
 
 [node name="OrangeBuilding9" parent="." instance=ExtResource("11_mie3u")]
-transform = Transform3D(0.86, 0, 0, 0, 0.86, 0, 0, 0, 0.86, 1843.2798, 11.433615, -248.027)
+transform = Transform3D(0.86, 0, 0, 0, 0.9803145, 0, 0, 0, 0.86, 1842.251, 11.412338, -248.61607)
 
 [node name="OrangeBuilding3" parent="." instance=ExtResource("11_mie3u")]
-transform = Transform3D(-2.4041263e-08, 0, 0.55, 0, 0.55, 0, -0.55, 0, -2.4041263e-08, 1838.1819, 18.620487, -315.71835)
+transform = Transform3D(-2.4041263e-08, 0, 0.55, 0, 0.55, 0, -0.55, 0, -2.4041263e-08, 1837.594, 18.620487, -315.71835)
 
 [node name="OrangeBuilding6" parent="." instance=ExtResource("11_mie3u")]
 transform = Transform3D(-2.9723743e-08, 0, 0.68, 0, 0.68, 0, -0.68, 0, -2.9723743e-08, 1837.1763, 61.203487, -354.43848)
@@ -2199,16 +2198,19 @@ transform = Transform3D(-2.9723743e-08, 0, 0.68, 0, 0.68, 0, -0.68, 0, -2.972374
 transform = Transform3D(-2.389202e-08, 0, 0.68938893, 0, 0.4, 0, -0.5465857, 0, -3.0134153e-08, 1838.1571, 13.281887, -332.622)
 
 [node name="Whitebuilding4" parent="." instance=ExtResource("12_0qy5o")]
-transform = Transform3D(-2.8849517e-08, 0, 0.66, 0, 0.66, 0, -0.66, 0, -2.8849517e-08, 1868.7369, 20.561764, -281.29715)
+transform = Transform3D(-3.764203e-08, 0, 0.8860738, 0, 0.66, 0, -0.8611493, 0, -3.8731518e-08, 1871.4027, 20.561764, -282.43192)
 
 [node name="Whitebuilding5" parent="." instance=ExtResource("12_0qy5o")]
 transform = Transform3D(-2.4478377e-08, 0, 0.6139566, 0, 0.56, 0, -0.56, 0, -2.6836894e-08, 1839.478, 57.400787, -314.45636)
 
 [node name="Whitebuilding6" parent="." instance=ExtResource("12_0qy5o")]
-transform = Transform3D(-2.4478377e-08, 0, 0.56, 0, 0.56, 0, -0.56, 0, -2.4478377e-08, 1821.3407, 1.5918388, -298.5521)
+transform = Transform3D(-2.7492714e-08, 0, 0.7773836, 0, 0.56, 0, -0.62896, 0, -3.3980516e-08, 1819.5437, 1.5918388, -298.59183)
+
+[node name="Whitebuilding11" parent="." instance=ExtResource("12_0qy5o")]
+transform = Transform3D(-1.1858263e-08, 0, 0.31530273, 0, 0.34441552, 0, -0.27128544, 0, -1.3782319e-08, 1840.8894, 7.1732483, -293.06113)
 
 [node name="Whitebuilding9" parent="." instance=ExtResource("12_0qy5o")]
-transform = Transform3D(-4.2400046e-08, 0, 0.97, 0, 0.97, 0, -0.97, 0, -4.2400046e-08, 1798.8104, 25.24509, -288.86346)
+transform = Transform3D(-5.244435e-08, 0, 1.044853, 0, 0.97, 0, -1.1997869, 0, -4.567197e-08, 1797.2323, 25.24509, -289.52194)
 
 [node name="Whitebuilding7" parent="." instance=ExtResource("12_0qy5o")]
 transform = Transform3D(-4.0214477e-08, 0, 0.92, 0, 0.92, 0, -0.92, 0, -4.0214477e-08, 1816.1997, 9.072662, -242.11577)
@@ -2217,7 +2219,7 @@ transform = Transform3D(-4.0214477e-08, 0, 0.92, 0, 0.92, 0, -0.92, 0, -4.021447
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1909.0084, 19.338772, -302.11954)
 
 [node name="FireEscapeStairs3" parent="." instance=ExtResource("19_q8sys")]
-transform = Transform3D(3.934025e-08, 0, -0.3, 0, 0.3, 0, 0.3, 0, 3.934025e-08, 1850.8462, 20.544117, -260.37836)
+transform = Transform3D(3.934025e-08, 0, -0.3, 0, 0.3, 0, 0.3, 0, 3.934025e-08, 1850.8462, 20.544117, -260.95026)
 
 [node name="_MeshInstance3D_61360" type="MeshInstance3D" parent="."]
 transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 1860.833, -2.430418, -304.36206)
@@ -8385,26 +8387,23 @@ transform = Transform3D(-3.2007357e-08, 0, 0.732243, 0, 0.732243, 0, -0.732243, 
 [node name="@Node3D@62693" parent="CityCrafter" instance=ExtResource("14_2ocox")]
 transform = Transform3D(-4.9732638e-08, 0, 1.1377501, 0, 1.1377501, 0, -1.1377501, 0, -4.9732638e-08, 1983.0928, 36.905212, -30.394062)
 
-[node name="CardboardBox4" parent="." instance=ExtResource("21_wjyqs")]
-transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1867.4353, 26.456987, -330.9381)
-
 [node name="WallJumpBillboard2" parent="." instance=ExtResource("22_kxtw2")]
-transform = Transform3D(-0.7595324, 0, 0.6504694, 0, 1, 0, -0.6504694, 0, -0.7595324, 1833.8352, 25.664984, -282.9443)
+transform = Transform3D(-0.8256031, 0, 0.7070529, 0, 1.0869887, 0, -0.7070529, 0, -0.8256031, 1834.1149, 25.896082, -282.9443)
 
 [node name="WASDBillboard" parent="." instance=ExtResource("19_wojap")]
 transform = Transform3D(-0.7183449, 0, 0.6956871, 0, 1, 0, -0.6956871, 0, -0.7183449, 1882.4418, 35.365585, -331.1662)
 
 [node name="ShiftBillboard" parent="." instance=ExtResource("20_copon")]
-transform = Transform3D(-0.6061821, 0, 0.96159536, 0, 1.1367155, 0, -0.96159536, 0, -0.6061821, 1885.0948, 40.864304, -308.48352)
+transform = Transform3D(-0.6061821, 0, 0.96159536, 0, 1.1367155, 0, -0.96159536, 0, -0.6061821, 1885.0948, 37.019485, -308.48352)
 
 [node name="JumpBillboard2" parent="." instance=ExtResource("21_kxtw2")]
 transform = Transform3D(0.7651463, 0, 0.6438566, 0, 1, 0, -0.6438566, 0, 0.7651463, 1842.7333, 30.437946, -331.88358)
 
 [node name="BlueBuilding7" parent="." instance=ExtResource("22_pgu05")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1862.5928, 3.0138302, -311.5152)
+transform = Transform3D(0.7857718, 0, 0, 0, 1, 0, 0, 0, 1, 1862.5928, 3.0138302, -311.5152)
 
 [node name="BlueBuilding10" parent="." instance=ExtResource("22_pgu05")]
-transform = Transform3D(-4.8956753e-08, 0, 1.12, 0, 1.12, 0, -1.12, 0, -4.8956753e-08, 1800.6537, 16.094225, -259.68384)
+transform = Transform3D(-4.8956753e-08, 0, 1.12, 0, 1.12, 0, -1.12, 0, -4.8956753e-08, 1802.4993, 16.094225, -259.68384)
 
 [node name="BlueBuilding11" parent="." instance=ExtResource("22_pgu05")]
 transform = Transform3D(-4.8956753e-08, 0, 1.12, 0, 1.12, 0, -1.12, 0, -4.8956753e-08, 1800.6537, 64.677986, -259.68384)
@@ -8416,7 +8415,7 @@ transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, 1832.9218, 8.908983, -3
 transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, 1904.5096, 73.712105, -360.15735)
 
 [node name="NightBuilding" parent="." instance=ExtResource("23_3nkef")]
-transform = Transform3D(0.63, 0, 0, 0, 0.63, 0, 0, 0, 0.63, 1888.9222, 15.924086, -304.90472)
+transform = Transform3D(0.63, 0, 0, 0, 0.63, 0, 0, 0, 0.63, 1888.9222, 12.079266, -304.90472)
 
 [node name="NightBuilding3" parent="." instance=ExtResource("23_3nkef")]
 transform = Transform3D(-5.3327895e-08, 0, 1.22, 0, 1.22, 0, -1.22, 0, -5.3327895e-08, 1945.4088, 40.187485, -307.11017)
@@ -8455,13 +8454,13 @@ transform = Transform3D(-1.3113417e-08, 0, -0.3, 0, 0.3, 0, 0.3, 0, -1.3113417e-
 transform = Transform3D(-1.3113417e-08, 0, 0.3, 0, 0.3, 0, -0.3, 0, -1.3113417e-08, 1841.4553, 32.943554, -303.2706)
 
 [node name="ac_unit" parent="." instance=ExtResource("27_3nkef")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1812.0692, 22.94309, -282.73947)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1814.4227, 22.94309, -263.4116)
 
 [node name="OrangeBuilding12" parent="." instance=ExtResource("11_mie3u")]
 transform = Transform3D(-2.9723743e-08, 0, 0.68, 0, 0.68, 0, -0.68, 0, -2.9723743e-08, 1852.6038, 24.399952, -387.0885)
 
 [node name="BlueBuilding12" parent="." instance=ExtResource("22_pgu05")]
-transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, 1877.493, 73.712105, -393.184)
+transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, 1882.5868, 73.712105, -386.18423)
 
 [node name="WhiteBuilding11" parent="." instance=ExtResource("24_vpf1r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1878.1888, 19.992647, -391.15363)
