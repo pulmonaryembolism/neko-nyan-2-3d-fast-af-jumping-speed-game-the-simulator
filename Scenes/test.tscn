@@ -2182,8 +2182,13 @@ transform = Transform3D(-3.1909313e-08, 0, 0.73, 0, 0.73, 0, -0.73, 0, -3.190931
 [node name="OrangeBuilding7" parent="." instance=ExtResource("11_mie3u")]
 transform = Transform3D(-3.1909313e-08, 0, 0.73, 0, 0.73, 0, -0.73, 0, -3.1909313e-08, 1850.4312, 22.261143, -279.61417)
 
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(-3.1909313e-08, 0, 0.72999996, 0, 0.72999996, 0, -0.72999996, 0, -3.1909313e-08, 1865.9647, 18.699492, -270.09143)
+use_collision = true
+size = Vector3(1.559082, 1.9394531, 3.599945)
+
 [node name="OrangeBuilding8" parent="." instance=ExtResource("11_mie3u")]
-transform = Transform3D(-3.1909313e-08, 0, 0.73, 0, 0.73, 0, -0.73, 0, -3.1909313e-08, 1838.7904, 1.7892036, -276.7158)
+transform = Transform3D(-3.1909313e-08, 0, 0.73, 0, 0.73, 0, -0.73, 0, -3.1909313e-08, 1838.7904, -1.1914539, -276.7158)
 
 [node name="OrangeBuilding9" parent="." instance=ExtResource("11_mie3u")]
 transform = Transform3D(0.86, 0, 0, 0, 0.86, 0, 0, 0, 0.86, 1843.2798, 11.433615, -248.027)
@@ -2225,8 +2230,16 @@ skeleton = NodePath("../CityCrafter")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="_MeshInstance3D_61360"]
 
+<<<<<<< Updated upstream
 [node name="CollisionShape3D" type="CollisionShape3D" parent="_MeshInstance3D_61360/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_jm0wb")
+=======
+[node name="Crate" parent="." instance=ExtResource("4_q8sys")]
+transform = Transform3D(-0.06300063, 0, 0.18981813, 0, 0.2, 0, -0.18981813, 0, -0.06300063, 1869.9559, 24.98241, -327.3118)
+
+[node name="WallJumpBillboard" parent="." instance=ExtResource("7_iaow0")]
+transform = Transform3D(-0.5752059, 0, 0.48128793, 0, 0.75, 0, -0.48128793, 0, -0.5752059, 1832.9365, 26.96379, -284.14493)
+>>>>>>> Stashed changes
 
 [node name="CityCrafter" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.166977, 0, 566.5345)
