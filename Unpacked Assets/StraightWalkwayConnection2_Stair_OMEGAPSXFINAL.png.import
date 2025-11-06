@@ -2,10 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8skrd8vmlpyk"
-path="res://.godot/imported/StraightWalkwayConnection_Stair_OMEGAPSXFINAL.png-0d6fcc940a7630a9513cc68758a713cf.ctex"
+uid="uid://bm2u8ikvnq74k"
+path.s3tc="res://.godot/imported/StraightWalkwayConnection2_Stair_OMEGAPSXFINAL.png-76dfc52dee2da08f701578ba21a6c713.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "e8a980a97264f6ff5ff1745ce176dd8d"
@@ -13,12 +14,12 @@ generator_parameters={
 
 [deps]
 
-source_file="res://Unpacked Assets/StraightWalkwayConnection_Stair_OMEGAPSXFINAL.png"
-dest_files=["res://.godot/imported/StraightWalkwayConnection_Stair_OMEGAPSXFINAL.png-0d6fcc940a7630a9513cc68758a713cf.ctex"]
+source_file="res://Unpacked Assets/StraightWalkwayConnection2_Stair_OMEGAPSXFINAL.png"
+dest_files=["res://.godot/imported/StraightWalkwayConnection2_Stair_OMEGAPSXFINAL.png-76dfc52dee2da08f701578ba21a6c713.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
