@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://c7c0fm4ktueaj"]
+
+[ext_resource type="PackedScene" uid="uid://bdytdptprjy1b" path="res://Unpacked Assets/scaffolding.glb" id="1_ys8fg"]
+[ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_2c2s5"]
+[ext_resource type="Texture2D" uid="uid://merlwtq01iuh" path="res://Unpacked Assets/scaffolding_ScaffoldingTexturePSX.png" id="3_umo7g"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a6le0"]
+render_priority = 0
+shader = ExtResource("2_2c2s5")
+shader_parameter/color_texture = ExtResource("3_umo7g")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lalc0"]
+size = Vector3(1, 1.0258789, 2.2177734)
+
+[node name="scaffolding" instance=ExtResource("1_ys8fg")]
+
+[node name="s2" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_a6le0")
+
+[node name="CollisionShape3D" parent="cube" index="0"]
+transform = Transform3D(63.50177, 0, 0, 0, 23.642385, 0, 0, 0, 3.4742656, 0, 0.3113147, -0.1188277)
+shape = SubResource("BoxShape3D_lalc0")

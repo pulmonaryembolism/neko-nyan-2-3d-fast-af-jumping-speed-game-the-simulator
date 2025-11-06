@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://du2tfyrl381mq"]
+
+[ext_resource type="PackedScene" uid="uid://boqsh7kdfis0e" path="res://Unpacked Assets/Bentpipe.glb" id="1_s4bc5"]
+[ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_lyxrr"]
+[ext_resource type="Texture2D" uid="uid://dllap21bnaxoh" path="res://Unpacked Assets/Bentpipe_BentPIpePSX.png" id="3_y2jyt"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dcy5a"]
+render_priority = 0
+shader = ExtResource("2_lyxrr")
+shader_parameter/color_texture = ExtResource("3_y2jyt")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.15
+
+[node name="Bentpipe" instance=ExtResource("1_s4bc5")]
+
+[node name="BentPipe" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_dcy5a")
