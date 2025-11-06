@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3 uid="uid://dyt1uh4g2mmih"]
+
+[ext_resource type="PackedScene" uid="uid://ddfnrqrerg312" path="res://Unpacked Assets/StraightWalkwayConnection2.glb" id="1_q71ck"]
+[ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_05lva"]
+[ext_resource type="Texture2D" uid="uid://73sic0jxvgot" path="res://Unpacked Assets/StraightWalkwayConnection2_PolesImageALTERNATIVEPSX.png" id="3_ihgvg"]
+[ext_resource type="Texture2D" uid="uid://id3sa076r3rg" path="res://Unpacked Assets/StraightWalkwayConnection2_RailingTextureCRUSTYFINAL.png" id="4_qs15h"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jfabx"]
+render_priority = 0
+shader = ExtResource("2_05lva")
+shader_parameter/color_texture = ExtResource("3_ihgvg")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.15
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2yyio"]
+render_priority = 0
+shader = ExtResource("2_05lva")
+shader_parameter/color_texture = ExtResource("4_qs15h")
+shader_parameter/vertex_wobble = 1.0
+shader_parameter/affine_mapping = 0.15
+
+[node name="StraightWalkwayConnection2" instance=ExtResource("1_q71ck")]
+
+[node name="Straight_Walkway" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_jfabx")
+surface_material_override/2 = SubResource("ShaderMaterial_2yyio")

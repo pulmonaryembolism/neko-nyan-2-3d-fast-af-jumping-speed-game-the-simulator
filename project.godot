@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="game"
-run/main_scene="uid://jyp5xco8ocd3"
+run/main_scene="uid://cil2vjwrmwraf"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -19,7 +19,6 @@ config/icon="res://icon.svg"
 
 AudioManager="*res://AudioManager.gd"
 Global="*res://Global.gd"
-CheckpointManager="*res://checkpoint_manager.gd"
 
 [display]
 

@@ -11,21 +11,21 @@ render_priority = 0
 shader = ExtResource("2_3xn11")
 shader_parameter/color_texture = ExtResource("3_ts118")
 shader_parameter/vertex_wobble = 1.0
-shader_parameter/affine_mapping = 0.15
+shader_parameter/affine_mapping = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_1kdmi"]
 render_priority = 0
 shader = ExtResource("2_3xn11")
 shader_parameter/color_texture = ExtResource("4_k8jfd")
 shader_parameter/vertex_wobble = 1.0
-shader_parameter/affine_mapping = 0.15
+shader_parameter/affine_mapping = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_flb16"]
 render_priority = 0
 shader = ExtResource("2_3xn11")
 shader_parameter/color_texture = ExtResource("5_37bws")
 shader_parameter/vertex_wobble = 1.0
-shader_parameter/affine_mapping = 0.15
+shader_parameter/affine_mapping = 0.0
 
 [node name="FireEscapeStairs" instance=ExtResource("1_wl7ge")]
 

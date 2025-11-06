@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://c2mqnvah5s288"]
+[gd_scene load_steps=5 format=3 uid="uid://c76src1lubroj"]
 
 [ext_resource type="PackedScene" uid="uid://cr61xuu5j0kwg" path="res://Unpacked Assets/SidewalkCurved.glb" id="1_ivu4i"]
 [ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_1jcm3"]
@@ -9,7 +9,7 @@ render_priority = 0
 shader = ExtResource("2_1jcm3")
 shader_parameter/color_texture = ExtResource("3_t1jxl")
 shader_parameter/vertex_wobble = 1.0
-shader_parameter/affine_mapping = 0.15
+shader_parameter/affine_mapping = 0.0
 
 [node name="SidewalkCurved" instance=ExtResource("1_ivu4i")]
 

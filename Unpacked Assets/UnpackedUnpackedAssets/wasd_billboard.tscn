@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://b8ra431hsaixc"]
+[gd_scene load_steps=7 format=3 uid="uid://bv2ob3gbvwi02"]
 
 [ext_resource type="PackedScene" uid="uid://c7cg0xlnl6mb8" path="res://Unpacked Assets/WASDBillboard.glb" id="1_gnhuq"]
 [ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_yhqad"]
@@ -10,14 +10,14 @@ render_priority = 0
 shader = ExtResource("2_yhqad")
 shader_parameter/color_texture = ExtResource("3_rr7vm")
 shader_parameter/vertex_wobble = 1.0
-shader_parameter/affine_mapping = 0.15
+shader_parameter/affine_mapping = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_le5gn"]
 render_priority = 0
 shader = ExtResource("2_yhqad")
 shader_parameter/color_texture = ExtResource("4_ykb6y")
 shader_parameter/vertex_wobble = 1.0
-shader_parameter/affine_mapping = 0.15
+shader_parameter/affine_mapping = 0.0
 
 [node name="WASDBillboard" instance=ExtResource("1_gnhuq")]
 

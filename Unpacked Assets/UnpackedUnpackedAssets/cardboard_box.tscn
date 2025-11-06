@@ -9,7 +9,7 @@ render_priority = 0
 shader = ExtResource("2_ys21h")
 shader_parameter/color_texture = ExtResource("3_0djgd")
 shader_parameter/vertex_wobble = 0.999999977648
-shader_parameter/affine_mapping = 0.1499999966472
+shader_parameter/affine_mapping = 0.0
 
 [node name="CardboardBox" instance=ExtResource("1_2c7l8")]
 

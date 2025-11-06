@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://drmeukqcmj02m"]
+[gd_scene load_steps=5 format=3 uid="uid://824e6fu6micu"]
 
 [ext_resource type="PackedScene" uid="uid://bnmjifo6bqc1v" path="res://Unpacked Assets/Whitebuilding2.glb" id="1_4r2bw"]
 [ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_jsc34"]
@@ -9,7 +9,7 @@ render_priority = 0
 shader = ExtResource("2_jsc34")
 shader_parameter/color_texture = ExtResource("3_fedby")
 shader_parameter/vertex_wobble = 1.0
-shader_parameter/affine_mapping = 0.15
+shader_parameter/affine_mapping = 0.0
 
 [node name="Whitebuilding2" instance=ExtResource("1_4r2bw")]
 

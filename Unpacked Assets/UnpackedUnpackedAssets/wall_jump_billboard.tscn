@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://wptmu3tt2j0a"]
+[gd_scene load_steps=7 format=3 uid="uid://b3hqdv66li4kq"]
 
 [ext_resource type="PackedScene" uid="uid://bxwkvcykh08ov" path="res://Unpacked Assets/WallJumpBillboard.glb" id="1_pg0bx"]
 [ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_64ghi"]
@@ -10,14 +10,14 @@ render_priority = 0
 shader = ExtResource("2_64ghi")
 shader_parameter/color_texture = ExtResource("3_dqbu8")
 shader_parameter/vertex_wobble = 1.0
-shader_parameter/affine_mapping = 0.15
+shader_parameter/affine_mapping = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_dxr3w"]
 render_priority = 0
 shader = ExtResource("2_64ghi")
 shader_parameter/color_texture = ExtResource("4_3t68c")
 shader_parameter/vertex_wobble = 1.0
-shader_parameter/affine_mapping = 0.15
+shader_parameter/affine_mapping = 0.0
 
 [node name="WallJumpBillboard" instance=ExtResource("1_pg0bx")]
 

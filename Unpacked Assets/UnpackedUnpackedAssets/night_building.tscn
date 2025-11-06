@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dx2p32n1hbopl"]
+[gd_scene load_steps=5 format=3 uid="uid://buhogafmbcico"]
 
 [ext_resource type="PackedScene" uid="uid://i3pvsp1scedj" path="res://Unpacked Assets/NightBuilding.glb" id="1_6ac1r"]
 [ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_7j6fw"]
@@ -9,7 +9,7 @@ render_priority = 0
 shader = ExtResource("2_7j6fw")
 shader_parameter/color_texture = ExtResource("3_oq3q7")
 shader_parameter/vertex_wobble = 1.0
-shader_parameter/affine_mapping = 0.15
+shader_parameter/affine_mapping = 0.0
 
 [node name="NightBuilding" instance=ExtResource("1_6ac1r")]
 

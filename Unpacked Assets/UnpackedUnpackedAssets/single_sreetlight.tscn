@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://cwpqbll1xe80q"]
+[gd_scene load_steps=5 format=3 uid="uid://b61ayky72ko2a"]
 
 [ext_resource type="PackedScene" uid="uid://by38ewf4kiurd" path="res://Unpacked Assets/SingleSreetlight.glb" id="1_l2d3m"]
 [ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_4bvda"]
@@ -9,7 +9,7 @@ render_priority = 0
 shader = ExtResource("2_4bvda")
 shader_parameter/color_texture = ExtResource("3_ud2ig")
 shader_parameter/vertex_wobble = 1.0
-shader_parameter/affine_mapping = 0.15
+shader_parameter/affine_mapping = 0.0
 
 [node name="SingleSreetlight" instance=ExtResource("1_l2d3m")]
 

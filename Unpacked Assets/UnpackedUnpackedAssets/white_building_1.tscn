@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bqgslumwjva4w"]
+[gd_scene load_steps=7 format=3 uid="uid://by8f8u33576j2"]
 
 [ext_resource type="PackedScene" uid="uid://b3a7wvdj6qgyu" path="res://Unpacked Assets/WhiteBuilding1.glb" id="1_2blhy"]
 [ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_otsv3"]
@@ -10,14 +10,14 @@ render_priority = 0
 shader = ExtResource("2_otsv3")
 shader_parameter/color_texture = ExtResource("3_ujedv")
 shader_parameter/vertex_wobble = 1.0
-shader_parameter/affine_mapping = 0.15
+shader_parameter/affine_mapping = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_cn2rl"]
 render_priority = 0
 shader = ExtResource("2_otsv3")
 shader_parameter/color_texture = ExtResource("4_1m1se")
 shader_parameter/vertex_wobble = 1.0
-shader_parameter/affine_mapping = 0.15
+shader_parameter/affine_mapping = 0.0
 
 [node name="WhiteBuilding1" instance=ExtResource("1_2blhy")]
 

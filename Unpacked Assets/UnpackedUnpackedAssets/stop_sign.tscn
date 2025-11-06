@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://pvqr0xuxqj2l"]
+[gd_scene load_steps=5 format=3 uid="uid://rsxjmovvo3il"]
 
 [ext_resource type="PackedScene" uid="uid://dukqsmvos1k8h" path="res://Unpacked Assets/StopSign.glb" id="1_mrojd"]
 [ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_twsce"]
@@ -9,7 +9,7 @@ render_priority = 0
 shader = ExtResource("2_twsce")
 shader_parameter/color_texture = ExtResource("3_0ihd5")
 shader_parameter/vertex_wobble = 1.0
-shader_parameter/affine_mapping = 0.15
+shader_parameter/affine_mapping = 0.0
 
 [node name="StopSign" instance=ExtResource("1_mrojd")]
 
