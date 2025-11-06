@@ -1,4 +1,4 @@
-[gd_scene load_steps=674 format=3 uid="uid://cil2vjwrmwraf"]
+[gd_scene load_steps=675 format=3 uid="uid://cil2vjwrmwraf"]
 
 [ext_resource type="Script" uid="uid://cb1fev18bvi6e" path="res://game.gd" id="1_ys1qc"]
 [ext_resource type="PackedScene" uid="uid://djm4nldmulyqq" path="res://Mechanics/spawn_point.tscn" id="2_pgu05"]
@@ -25,6 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://824e6fu6micu" path="res://Unpacked Assets/UnpackedUnpackedAssets/whitebuilding_2.tscn" id="25_m64o6"]
 [ext_resource type="PackedScene" uid="uid://cnqp2jmbwtf4c" path="res://Unpacked Assets/UnpackedUnpackedAssets/orange_building.tscn" id="26_55gk5"]
 [ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/straight_walkway_connection_2.tscn" id="26_pgu05"]
+[ext_resource type="PackedScene" uid="uid://bhgvqoj0smgwv" path="res://Unpacked Assets/ac_unit.glb" id="27_3nkef"]
 [ext_resource type="PackedScene" uid="uid://b1umvew3mm735" path="res://Unpacked Assets/UnpackedUnpackedAssets/fire_escape_stairs.tscn" id="28_m64o6"]
 
 [sub_resource type="Environment" id="Environment_i3aeo"]
@@ -8452,5 +8453,8 @@ transform = Transform3D(-1.3113417e-08, 0, -0.3, 0, 0.3, 0, 0.3, 0, -1.3113417e-
 
 [node name="StraightWalkwayConnection2" parent="." instance=ExtResource("26_pgu05")]
 transform = Transform3D(-1.3113417e-08, 0, 0.3, 0, 0.3, 0, -0.3, 0, -1.3113417e-08, 1841.4553, 32.943554, -303.2706)
+
+[node name="ac_unit" parent="." instance=ExtResource("27_3nkef")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1812.0692, 22.94309, -282.73947)
 
 [editable path="SpawnPoint"]
