@@ -1,4 +1,4 @@
-[gd_scene load_steps=689 format=3 uid="uid://cil2vjwrmwraf"]
+[gd_scene load_steps=691 format=3 uid="uid://cil2vjwrmwraf"]
 
 [ext_resource type="Script" uid="uid://cb1fev18bvi6e" path="res://game.gd" id="1_ys1qc"]
 [ext_resource type="PackedScene" uid="uid://djm4nldmulyqq" path="res://Mechanics/spawn_point.tscn" id="2_pgu05"]
@@ -23,21 +23,21 @@
 [ext_resource type="PackedScene" uid="uid://by8f8u33576j2" path="res://Unpacked Assets/UnpackedUnpackedAssets/white_building_1.tscn" id="24_vpf1r"]
 [ext_resource type="PackedScene" uid="uid://824e6fu6micu" path="res://Unpacked Assets/UnpackedUnpackedAssets/whitebuilding_2.tscn" id="25_m64o6"]
 [ext_resource type="PackedScene" uid="uid://cnqp2jmbwtf4c" path="res://Unpacked Assets/UnpackedUnpackedAssets/orange_building.tscn" id="26_55gk5"]
-[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/straight_walkway_connection_2.tscn" id="26_pgu05"]
-[ext_resource type="PackedScene" uid="uid://2t7ujsqputxg" path="res://Unpacked Assets/UnpackedUnpackedAssets/bentpipe.tscn" id="27_2jg6l"]
+[ext_resource type="PackedScene" uid="uid://dyt1uh4g2mmih" path="res://Unpacked Assets/UnpackedUnpackedAssets/straight_walkway_connection_2.tscn" id="26_pgu05"]
+[ext_resource type="PackedScene" uid="uid://du2tfyrl381mq" path="res://Unpacked Assets/UnpackedUnpackedAssets/bentpipe.tscn" id="27_2jg6l"]
 [ext_resource type="PackedScene" uid="uid://bhgvqoj0smgwv" path="res://Unpacked Assets/ac_unit.glb" id="27_3nkef"]
 [ext_resource type="PackedScene" uid="uid://c8o8e5u30dq8g" path="res://Unpacked Assets/UnpackedUnpackedAssets/crate.tscn" id="27_vpf1r"]
 [ext_resource type="PackedScene" uid="uid://b1umvew3mm735" path="res://Unpacked Assets/UnpackedUnpackedAssets/fire_escape_stairs.tscn" id="28_m64o6"]
-[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/checkpointflag.tscn" id="28_nlfrn"]
-[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/scaffolding.tscn" id="29_j44qy"]
+[ext_resource type="PackedScene" uid="uid://bgm82p10a27cp" path="res://Unpacked Assets/UnpackedUnpackedAssets/checkpointflag.tscn" id="28_nlfrn"]
+[ext_resource type="PackedScene" uid="uid://c7c0fm4ktueaj" path="res://Unpacked Assets/UnpackedUnpackedAssets/scaffolding.tscn" id="29_j44qy"]
 [ext_resource type="PackedScene" uid="uid://bmrrhoqt6lu1l" path="res://Unpacked Assets/UnpackedUnpackedAssets/straightpipe.tscn" id="30_ipur1"]
-[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/rooftop_white_2.tscn" id="33_2jg6l"]
+[ext_resource type="PackedScene" uid="uid://dpverg32l8mi3" path="res://Unpacked Assets/UnpackedUnpackedAssets/rooftop_white_2.tscn" id="33_2jg6l"]
 [ext_resource type="PackedScene" uid="uid://bjg7b4aiaqctv" path="res://Unpacked Assets/UnpackedUnpackedAssets/rooftop_blue.tscn" id="33_nlfrn"]
 [ext_resource type="PackedScene" uid="uid://ciwbabirbsy5o" path="res://Unpacked Assets/UnpackedUnpackedAssets/rooftop_white.tscn" id="34_j44qy"]
-[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/rooftop_orange.tscn" id="34_nlfrn"]
-[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/canopy.tscn" id="35_j44qy"]
+[ext_resource type="PackedScene" uid="uid://cs55k2wiik2q7" path="res://Unpacked Assets/UnpackedUnpackedAssets/rooftop_orange.tscn" id="34_nlfrn"]
+[ext_resource type="PackedScene" uid="uid://cwyrqknk5gr7n" path="res://Unpacked Assets/UnpackedUnpackedAssets/canopy.tscn" id="35_j44qy"]
 [ext_resource type="PackedScene" uid="uid://ckq0wuodht4xa" path="res://Mechanics/checkpoint.tscn" id="37_4fddv"]
-[ext_resource type="PackedScene" uid="uid://dnfuwxamwxcek" path="res://Unpacked Assets/UnpackedUnpackedAssets/balcony.tscn" id="37_wqbs1"]
+[ext_resource type="PackedScene" uid="uid://dqucdolljxh5e" path="res://Unpacked Assets/UnpackedUnpackedAssets/balcony.tscn" id="37_wqbs1"]
 [ext_resource type="PackedScene" uid="uid://dngdrm061q7u" path="res://Unpacked Assets/UnpackedUnpackedAssets/straight_stairs_2.tscn" id="39_051wo"]
 [ext_resource type="PackedScene" uid="uid://cermgm2lenah3" path="res://Unpacked Assets/corner_walkway.glb" id="40_yn8tc"]
 [ext_resource type="PackedScene" uid="uid://c55j4eusk7rie" path="res://Unpacked Assets/spike.glb" id="41_66mtb"]
@@ -2029,6 +2029,23 @@ size = Vector2(8, 200)
 [sub_resource type="PlaneMesh" id="PlaneMesh_hfrqp"]
 size = Vector2(8, 200)
 
+[sub_resource type="Shader" id="Shader_66mtb"]
+code = "shader_type canvas_item;
+render_mode unshaded, blend_disabled;
+
+// Explicitly request the screen texture
+uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, filter_linear_mipmap;
+
+void fragment() {
+    vec4 color = texture(SCREEN_TEXTURE, SCREEN_UV);
+    float gray = dot(color.rgb, vec3(0.299, 0.587, 0.114));
+    COLOR = vec4(vec3(gray), color.a);
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_d83ya"]
+shader = SubResource("Shader_66mtb")
+
 [node name="Test" type="Node3D"]
 process_mode = 3
 script = ExtResource("1_ys1qc")
@@ -2042,7 +2059,11 @@ camera_attributes = SubResource("CameraAttributesPractical_8uh7m")
 compositor = SubResource("Compositor_6uqi0")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
-transform = Transform3D(0.73980975, 0.30421537, 0.6001121, -0.08205507, -0.8444871, 0.5292529, 0.66779375, -0.4407887, -0.5997973, 0, 92.38321, 47.75855)
+transform = Transform3D(0.73980975, 0.30421537, 0.6001121, -0.08205507, -0.8444871, 0.5292529, 0.66779375, -0.4407887, -0.5997973, 1846.2991, 90.692795, -167.73624)
+shadow_enabled = true
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="WorldEnvironment"]
+transform = Transform3D(0.73980975, 0.30421537, 0.6001121, -0.08205507, -0.8444871, 0.5292529, 0.66779375, -0.4407887, -0.5997973, 1846.2991, 21.932312, -167.73624)
 shadow_enabled = true
 
 [node name="WanPrototype" type="StaticBody3D" parent="."]
@@ -8705,6 +8726,12 @@ transform = Transform3D(-1.35, -8.742278e-08, 2.4074637e-15, 0, -4.371139e-08, -
 [node name="rooftop_orange6" parent="." instance=ExtResource("34_nlfrn")]
 transform = Transform3D(-3.016086e-08, -1, 2.7538174e-08, 0, -4.371139e-08, -0.63, 0.69, -4.371139e-08, 1.2037319e-15, 1845.3134, 1.0693207, -128.20476)
 
+[node name="rooftop_orange23" parent="." instance=ExtResource("34_nlfrn")]
+transform = Transform3D(-3.016086e-08, -1, 2.7538174e-08, 0, -4.371139e-08, -0.63, 0.69, -4.371139e-08, 1.2037319e-15, 1845.3134, 1.0693207, -128.20476)
+
+[node name="rooftop_orange24" parent="." instance=ExtResource("34_nlfrn")]
+transform = Transform3D(-4.5271342e-08, 0, -0.75759643, 0, 7.154086, 0, 1.0356874, 0, -3.3115587e-08, 1836.8052, 0.06265056, -140.48328)
+
 [node name="rooftop_orange15" parent="." instance=ExtResource("34_nlfrn")]
 transform = Transform3D(-3.458074e-10, -1, 2.7538174e-08, 0, -4.371139e-08, -0.63, 0.007911151, -4.371139e-08, 1.2037319e-15, 1835.9951, -0.3670311, -144.62578)
 
@@ -8712,7 +8739,7 @@ transform = Transform3D(-3.458074e-10, -1, 2.7538174e-08, 0, -4.371139e-08, -0.6
 transform = Transform3D(-3.458074e-10, -1, 2.7538174e-08, 0, -4.371139e-08, -0.63, 0.007911151, -4.371139e-08, 1.2037319e-15, 1839.219, -0.3670311, -151.88902)
 
 [node name="rooftop_orange18" parent="." instance=ExtResource("34_nlfrn")]
-transform = Transform3D(-3.458074e-10, -1, 2.7538174e-08, 0, -4.371139e-08, -0.63, 0.007911151, -4.371139e-08, 1.2037319e-15, 1839.3739, -0.3670311, -146.30971)
+transform = Transform3D(-3.4656103e-10, -1.0021793, 2.7598187e-08, 0, -4.3806647e-08, -0.6313729, 0.007928392, -4.3806647e-08, 1.2063551e-15, 1839.3733, -0.3685962, -146.31598)
 
 [node name="rooftop_orange16" parent="." instance=ExtResource("34_nlfrn")]
 transform = Transform3D(-3.458074e-10, -1, 2.7538174e-08, 0, -4.371139e-08, -0.63, 0.007911151, -4.371139e-08, 1.2037319e-15, 1835.9951, -0.3670311, -138.75061)
@@ -8794,6 +8821,9 @@ transform = Transform3D(0.0006096298, -0.12743294, 0.16946049, -3.863235e-05, 0.
 
 [node name="rooftop_orange12" parent="." instance=ExtResource("34_nlfrn")]
 transform = Transform3D(-0.007861891, 0.14631985, -0.13963354, 0.0003050902, 0.21510652, 0.09744937, 0.048000127, 0.022598345, -0.023489814, 1856.493, 2.7121239, -141.47318)
+
+[node name="rooftop_orange25" parent="." instance=ExtResource("34_nlfrn")]
+transform = Transform3D(0.0012843955, 0.16484512, -0.113503054, 0.0015637913, 0.23952548, 0.07811548, 0.24930805, -0.0023516943, 9.477438e-05, 1848.3055, 0.019812703, -143.75272)
 
 [node name="rooftop_orange14" parent="." instance=ExtResource("34_nlfrn")]
 transform = Transform3D(-0.04688194, 0.010948039, -0.027802978, -0.00024044662, 0.14835458, 0.15805961, 0.0054784874, 0.10019865, -0.2309859, 1853.2664, 5.7784214, -145.65782)
@@ -8908,5 +8938,16 @@ transform = Transform3D(-1.9670125e-08, 0, 0.45, 0, 0.45, 0, -0.45, 0, -1.967012
 
 [node name="Straightpipe11" parent="." instance=ExtResource("30_ipur1")]
 transform = Transform3D(-1.9670125e-08, 0, 0.45, 0, 0.45, 0, -0.45, 0, -1.9670125e-08, 1819.7589, 34.190327, -153.65025)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_d83ya")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
 
 [editable path="SpawnPoint"]
