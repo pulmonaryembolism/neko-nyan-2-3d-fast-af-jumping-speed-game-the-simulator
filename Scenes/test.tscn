@@ -2319,10 +2319,10 @@ transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, 1877.2638, 73.712105, -
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1877.9596, 19.992647, -386.0705)
 
 [node name="BlueBuilding14" parent="." instance=ExtResource("22_pgu05")]
-transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, 1842.531, 73.712105, -382.85284)
+transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, 1845.1864, 73.712105, -385.6241)
 
 [node name="WhiteBuilding11" parent="." instance=ExtResource("24_vpf1r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1843.2268, 19.992647, -380.82248)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1845.8822, 19.992647, -383.59375)
 
 [node name="Whitebuilding8" parent="." instance=ExtResource("25_m64o6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1917.5836, 24.481855, -328.12418)
