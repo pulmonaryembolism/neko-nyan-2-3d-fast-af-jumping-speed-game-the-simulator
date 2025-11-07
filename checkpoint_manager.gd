@@ -16,4 +16,3 @@ func on_checkpoint_activated(checkpoint_id: int):
 func _process(delta: float) -> void:
 	if activated_count == total_checkpoints:
 		Global.stop_timer = true
-		get_tree().change_scene_to_file("res://Scenes/end_screen.tscn")
