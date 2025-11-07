@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b3u2xa7c2i0r6"
-path="res://.godot/imported/billboard.blend-88cc0b2c6d2b2732e6ffce7b416799b9.scn"
+valid=false
 
 [deps]
 
 source_file="res://Assets/billboard.blend"
-dest_files=["res://.godot/imported/billboard.blend-88cc0b2c6d2b2732e6ffce7b416799b9.scn"]
 
 [params]
 
