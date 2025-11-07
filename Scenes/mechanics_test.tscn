@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://ixlix6013wd7"]
+[gd_scene load_steps=13 format=3 uid="uid://ixlix6013wd7"]
 
 [ext_resource type="Shader" uid="uid://dgxelk4fpflp1" path="res://Shaders/checkerboard.gdshader" id="1_harvb"]
 [ext_resource type="PackedScene" uid="uid://djm4nldmulyqq" path="res://Mechanics/spawn_point.tscn" id="2_7uf5p"]
 [ext_resource type="PackedScene" uid="uid://ckq0wuodht4xa" path="res://Mechanics/checkpoint.tscn" id="3_7uf5p"]
+[ext_resource type="PackedScene" uid="uid://cjvwcqhp2cgd0" path="res://Mechanics/portal.tscn" id="4_0l0nb"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_0l0nb"]
 render_priority = 0
@@ -30,6 +31,10 @@ auto_exposure_enabled = true
 
 [sub_resource type="Compositor" id="Compositor_fgor6"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_pvjcl"]
+resource_local_to_scene = true
+size = Vector3(91.774796, 1, 83.230896)
+
 [node name="MechanicsTest" type="Node3D"]
 
 [node name="CSGMesh3D" type="CSGMesh3D" parent="."]
@@ -54,3 +59,14 @@ checkpoint_id = 1
 [node name="Checkpoint2" parent="." instance=ExtResource("3_7uf5p")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.649, 0, -0.18)
 checkpoint_id = 2
+
+[node name="Portal" parent="." instance=ExtResource("4_0l0nb")]
+
+[node name="check_point" parent="Portal" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6322987, 7.2023625)
+
+[node name="kill_trigger" parent="Portal" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3, 0)
+shape = SubResource("BoxShape3D_pvjcl")
+
+[editable path="Portal"]
