@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpverg32l8mi3"]
+
+[ext_resource type="PackedScene" uid="uid://d1jx1xjny2eke" path="res://Unpacked Assets/rooftop_white2.glb" id="1_32v6w"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_inw4v"]
+size = Vector3(33.96718, 0.16931152, 33.93988)
+
+[node name="rooftop_white2" instance=ExtResource("1_32v6w")]
+
+[node name="CollisionShape3D" parent="cube_011" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07971954, 0.0134887695, -0.015960693)
+shape = SubResource("BoxShape3D_inw4v")
