@@ -23,21 +23,21 @@
 [ext_resource type="PackedScene" uid="uid://by8f8u33576j2" path="res://Unpacked Assets/UnpackedUnpackedAssets/white_building_1.tscn" id="24_vpf1r"]
 [ext_resource type="PackedScene" uid="uid://824e6fu6micu" path="res://Unpacked Assets/UnpackedUnpackedAssets/whitebuilding_2.tscn" id="25_m64o6"]
 [ext_resource type="PackedScene" uid="uid://cnqp2jmbwtf4c" path="res://Unpacked Assets/UnpackedUnpackedAssets/orange_building.tscn" id="26_55gk5"]
-[ext_resource type="PackedScene" uid="uid://dyt1uh4g2mmih" path="res://Unpacked Assets/UnpackedUnpackedAssets/straight_walkway_connection_2.tscn" id="26_pgu05"]
-[ext_resource type="PackedScene" uid="uid://du2tfyrl381mq" path="res://Unpacked Assets/UnpackedUnpackedAssets/bentpipe.tscn" id="27_2jg6l"]
+[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/straight_walkway_connection_2.tscn" id="26_pgu05"]
+[ext_resource type="PackedScene" uid="uid://2t7ujsqputxg" path="res://Unpacked Assets/UnpackedUnpackedAssets/bentpipe.tscn" id="27_2jg6l"]
 [ext_resource type="PackedScene" uid="uid://bhgvqoj0smgwv" path="res://Unpacked Assets/ac_unit.glb" id="27_3nkef"]
 [ext_resource type="PackedScene" uid="uid://c8o8e5u30dq8g" path="res://Unpacked Assets/UnpackedUnpackedAssets/crate.tscn" id="27_vpf1r"]
 [ext_resource type="PackedScene" uid="uid://b1umvew3mm735" path="res://Unpacked Assets/UnpackedUnpackedAssets/fire_escape_stairs.tscn" id="28_m64o6"]
-[ext_resource type="PackedScene" uid="uid://bgm82p10a27cp" path="res://Unpacked Assets/UnpackedUnpackedAssets/checkpointflag.tscn" id="28_nlfrn"]
-[ext_resource type="PackedScene" uid="uid://c7c0fm4ktueaj" path="res://Unpacked Assets/UnpackedUnpackedAssets/scaffolding.tscn" id="29_j44qy"]
+[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/checkpointflag.tscn" id="28_nlfrn"]
+[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/scaffolding.tscn" id="29_j44qy"]
 [ext_resource type="PackedScene" uid="uid://bmrrhoqt6lu1l" path="res://Unpacked Assets/UnpackedUnpackedAssets/straightpipe.tscn" id="30_ipur1"]
-[ext_resource type="PackedScene" uid="uid://dpverg32l8mi3" path="res://Unpacked Assets/UnpackedUnpackedAssets/rooftop_white_2.tscn" id="33_2jg6l"]
+[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/rooftop_white_2.tscn" id="33_2jg6l"]
 [ext_resource type="PackedScene" uid="uid://bjg7b4aiaqctv" path="res://Unpacked Assets/UnpackedUnpackedAssets/rooftop_blue.tscn" id="33_nlfrn"]
 [ext_resource type="PackedScene" uid="uid://ciwbabirbsy5o" path="res://Unpacked Assets/UnpackedUnpackedAssets/rooftop_white.tscn" id="34_j44qy"]
-[ext_resource type="PackedScene" uid="uid://cs55k2wiik2q7" path="res://Unpacked Assets/UnpackedUnpackedAssets/rooftop_orange.tscn" id="34_nlfrn"]
-[ext_resource type="PackedScene" uid="uid://cwyrqknk5gr7n" path="res://Unpacked Assets/UnpackedUnpackedAssets/canopy.tscn" id="35_j44qy"]
+[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/rooftop_orange.tscn" id="34_nlfrn"]
+[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/canopy.tscn" id="35_j44qy"]
 [ext_resource type="PackedScene" uid="uid://ckq0wuodht4xa" path="res://Mechanics/checkpoint.tscn" id="37_4fddv"]
-[ext_resource type="PackedScene" uid="uid://dqucdolljxh5e" path="res://Unpacked Assets/UnpackedUnpackedAssets/balcony.tscn" id="37_wqbs1"]
+[ext_resource type="PackedScene" uid="uid://dnfuwxamwxcek" path="res://Unpacked Assets/UnpackedUnpackedAssets/balcony.tscn" id="37_wqbs1"]
 [ext_resource type="PackedScene" uid="uid://dngdrm061q7u" path="res://Unpacked Assets/UnpackedUnpackedAssets/straight_stairs_2.tscn" id="39_051wo"]
 [ext_resource type="PackedScene" uid="uid://cermgm2lenah3" path="res://Unpacked Assets/corner_walkway.glb" id="40_yn8tc"]
 [ext_resource type="PackedScene" uid="uid://c55j4eusk7rie" path="res://Unpacked Assets/spike.glb" id="41_66mtb"]
@@ -8649,13 +8649,25 @@ transform = Transform3D(0.56, 0, 0, 0, 0.56, 0, 0, 0, 0.56, 1828.8595, 12.094412
 transform = Transform3D(0.080771215, 0, -0.058957707, 0, 0.1, 0, 0.058957707, 0, 0.080771215, 1856.9432, 10.52952, -162.33408)
 
 [node name="CardboardBox9" parent="." instance=ExtResource("21_wjyqs")]
-transform = Transform3D(0.00036442466, 0, -0.2399997, 0, 0.23999998, 0, 0.2399997, 0, 0.00036442466, 1842.2417, -0.57857704, -164.1646)
+transform = Transform3D(0.00036442466, 0, -0.23999973, 0, 0.24000001, 0, 0.23999973, 0, 0.00036442466, 1844.4896, -0.57857704, -166.59377)
 
 [node name="CardboardBox10" parent="." instance=ExtResource("21_wjyqs")]
-transform = Transform3D(0.030832019, 0, -0.23801132, 0, 0.24000001, 0, 0.23801132, 0, 0.030832019, 1842.1493, 0.6551125, -164.1646)
+transform = Transform3D(0.030832019, 0, -0.23801132, 0, 0.24000001, 0, 0.23801132, 0, 0.030832019, 1844.3972, 0.6551125, -166.59377)
 
 [node name="CardboardBox11" parent="." instance=ExtResource("21_wjyqs")]
-transform = Transform3D(0.13835746, 0, -0.19610515, 0, 0.21823311, 0, 0.19610515, 0, 0.13835746, 1842.1493, 1.8778751, -164.1646)
+transform = Transform3D(0.13835746, 0, -0.19610515, 0, 0.21823311, 0, 0.19610515, 0, 0.13835746, 1844.3972, 1.8778751, -166.59377)
+
+[node name="CardboardBox13" parent="." instance=ExtResource("21_wjyqs")]
+transform = Transform3D(-0.10698249, 0, -0.21483657, 0, 0.24000001, 0, 0.21483657, 0, -0.10698249, 1847.3646, -0.57857704, -166.56615)
+
+[node name="CardboardBox14" parent="." instance=ExtResource("21_wjyqs")]
+transform = Transform3D(-0.07884096, 0, -0.22668065, 0, 0.24000001, 0, 0.22668065, 0, -0.07884096, 1847.2819, 0.6551125, -166.60747)
+
+[node name="CardboardBox15" parent="." instance=ExtResource("21_wjyqs")]
+transform = Transform3D(0.036074862, 0, -0.2372733, 0, 0.2182331, 0, 0.2372733, 0, 0.036074862, 1847.2819, 1.8778751, -166.60747)
+
+[node name="CardboardBox16" parent="." instance=ExtResource("21_wjyqs")]
+transform = Transform3D(-0.06374154, 0, -0.23138072, 0, 0.2182331, 0, 0.23138072, 0, -0.06374154, 1847.2819, 2.9691422, -166.60747)
 
 [node name="CardboardBox2" parent="." instance=ExtResource("21_wjyqs")]
 transform = Transform3D(0.097810425, 0, 0.020811656, 0, 0.1, 0, -0.020811656, 0, 0.097810425, 1857.1261, 10.522576, -163.05972)
