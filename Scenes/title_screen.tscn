@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b8y7dd5itfa1i"]
 
 [ext_resource type="Script" uid="uid://c1qnij00u7f5e" path="res://title_screen.gd" id="1_klylv"]
-[ext_resource type="Texture2D" uid="uid://c2u8t5l65r27r" path="res://Unpacked Assets/FireEscapeStairs_PolesImageALTERNATIVEPSX.png" id="2_p3fck"]
+[ext_resource type="Texture2D" uid="uid://ckm3pedrugw3q" path="res://Assets/uiAssets/StartBackground-2.png" id="2_p3fck"]
 
 [node name="TitleScreen" type="Control"]
 process_mode = 3
@@ -14,13 +14,11 @@ grow_vertical = 2
 script = ExtResource("1_klylv")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-visible = false
-layout_mode = 0
-offset_left = -28.999998
-offset_top = -16.000002
-offset_right = 227.0
-offset_bottom = 240.0
-scale = Vector2(7.816903, 4.4571695)
+layout_mode = 1
+offset_top = 1.999999
+offset_right = 1920.0
+offset_bottom = 1082.0
+scale = Vector2(1.0084939, 1.0317464)
 texture = ExtResource("2_p3fck")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
@@ -33,6 +31,7 @@ scale = Vector2(5.1103077, 5.1103077)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
+size_flags_horizontal = 0
 
 [node name="StartButton" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
