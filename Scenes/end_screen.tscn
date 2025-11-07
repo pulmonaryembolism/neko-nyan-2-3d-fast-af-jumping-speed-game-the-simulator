@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://di1h5a35sydd8"]
+[gd_scene load_steps=2 format=3 uid="uid://di1h5a35sydd8"]
 
 [ext_resource type="Script" uid="uid://bnhjm51ylvyah" path="res://end_screen.gd" id="1_1gwaw"]
-[ext_resource type="PackedScene" uid="uid://d1b38nddoq7d4" path="res://Mechanics/timer.tscn" id="2_1gwaw"]
 
 [node name="EndScreen" type="Control"]
 layout_mode = 3
@@ -35,8 +34,6 @@ text = "Replay"
 layout_mode = 2
 text = "Options"
 
-[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="QuitButton" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Quit"
-
-[node name="Timer" parent="." instance=ExtResource("2_1gwaw")]
