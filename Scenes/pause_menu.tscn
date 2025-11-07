@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://bxonrhkg1vfpe"]
+[gd_scene load_steps=2 format=3 uid="uid://bxonrhkg1vfpe"]
 
 [ext_resource type="Script" uid="uid://bh4ms3w8y2uel" path="res://pause_menu.gd" id="1_emv3i"]
-[ext_resource type="Texture2D" uid="uid://1m7agxwusf6f" path="res://Assets/uiAssets/PauseBackground.png" id="2_k0w1u"]
 
 [node name="PauseMenu" type="Control"]
 process_mode = 2
@@ -13,19 +12,18 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_emv3i")
 
-[node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("2_k0w1u")
-
 [node name="MarginContainer" type="MarginContainer" parent="."]
 process_mode = 2
-layout_mode = 0
-offset_left = 666.0
-offset_top = 209.0
-offset_right = 866.0
-offset_bottom = 409.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.347
+anchor_top = 0.194
+anchor_right = 0.65900004
+anchor_bottom = 0.749
+offset_left = -0.23999023
+offset_top = -0.5200043
+offset_right = -399.28003
+offset_bottom = -399.92004
 scale = Vector2(3, 3)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
