@@ -1,4 +1,9 @@
-[gd_scene format=3 uid="uid://cv350xbcc1vp5"]
+[gd_scene load_steps=3 format=3 uid="uid://cv350xbcc1vp5"]
+
+[ext_resource type="Script" uid="uid://cdckhb40y784w" path="res://save_screen.gd" id="1_1jd04"]
+
+[sub_resource type="Theme" id="Theme_8nyic"]
+default_font_size = 64
 
 [node name="SaveScreen" type="Control"]
 layout_mode = 3
@@ -7,3 +12,57 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = SubResource("Theme_8nyic")
+script = ExtResource("1_1jd04")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 192.0
+offset_top = 64.0
+offset_right = -192.0
+offset_bottom = -120.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Slot1" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Empty"
+
+[node name="Slot2" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Empty"
+
+[node name="Slot3" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Empty"
+
+[node name="Slot4" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Empty"
+
+[node name="Slot5" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Empty"
+
+[node name="Slot6" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Empty"
+
+[node name="Slot7" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Empty"
+
+[node name="Slot8" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Empty
+"
+
+[node name="BackButton" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Back"
