@@ -9062,6 +9062,18 @@ transform = Transform3D(-0.3, 0, -2.6226834e-08, 0, 0.3, 0, 2.6226834e-08, 0, -0
 [node name="FireEscapeStairs16" parent="." instance=ExtResource("28_m64o6")]
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 1869.9818, 46.360382, -258.15665)
 
+[node name="FireEscapeStairs17" parent="." instance=ExtResource("28_m64o6")]
+transform = Transform3D(-0.3, 0, -2.6226834e-08, 0, 0.3, 0, 2.6226834e-08, 0, -0.3, 1872.116, 57.66555, -257.19705)
+
+[node name="FireEscapeStairs18" parent="." instance=ExtResource("28_m64o6")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 1869.983, 53.891937, -258.17236)
+
+[node name="FireEscapeStairs19" parent="." instance=ExtResource("28_m64o6")]
+transform = Transform3D(-0.3, 0, -2.6226834e-08, 0, 0.3, 0, 2.6226834e-08, 0, -0.3, 1872.116, 65.21095, -257.19705)
+
+[node name="FireEscapeStairs20" parent="." instance=ExtResource("28_m64o6")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 1869.983, 61.43734, -258.17236)
+
 [node name="FireEscapeStairs3" parent="." instance=ExtResource("28_m64o6")]
 transform = Transform3D(-0.3, 0, -2.6226834e-08, 0, 0.3, 0, 2.6226834e-08, 0, -0.3, 1872.1147, 12.43688, -257.18134)
 
