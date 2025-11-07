@@ -2,7 +2,7 @@ extends Control
 
 @onready var start_button = $MarginContainer/VBoxContainer/StartButton
 @onready var options_button = $MarginContainer/VBoxContainer/OptionsButton
-@onready var quit_button = $MarginContainer/VBoxContainer/QuitButton
+@onready var quit_button = $MarginContainer/VBoxContainer/Quit
 
 func _ready():
 	$MarginContainer/VBoxContainer/Time.text = Global.final_time

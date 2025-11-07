@@ -48,9 +48,9 @@ compositor = SubResource("Compositor_fgor6")
 transform = Transform3D(1, 0, 0, 0, -0.822144, 0.5692796, 0, -0.5692796, -0.822144, 0, 0.77239704, 0)
 
 [node name="Checkpoint" parent="." instance=ExtResource("3_7uf5p")]
-transform = Transform3D(1.0045171, 0, 0, 0, 1.0045171, 0, 0, 0, 1.0045171, 3.5453973, 0.92069495, -2.527772)
+transform = Transform3D(1.0045171, 0, 0, 0, 1.0045171, 0, 0, 0, 1.0045171, 3.545, 0, -2.528)
 checkpoint_id = 1
 
 [node name="Checkpoint2" parent="." instance=ExtResource("3_7uf5p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.648647, 0.7067138, -0.17993736)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.649, 0, -0.18)
 checkpoint_id = 2
