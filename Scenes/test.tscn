@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://by8f8u33576j2" path="res://Unpacked Assets/UnpackedUnpackedAssets/white_building_1.tscn" id="24_vpf1r"]
 [ext_resource type="PackedScene" uid="uid://824e6fu6micu" path="res://Unpacked Assets/UnpackedUnpackedAssets/whitebuilding_2.tscn" id="25_m64o6"]
 [ext_resource type="PackedScene" uid="uid://cnqp2jmbwtf4c" path="res://Unpacked Assets/UnpackedUnpackedAssets/orange_building.tscn" id="26_55gk5"]
+<<<<<<< HEAD
 [ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/straight_walkway_connection_2.tscn" id="26_pgu05"]
 [ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/bentpipe.tscn" id="27_2jg6l"]
 [ext_resource type="PackedScene" uid="uid://bhgvqoj0smgwv" path="res://Unpacked Assets/ac_unit.glb" id="27_3nkef"]
@@ -35,6 +36,18 @@
 [ext_resource type="PackedScene" uid="uid://ciwbabirbsy5o" path="res://Unpacked Assets/UnpackedUnpackedAssets/rooftop_white.tscn" id="34_j44qy"]
 [ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/rooftop_orange.tscn" id="34_nlfrn"]
 [ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/canopy.tscn" id="35_j44qy"]
+=======
+[ext_resource type="PackedScene" uid="uid://dyt1uh4g2mmih" path="res://Unpacked Assets/UnpackedUnpackedAssets/straight_walkway_connection_2.tscn" id="26_pgu05"]
+[ext_resource type="PackedScene" uid="uid://du2tfyrl381mq" path="res://Unpacked Assets/UnpackedUnpackedAssets/bentpipe.tscn" id="27_2jg6l"]
+[ext_resource type="PackedScene" uid="uid://bhgvqoj0smgwv" path="res://Unpacked Assets/ac_unit.glb" id="27_3nkef"]
+[ext_resource type="PackedScene" uid="uid://b1umvew3mm735" path="res://Unpacked Assets/UnpackedUnpackedAssets/fire_escape_stairs.tscn" id="28_m64o6"]
+[ext_resource type="PackedScene" uid="uid://bgm82p10a27cp" path="res://Unpacked Assets/UnpackedUnpackedAssets/checkpointflag.tscn" id="28_nlfrn"]
+[ext_resource type="PackedScene" uid="uid://c7c0fm4ktueaj" path="res://Unpacked Assets/UnpackedUnpackedAssets/scaffolding.tscn" id="29_j44qy"]
+[ext_resource type="PackedScene" uid="uid://6dgpi6dyo2fa" path="res://Unpacked Assets/UnpackedUnpackedAssets/straightpipe.tscn" id="30_ipur1"]
+[ext_resource type="PackedScene" uid="uid://dpverg32l8mi3" path="res://Unpacked Assets/UnpackedUnpackedAssets/rooftop_white_2.tscn" id="33_2jg6l"]
+[ext_resource type="PackedScene" uid="uid://bjg7b4aiaqctv" path="res://Unpacked Assets/UnpackedUnpackedAssets/rooftop_blue.tscn" id="33_nlfrn"]
+[ext_resource type="PackedScene" uid="uid://cs55k2wiik2q7" path="res://Unpacked Assets/UnpackedUnpackedAssets/rooftop_orange.tscn" id="34_nlfrn"]
+>>>>>>> 00e41d11745798a34a8cc134c05af2de3b4e12b5
 
 [sub_resource type="Environment" id="Environment_i3aeo"]
 volumetric_fog_enabled = true
@@ -8489,6 +8502,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1830.2596, 9.790396, -413.472
 [node name="Straightpipe" parent="." instance=ExtResource("30_ipur1")]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 1865.3308, 36.580547, -292.24408)
 
+<<<<<<< HEAD
 [node name="Straightpipe3" parent="." instance=ExtResource("30_ipur1")]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 1865.3308, 37.475998, -292.24408)
 
@@ -8516,6 +8530,8 @@ transform = Transform3D(-4.371139e-09, 0.1, -4.371139e-09, 0, -4.371139e-09, -0.
 [node name="Straightpipe2" parent="." instance=ExtResource("30_ipur1")]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 1902.6941, 37.723038, -308.1943)
 
+=======
+>>>>>>> 00e41d11745798a34a8cc134c05af2de3b4e12b5
 [node name="rooftop_orange3" parent="." instance=ExtResource("34_nlfrn")]
 transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-08, 1861.154, 24.966, -364.63)
 
@@ -8526,6 +8542,7 @@ transform = Transform3D(3.4969112e-08, -3.0570967e-15, 0.8, -6.9938224e-08, -0.8
 transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 1816.5427, 19, -264.3297)
 
 [node name="rooftop_blue" parent="." instance=ExtResource("33_nlfrn")]
+<<<<<<< HEAD
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1862.3278, 24.854134, -311.36697)
 
 [node name="rooftop_white" parent="." instance=ExtResource("34_j44qy")]
@@ -8560,5 +8577,8 @@ transform = Transform3D(-4.9830984e-08, 0, -1, 0, 1, 0, 1.14, 0, -4.371139e-08, 
 
 [node name="canopy8" parent="." instance=ExtResource("35_j44qy")]
 transform = Transform3D(-4.9830984e-08, 0, -1, 0, 1, 0, 1.14, 0, -4.371139e-08, 1847.4229, 78.680916, -347.458)
+=======
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1862.3612, 24.854137, -311.5551)
+>>>>>>> 00e41d11745798a34a8cc134c05af2de3b4e12b5
 
 [editable path="SpawnPoint"]

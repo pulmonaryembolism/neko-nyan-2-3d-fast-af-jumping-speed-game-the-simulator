@@ -3,10 +3,17 @@
 [ext_resource type="PackedScene" uid="uid://jmrfrfn5i3pt" path="res://Unpacked Assets/rooftop_blue.glb" id="1_xetyx"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5b73d"]
+<<<<<<< HEAD
 size = Vector3(23.630981, 0.17407227, 19.811523)
+=======
+>>>>>>> 00e41d11745798a34a8cc134c05af2de3b4e12b5
 
 [node name="rooftop_blue" instance=ExtResource("1_xetyx")]
 
 [node name="CollisionShape3D" parent="cube_009" index="0"]
+<<<<<<< HEAD
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015075684, -0.019165039, -0.025390625)
+=======
+transform = Transform3D(23.332499, 0, 0, 0, 0.2561702, 0, 0, 0, 19.30394, 0, -0.033854842, 0)
+>>>>>>> 00e41d11745798a34a8cc134c05af2de3b4e12b5
 shape = SubResource("BoxShape3D_5b73d")
