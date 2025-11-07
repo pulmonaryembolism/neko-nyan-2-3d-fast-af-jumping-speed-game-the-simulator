@@ -24,14 +24,14 @@
 [ext_resource type="PackedScene" uid="uid://824e6fu6micu" path="res://Unpacked Assets/UnpackedUnpackedAssets/whitebuilding_2.tscn" id="25_m64o6"]
 [ext_resource type="PackedScene" uid="uid://cnqp2jmbwtf4c" path="res://Unpacked Assets/UnpackedUnpackedAssets/orange_building.tscn" id="26_55gk5"]
 [ext_resource type="PackedScene" uid="uid://dyt1uh4g2mmih" path="res://Unpacked Assets/UnpackedUnpackedAssets/straight_walkway_connection_2.tscn" id="26_pgu05"]
-[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/bentpipe.tscn" id="27_2jg6l"]
+[ext_resource type="PackedScene" uid="uid://du2tfyrl381mq" path="res://Unpacked Assets/UnpackedUnpackedAssets/bentpipe.tscn" id="27_2jg6l"]
 [ext_resource type="PackedScene" uid="uid://bhgvqoj0smgwv" path="res://Unpacked Assets/ac_unit.glb" id="27_3nkef"]
 [ext_resource type="PackedScene" uid="uid://b1umvew3mm735" path="res://Unpacked Assets/UnpackedUnpackedAssets/fire_escape_stairs.tscn" id="28_m64o6"]
-[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/checkpointflag.tscn" id="28_nlfrn"]
-[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/scaffolding.tscn" id="29_j44qy"]
-[ext_resource type="PackedScene" path="res://Unpacked Assets/UnpackedUnpackedAssets/straightpipe.tscn" id="30_ipur1"]
+[ext_resource type="PackedScene" uid="uid://bgm82p10a27cp" path="res://Unpacked Assets/UnpackedUnpackedAssets/checkpointflag.tscn" id="28_nlfrn"]
+[ext_resource type="PackedScene" uid="uid://c7c0fm4ktueaj" path="res://Unpacked Assets/UnpackedUnpackedAssets/scaffolding.tscn" id="29_j44qy"]
+[ext_resource type="PackedScene" uid="uid://6dgpi6dyo2fa" path="res://Unpacked Assets/UnpackedUnpackedAssets/straightpipe.tscn" id="30_ipur1"]
 [ext_resource type="PackedScene" uid="uid://dpverg32l8mi3" path="res://Unpacked Assets/UnpackedUnpackedAssets/rooftop_white_2.tscn" id="33_2jg6l"]
-[ext_resource type="PackedScene" uid="uid://jmrfrfn5i3pt" path="res://Unpacked Assets/rooftop_blue.glb" id="33_051wo"]
+[ext_resource type="PackedScene" uid="uid://bjg7b4aiaqctv" path="res://Unpacked Assets/UnpackedUnpackedAssets/rooftop_blue.tscn" id="33_nlfrn"]
 [ext_resource type="PackedScene" uid="uid://cs55k2wiik2q7" path="res://Unpacked Assets/UnpackedUnpackedAssets/rooftop_orange.tscn" id="34_nlfrn"]
 
 [sub_resource type="Environment" id="Environment_i3aeo"]
@@ -8484,9 +8484,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1830.2596, 9.790396, -413.472
 [node name="Straightpipe" parent="." instance=ExtResource("30_ipur1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1843.465, 1.7078457, -434.77313)
 
-[node name="rooftop_blue" parent="." instance=ExtResource("33_051wo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1862.2609, 24.69743, -311.40842)
-
 [node name="rooftop_orange3" parent="." instance=ExtResource("34_nlfrn")]
 transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-08, 1861.154, 24.966, -364.63)
 
@@ -8495,5 +8492,8 @@ transform = Transform3D(3.4969112e-08, -3.0570967e-15, 0.8, -6.9938224e-08, -0.8
 
 [node name="rooftop_white2" parent="." instance=ExtResource("33_2jg6l")]
 transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 1816.5427, 19, -264.3297)
+
+[node name="rooftop_blue" parent="." instance=ExtResource("33_nlfrn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1862.3612, 24.854137, -311.5551)
 
 [editable path="SpawnPoint"]

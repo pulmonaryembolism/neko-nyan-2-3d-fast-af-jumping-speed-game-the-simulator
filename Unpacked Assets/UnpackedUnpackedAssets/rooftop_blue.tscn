@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjg7b4aiaqctv"]
+
+[ext_resource type="PackedScene" uid="uid://jmrfrfn5i3pt" path="res://Unpacked Assets/rooftop_blue.glb" id="1_xetyx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5b73d"]
+
+[node name="rooftop_blue" instance=ExtResource("1_xetyx")]
+
+[node name="CollisionShape3D" parent="cube_009" index="0"]
+transform = Transform3D(23.332499, 0, 0, 0, 0.2561702, 0, 0, 0, 19.30394, 0, -0.033854842, 0)
+shape = SubResource("BoxShape3D_5b73d")
