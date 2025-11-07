@@ -2468,6 +2468,30 @@ transform = Transform3D(-4.9830984e-08, 0, -1, 0, 1, 0, 1.14, 0, -4.371139e-08, 
 [node name="canopy8" parent="." instance=ExtResource("35_j44qy")]
 transform = Transform3D(-4.9830984e-08, 0, -1, 0, 1, 0, 1.14, 0, -4.371139e-08, 1847.4229, 78.680916, -347.458)
 
+[node name="canopy15" parent="." instance=ExtResource("35_j44qy")]
+transform = Transform3D(-1.14, 0, -8.742278e-08, 0, 1, 0, 9.966197e-08, 0, -1, 1833.1658, 45.215862, -342.22147)
+
+[node name="canopy16" parent="." instance=ExtResource("35_j44qy")]
+transform = Transform3D(-1.14, 0, -8.742278e-08, 0, 1, 0, 9.966197e-08, 0, -1, 1841.0637, 45.215862, -342.43353)
+
+[node name="canopy17" parent="." instance=ExtResource("35_j44qy")]
+transform = Transform3D(-1.14, 0, -8.742278e-08, 0, 1, 0, 9.966197e-08, 0, -1, 1841.0637, 56.088127, -342.43353)
+
+[node name="canopy18" parent="." instance=ExtResource("35_j44qy")]
+transform = Transform3D(-1.14, 0, -8.742278e-08, 0, 1, 0, 9.966197e-08, 0, -1, 1833.1658, 56.088127, -342.5577)
+
+[node name="canopy19" parent="." instance=ExtResource("35_j44qy")]
+transform = Transform3D(-1.14, 0, -8.742278e-08, 0, 1, 0, 9.966197e-08, 0, -1, 1833.1658, 67.42474, -342.5577)
+
+[node name="canopy20" parent="." instance=ExtResource("35_j44qy")]
+transform = Transform3D(-1.14, 0, -8.742278e-08, 0, 1, 0, 9.966197e-08, 0, -1, 1841.0637, 67.42474, -342.6142)
+
+[node name="canopy21" parent="." instance=ExtResource("35_j44qy")]
+transform = Transform3D(-1.14, 0, -8.742278e-08, 0, 1, 0, 9.966197e-08, 0, -1, 1841.0637, 78.680916, -342.6142)
+
+[node name="canopy22" parent="." instance=ExtResource("35_j44qy")]
+transform = Transform3D(-1.14, 0, -8.742278e-08, 0, 1, 0, 9.966197e-08, 0, -1, 1833.1658, 78.680916, -342.5789)
+
 [node name="_MeshInstance3D_61360" type="MeshInstance3D" parent="."]
 transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 1860.833, -0.905941, -263.7723)
 mesh = SubResource("PlaneMesh_jm0wb")
@@ -9124,5 +9148,11 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1840
 
 [node name="balcony20" parent="." instance=ExtResource("37_wqbs1")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1840.3923, 26.882734, -223.17294)
+
+[node name="Bentpipe4" parent="." instance=ExtResource("27_2jg6l")]
+transform = Transform3D(-2.3260442e-09, -0.05321369, 0, 0.05321369, -2.3260442e-09, 0, 0, 0, 0.05321369, 1819.8657, 23.132763, -257.9527)
+
+[node name="Bentpipe7" parent="." instance=ExtResource("27_2jg6l")]
+transform = Transform3D(-2.557004e-09, -0.057264354, 0, 0.05849743, -2.5031044e-09, 0, 0, 0, 0.05321369, 1820.4315, 24.161963, -257.9527)
 
 [editable path="SpawnPoint"]
