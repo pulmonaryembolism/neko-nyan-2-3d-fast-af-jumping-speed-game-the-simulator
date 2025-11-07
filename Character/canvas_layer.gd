@@ -1,6 +1,6 @@
 extends CanvasLayer
 	
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	var character = get_parent() as CharacterBody3D
 	if not character:
 		return

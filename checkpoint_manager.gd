@@ -13,6 +13,6 @@ func on_checkpoint_activated(checkpoint_id: int):
 		activated_count += 1
 		print("Checkpoint", checkpoint_id, "activated. Total:", activated_count)
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if activated_count == total_checkpoints:
 		Global.stop_timer = true
