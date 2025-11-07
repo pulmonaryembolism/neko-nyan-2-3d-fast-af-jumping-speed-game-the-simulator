@@ -1,5 +1,8 @@
 extends CharacterBody3D
 
+@export var min_fov := 110.0
+@export var max_fov := 130.0
+@export var fov_speed := 2.5
 @export var jump_speed := 4.50
 @export var wall_jump_speed := 4.43
 @export var wall_jump_boost := 1.10
@@ -61,6 +64,13 @@ func camera_reset(delta):
 	saved_global_camera = %CameraSmooth.global_position
 	if %CameraSmooth.position.y == 0:
 		saved_global_camera = null
+
+func camera_fov(delta) -> void:
+	var horzspeed = Vector3(self.velocity.x, 0.0, self.velocity.z).length()
+	var target_fov = ((horzspeed - (walk_speed - 0.6)) * 2.0) + min_fov
+	target_fov = clamp(target_fov, min_fov, max_fov)
+	%Camera3D.fov = lerp(%Camera3D.fov, target_fov, fov_speed * delta)
+
 
 func _ready():
 	look_sensitivity = TAU / (Global.cm_per_360 * Global.dpi / 2.54)
@@ -267,4 +277,5 @@ func _physics_process(delta):
 		#stair check moves character manually
 		move_and_slide()
 	
+	camera_fov(delta)
 	camera_reset(delta)
