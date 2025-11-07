@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bwoa2k8ere8bv"]
+[gd_scene load_steps=3 format=3 uid="uid://bwoa2k8ere8bv"]
 
 [ext_resource type="Script" uid="uid://ba8w2afud5bh5" path="res://settings.gd" id="1_qqnya"]
+[ext_resource type="Texture2D" uid="uid://b2vpfgn75c4t8" path="res://Assets/uiAssets/OptionsBackground.png" id="2_hg628"]
 
 [node name="Settings" type="Control"]
 process_mode = 3
@@ -17,16 +18,27 @@ script = ExtResource("1_qqnya")
 metadata/_edit_horizontal_guides_ = [651.0]
 metadata/_edit_vertical_guides_ = [1154.0]
 
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.0114882, 1.0155015)
+texture = ExtResource("2_hg628")
+
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
-offset_left = 410.0
-offset_top = 82.0
-offset_right = 529.99915
-offset_bottom = 277.0
+offset_left = 831.0
+offset_top = 292.0
+offset_right = 950.99915
+offset_bottom = 487.0
 scale = Vector2(2.528288, 2.5414119)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
+size_flags_vertical = 4
 
 [node name="BackButton" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2

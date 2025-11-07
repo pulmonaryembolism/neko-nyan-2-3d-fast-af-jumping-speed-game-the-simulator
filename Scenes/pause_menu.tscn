@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bxonrhkg1vfpe"]
+[gd_scene load_steps=3 format=3 uid="uid://bxonrhkg1vfpe"]
 
 [ext_resource type="Script" uid="uid://bh4ms3w8y2uel" path="res://pause_menu.gd" id="1_emv3i"]
+[ext_resource type="Texture2D" uid="uid://1m7agxwusf6f" path="res://Assets/uiAssets/PauseBackground.png" id="2_k0w1u"]
 
 [node name="PauseMenu" type="Control"]
 process_mode = 2
@@ -11,6 +12,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_emv3i")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_k0w1u")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 process_mode = 2
