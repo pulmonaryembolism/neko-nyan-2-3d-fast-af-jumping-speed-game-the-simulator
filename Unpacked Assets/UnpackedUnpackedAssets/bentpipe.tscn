@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://du2tfyrl381mq"]
+[gd_scene load_steps=5 format=3 uid="uid://2t7ujsqputxg"]
 
 [ext_resource type="PackedScene" uid="uid://boqsh7kdfis0e" path="res://Unpacked Assets/Bentpipe.glb" id="1_s4bc5"]
 [ext_resource type="Shader" uid="uid://ckguggud1ggla" path="res://Shaders/default_object.gdshader" id="2_lyxrr"]
@@ -9,7 +9,7 @@ render_priority = 0
 shader = ExtResource("2_lyxrr")
 shader_parameter/color_texture = ExtResource("3_y2jyt")
 shader_parameter/vertex_wobble = 1.0
-shader_parameter/affine_mapping = 0.15
+shader_parameter/affine_mapping = 0.0
 
 [node name="Bentpipe" instance=ExtResource("1_s4bc5")]
 
