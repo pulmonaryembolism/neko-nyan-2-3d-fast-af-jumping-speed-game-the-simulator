@@ -14,6 +14,7 @@ grow_vertical = 2
 script = ExtResource("1_klylv")
 
 [node name="TextureRect" type="TextureRect" parent="."]
+visible = false
 layout_mode = 0
 offset_left = -28.999998
 offset_top = -16.000002
