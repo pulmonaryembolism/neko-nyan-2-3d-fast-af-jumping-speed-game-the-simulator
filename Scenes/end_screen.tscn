@@ -13,10 +13,10 @@ script = ExtResource("1_1gwaw")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
-offset_left = 798.0
+offset_left = 640.0
 offset_top = 290.0
-offset_right = 868.0
-offset_bottom = 418.0
+offset_right = 793.07733
+offset_bottom = 417.72394
 scale = Vector2(4.1808925, 4.1808925)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
@@ -26,13 +26,9 @@ layout_mode = 2
 layout_mode = 2
 text = "Time: "
 
-[node name="StartButton" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="ReplayButton" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Replay"
-
-[node name="OptionsButton" type="Button" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-text = "Options"
 
 [node name="QuitButton" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2

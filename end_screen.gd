@@ -1,7 +1,6 @@
 extends Control
 
-@onready var start_button = $MarginContainer/VBoxContainer/ReplayButton
-@onready var options_button = $MarginContainer/VBoxContainer/OptionsButton
+@onready var replay_button = $MarginContainer/VBoxContainer/ReplayButton
 @onready var quit_button = $MarginContainer/VBoxContainer/QuitButton
 
 func _ready():
