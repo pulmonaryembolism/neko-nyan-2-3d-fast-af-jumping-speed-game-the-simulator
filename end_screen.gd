@@ -5,7 +5,7 @@ extends Control
 
 func _ready():
 	$MarginContainer/VBoxContainer/Time.text = Global.final_time
-	start_button.pressed.connect(_on_StartButton_pressed)
+	replay_button.pressed.connect(_on_StartButton_pressed)
 	quit_button.pressed.connect(_on_QuitButton_pressed)
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
