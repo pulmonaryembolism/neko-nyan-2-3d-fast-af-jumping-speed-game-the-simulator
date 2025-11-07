@@ -20,7 +20,6 @@ func _process(delta: float) -> void:
 		stop()
 
 func stop() -> void:
-	Global.final_time = "Time: %02d:%02d:%03d" % [minutes, seconds, msec]
+	Global.final_time = "%02d:%02d:%03d" % [minutes, seconds, msec]
 	set_process(false)
 	Global.stop_timer = false
-	get_tree().change_scene_to_file("res://Scenes/end_screen.tscn")

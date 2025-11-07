@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://di1h5a35sydd8"]
+[gd_scene load_steps=3 format=3 uid="uid://di1h5a35sydd8"]
 
 [ext_resource type="Script" uid="uid://bnhjm51ylvyah" path="res://end_screen.gd" id="1_1gwaw"]
+[ext_resource type="PackedScene" uid="uid://d1b38nddoq7d4" path="res://Mechanics/timer.tscn" id="2_1gwaw"]
 
 [node name="EndScreen" type="Control"]
 layout_mode = 3
@@ -12,15 +13,11 @@ grow_vertical = 2
 script = ExtResource("1_1gwaw")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 640.0
-offset_top = 256.0
-offset_right = -1142.2303
-offset_bottom = -686.23035
-grow_horizontal = 2
+layout_mode = 0
+offset_left = 798.0
+offset_top = 290.0
+offset_right = 868.0
+offset_bottom = 418.0
 scale = Vector2(4.1808925, 4.1808925)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
@@ -28,18 +25,18 @@ layout_mode = 2
 
 [node name="Time" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-text = "Time: 00:00:000"
-horizontal_alignment = 1
-vertical_alignment = 1
+text = "Time: "
 
-[node name="SaveButton" type="Button" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-text = "Save"
-
-[node name="ReplayButton" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="StartButton" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Replay"
 
-[node name="QuitButton" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="OptionsButton" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Options"
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Quit"
+
+[node name="Timer" parent="." instance=ExtResource("2_1gwaw")]
