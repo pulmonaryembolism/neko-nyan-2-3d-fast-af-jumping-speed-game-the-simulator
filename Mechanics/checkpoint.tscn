@@ -1,19 +1,20 @@
 [gd_scene load_steps=4 format=3 uid="uid://ckq0wuodht4xa"]
 
 [ext_resource type="Script" uid="uid://r7uft03yw55y" path="res://Mechanics/checkpoint.gd" id="1_t1csw"]
-[ext_resource type="PackedScene" uid="uid://bgm82p10a27cp" path="res://Unpacked Assets/UnpackedUnpackedAssets/checkpointflag.tscn" id="2_5nv6f"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_5nv6f"]
-size = Vector3(1, 3.8878174, 1.8417969)
+[sub_resource type="SphereShape3D" id="SphereShape3D_8yx64"]
+radius = 0.98678416
+
+[sub_resource type="SphereMesh" id="SphereMesh_t1csw"]
 
 [node name="Checkpoint" type="Area3D"]
 script = ExtResource("1_t1csw")
 
-[node name="checkpointflag" parent="." instance=ExtResource("2_5nv6f")]
-transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
-
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9439087, -0.42089844)
-shape = SubResource("BoxShape3D_5nv6f")
+shape = SubResource("SphereShape3D_8yx64")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
+transform = Transform3D(2.0340607, 0, 0, 0, 1.7913904, 0, 0, 0, 2.0608554, 0, 0, 0)
+mesh = SubResource("SphereMesh_t1csw")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
